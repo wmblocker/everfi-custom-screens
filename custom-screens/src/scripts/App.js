@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import NavBar from "./components/NavBar.js";
+import Footer from "./components/Footer.js";
 import '../css/App.css';
 
 class App extends Component {
@@ -6,8 +8,8 @@ class App extends Component {
     return (
       <div className="App">
       <NavBar />
-      <SideNav />
-      <MainContainer />
+      {/*<SideNav />*/}
+      {/*<MainContainer />*/}
       <Footer />
       </div>
     );
