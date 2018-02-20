@@ -43,7 +43,7 @@ ul{
     
     .col-25{
         width: 25%;
-        height: 100%;
+        height: auto;
         float: left;
     }
     
@@ -62,4 +62,12 @@ ul{
         margin-top: 20px;
         display: inline-block;
     }
+}
+
+.code-box{
+    margin: 20px 0px 20px 0px;
+}
+
+form{
+    margin:20px 0px 20px 0px;
 }
