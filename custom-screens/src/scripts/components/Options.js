@@ -5,8 +5,20 @@ export class Option1 extends Component{
         return(
             <div>
                 <h2 className="text-center" >Option 1</h2>
-                <div className="cs-modal">
-
+                <div className="cs-modal-1">
+                    <div className="header">
+                        <p className="header-text">Way to go!</p>
+                    </div>
+                    <div className="col-wrap">
+                        <div className="col-25">
+                            <div className="bar">
+                            </div>
+                        </div>
+                        <div className="col-75">
+                            <p className="sub-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a className="action-button" href="#" target="_blank">Learn more</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         );
