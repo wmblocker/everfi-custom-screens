@@ -1,0 +1,19 @@
+aside, main{
+    padding: 10px;
+}
+
+ul{
+    li{
+        list-style-type: none;
+        a{
+            color: #fff;
+        }
+    }
+}
+
+.cs-modal{
+    width:1024px;
+    height:600px;
+    border: 1px solid #000;
+    margin-left:30px;
+}
