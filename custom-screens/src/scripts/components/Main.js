@@ -9,7 +9,7 @@ class Main extends Component{
         return(
             <Switch>
             <div className="row">
-                <aside className="col-md-2 bg-dark" style={{height:"90vh"}} >           
+                <aside className="col-md-2 bg-dark" style={{height:"auto"}} >           
                     <ul>
                         <li><Link to="/everfi-custom-screens/option1">Option 1</Link></li>
                         <li><Link to="/everfi-custom-screens/option2">Option 2</Link></li>

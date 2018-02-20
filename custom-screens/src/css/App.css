@@ -46,7 +46,9 @@ ul li {
     display: inline-block; }
 
 .code-box {
-  margin: 20px 0px 20px 0px; }
+  margin: 20px 0px 20px 0px;
+  padding-left: 35px;
+  white-space: normal; }
 
 form {
   margin: 20px 0px 20px 0px; }
