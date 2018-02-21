@@ -46,8 +46,10 @@ ul li {
     display: inline-block; }
 
 .code-box {
-  margin: 20px 0px 20px 0px;
-  padding-left: 35px;
+  margin: 20px 0px 40px 0px;
+  padding-left: 35px; }
+
+pre {
   white-space: normal; }
 
 form {
