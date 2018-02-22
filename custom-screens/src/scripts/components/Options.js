@@ -1,13 +1,18 @@
 import React, {Component} from "react";
 
 export class Option1 extends Component{
+    constructor(props){
+        super(props);
+        this.state = {headerText: "HI"};
+    }
+
     render(){
         return(
             <div>
                 <h2 className="text-center" >Option 1</h2>
                 <div className="cs-modal-1">
                     <div className="header">
-                        <p className="header-text">Way to go!</p>
+                        <p className="header-text">{this.state.headerText}</p>
                     </div>
                     <div className="col-wrap">
                         <div className="col-25">
