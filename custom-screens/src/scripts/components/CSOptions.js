@@ -1,9 +1,18 @@
 import React, { Component } from 'react';
 
 class CSOptions extends Component{
+    constructor(props){
+        super(props);
+        this.handleHeaderTextChange = this.handleHeaderTextChange.bind(this);
+    }
+
+    handleHeaderTextChange(e){
+        this.props.onHeaderTextChange(e.target.value);
+    }
+
     render(){
         return(
-            <h3>Customization Options</h3>
+            <input type="text" title="input" value={this.props.headerText} onChange={this.handleHeaderTextChange}/>
         );
     }
 }

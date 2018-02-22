@@ -1,9 +1,17 @@
 import React, {Component} from "react";
+import CSOptions from "./CSOptions.js";
 
 export class Option1 extends Component{
     constructor(props){
         super(props);
-        this.state = {headerText: "HI"};
+        this.state = {headerText: "Heading", subHeading: "Sub-Heading", actionButton: "Learn More"};
+        this.handleHeaderTextChange = this.handleHeaderTextChange.bind(this);
+    }
+
+    handleHeaderTextChange(updatedText){
+        this.setState({
+            headerText : updatedText
+        });
     }
 
     render(){
@@ -20,8 +28,8 @@ export class Option1 extends Component{
                             </div>
                         </div>
                         <div className="col-75">
-                            <p className="sub-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <a className="action-button" href="#" target="_blank">Learn more</a>
+                            <p className="sub-heading">{this.state.subHeading}</p>
+                            <a className="action-button" href="#" target="_blank">{this.state.actionButton}</a>
                         </div>
                     </div>
                 </div>
@@ -31,7 +39,7 @@ export class Option1 extends Component{
                         &lt;div&gt;<br />
                             &lt;div className=&quot;cs-modal-1&quot;&gt;<br />
                                 &lt;div className=&quot;header&quot;&gt;<br />
-                                    &lt;p className=&quot;header-text&quot;&gt;Way to go!&lt;/p&gt;<br />
+                                    &lt;p className=&quot;header-text&quot;&gt;{this.state.headerText}&lt;/p&gt;<br />
                                 &lt;/div&gt;<br />
                                 &lt;div className=&quot;col-wrap&quot;&gt;<br />
                                     &lt;div className=&quot;col-25&quot;&gt;<br />
@@ -40,7 +48,7 @@ export class Option1 extends Component{
                                     &lt;/div&gt;<br />
                                     &lt;div className=&quot;col-75&quot;&gt;<br />
                                         &lt;p className=&quot;sub-heading&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;<br />
-                                        &lt;a className=&quot;action-button&quot; href=&quot;#&quot; target=&quot;_blank&quot;&gt;Learn more&lt;/a&gt;<br />
+                                        &lt;a className=&quot;action-button&quot; href=&quot;#&quot; target=&quot;_blank&quot;&gt;{this.state.actionButton}&lt;/a&gt;<br />
                                     &lt;/div&gt;<br />
                                 &lt;/div&gt;<br />
                             &lt;/div&gt;<br />
@@ -56,8 +64,7 @@ export class Option1 extends Component{
                         </pre>
                     </div>
                     <div className="col-md-6">
-                    <form>  
-                    </form>
+                    <CSOptions headerText = {this.state.headerText} onHeaderTextChange = {this.handleHeaderTextChange}/>
                     </div>
                 </div>
             </div>
