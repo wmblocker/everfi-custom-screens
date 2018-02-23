@@ -5,12 +5,14 @@ import * as HTMLCode from "./HTMLCode.js"
 export class Option1 extends Component{
     constructor(props){
         super(props);
-        this.state = {headerText: "Heading", subHeadingText: "Sub-Heading", actionButtonText: "Learn More", headerBackGround: "#f8f9fa;"};
+        this.state = {headerText: "Heading", subHeadingText: "Sub-Heading", actionButtonText: "Learn More", headerBackGround: "#f8f9fa", headerBorder: "#ee5030", barColor: "#f8f9fa"};
         this.handleHeaderTextChange = this.handleHeaderTextChange.bind(this);
         this.handleSubHeadingTextChange = this.handleSubHeadingTextChange.bind(this);
         this.handleActionButtonTextChange = this.handleActionButtonTextChange.bind(this);
         this.handleHeaderBackGroundChange = this.handleHeaderBackGroundChange.bind(this);
-        
+        this.handleHeaderBorderChange = this.handleHeaderBorderChange.bind(this);
+        this.handleBarColorChange = this.handleBarColorChange.bind(this);
+
     }
 
     handleHeaderTextChange(updatedText){
@@ -37,17 +39,46 @@ export class Option1 extends Component{
         });
     }
 
+    handleHeaderBorderChange(updatedText){
+        this.setState({
+            headerBorder : updatedText
+        });
+    }
+    
+    handleBarColorChange(updatedText){
+        this.setState({
+            barColor : updatedText
+        });
+    }
+
     render(){
         return(
             <div>
-                <div className="row">
-                    <div className="col-md-12">
-                        <h2 className="text-center" >Option 1</h2>
+                <div className="row mt-3">
+                    <div className="col-md-3 bg-light">
+                        <CSOptions.Option1 
+                        headerText = {this.state.headerText}
+                        headerBorder = {this.state.headerBorder}
+                        subHeadingText = {this.state.subHeadingText}
+                        actionButtonText = {this.state.actionButtonText}
+                        headerBackGround = {this.state.headerBackGround}
+                        barColor = {this.state.bar}
+                        onHeaderBackGroundChange = {this.handleHeaderBackGroundChange}
+                        onHeaderTextChange = {this.handleHeaderTextChange}
+                        onSubHeadingTextChange = {this.handleSubHeadingTextChange}
+                        onActionButtonTextChange = {this.handleActionButtonTextChange}
+                        onHeaderBorderChange = {this.handleHeaderBorderChange}
+                        onBarColorChange = {this.handleBarColorChange}
+                    />
+                    </div>
+                    <div className="col-md-9">
                         <HTMLCode.Option1 
                         headerText = {this.state.headerText}
                         headerBackGround = {this.state.headerBackGround}
+                        headerBorder = {this.state.headerBorder}
                         subHeadingText = {this.state.subHeadingText}
-                        actionButtonText = {this.state.actionButtonText}                     
+                        actionButtonText = {this.state.actionButtonText}
+                        barColor = {this.state.bar}
                         />
                     </div>
                 </div>
@@ -73,18 +104,6 @@ export class Option1 extends Component{
                         &lt;/div&gt;<br />
             </code>
                         </pre>
-                    </div>
-                    <div className="col-md-6">
-                    <CSOptions.Option1 
-                    headerText = {this.state.headerText}
-                    subHeadingText = {this.state.subHeadingText}
-                    actionButtonText = {this.state.actionButtonText}
-                    headerBackGround = {this.state.headerBackGround}
-                    onHeaderBackGroundChange = {this.handleHeaderBackGroundChange}
-                    onHeaderTextChange = {this.handleHeaderTextChange}
-                    onSubHeadingTextChange = {this.handleSubHeadingTextChange}
-                    onActionButtonTextChange = {this.handleActionButtonTextChange}
-                    />
                     </div>
                 </div>
             </div>
