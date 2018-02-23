@@ -1,20 +1,46 @@
 import React, { Component } from 'react';
 
-class CSOptions extends Component{
+export class Option1 extends Component{
     constructor(props){
         super(props);
         this.handleHeaderTextChange = this.handleHeaderTextChange.bind(this);
+        this.handleSubHeadingTextChange = this.handleSubHeadingTextChange.bind(this);
+        this.handleActionButtonTextChange = this.handleActionButtonTextChange.bind(this);
     }
 
     handleHeaderTextChange(e){
         this.props.onHeaderTextChange(e.target.value);
     }
 
+    handleSubHeadingTextChange(e){
+        this.props.onSubHeadingTextChange(e.target.value);
+    }
+
+    handleActionButtonTextChange(e){
+        this.props.onActionButtonTextChange(e.target.value);
+    }
+
     render(){
         return(
-            <input type="text" title="input" value={this.props.headerText} onChange={this.handleHeaderTextChange}/>
+            <form>
+                <div className="form-row">
+                    <div className="form-group">
+                        <input className="form-control" type="text" title="input" value={this.props.headerText} onChange={this.handleHeaderTextChange}/>
+                    </div>
+                </div>
+                
+                <div className="form-row">
+                    <div className="form-group">
+                        <input className="form-control" type="text" title="input" value={this.props.subHeadingText} onChange={this.handleSubHeadingTextChange}/>
+                    </div>
+                </div>
+                
+                <div className="form-row">
+                <div className="form-group">
+                    <input className="form-control" type="text" title="input" value={this.props.actionButtonText} onChange={this.handleActionButtonTextChange}/>
+                </div>
+                </div>
+            </form>
         );
     }
 }
-
-export default CSOptions;

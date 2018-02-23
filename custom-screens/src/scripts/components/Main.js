@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Router, Route, Link, Switch} from 'react-router-dom';
 import {BrowserRouter} from 'react-router-dom';
 import CSOptions from "./CSOptions.js";
-import {Option1, Option2, Option3, Option4, Option5, Option6, Option7} from "./Options.js";
+import * as Options from "./Options.js";
 
 class Main extends Component{
     render(){
@@ -21,13 +21,13 @@ class Main extends Component{
                     </ul>  
                 </aside> 
                 <main className="col-md-10">
-                    <Route path="/everfi-custom-screens/option1" component={Option1} />
-                    <Route path="/everfi-custom-screens/option2" component={Option2} />
-                    <Route path="/everfi-custom-screens/option3" component={Option3} />
-                    <Route path="/everfi-custom-screens/option4" component={Option4} />
-                    <Route path="/everfi-custom-screens/option5" component={Option5} />
-                    <Route path="/everfi-custom-screens/option6" component={Option6} />
-                    <Route path="/everfi-custom-screens/option7" component={Option7} />
+                    <Route path="/everfi-custom-screens/option1" component={Options.Option1} />
+                    <Route path="/everfi-custom-screens/option2" component={Options.Option2} />
+                    <Route path="/everfi-custom-screens/option3" component={Options.Option3} />
+                    <Route path="/everfi-custom-screens/option4" component={Options.Option4} />
+                    <Route path="/everfi-custom-screens/option5" component={Options.Option5} />
+                    <Route path="/everfi-custom-screens/option6" component={Options.Option6} />
+                    <Route path="/everfi-custom-screens/option7" component={Options.Option7} />
                 </main>
             </div>
             </Switch>
