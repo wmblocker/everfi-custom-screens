@@ -6,6 +6,8 @@ export class Option1 extends Component{
         this.handleHeaderTextChange = this.handleHeaderTextChange.bind(this);
         this.handleSubHeadingTextChange = this.handleSubHeadingTextChange.bind(this);
         this.handleActionButtonTextChange = this.handleActionButtonTextChange.bind(this);
+        this.handleHeaderBackGroundChange = this.handleHeaderBackGroundChange.bind(this);
+
     }
 
     handleHeaderTextChange(e){
@@ -18,6 +20,11 @@ export class Option1 extends Component{
 
     handleActionButtonTextChange(e){
         this.props.onActionButtonTextChange(e.target.value);
+    }
+
+    handleHeaderBackGroundChange(e){
+        this.props.onHeaderBackGroundChange(e.target.value);
+
     }
 
     render(){
@@ -36,9 +43,15 @@ export class Option1 extends Component{
                 </div>
                 
                 <div className="form-row">
-                <div className="form-group">
-                    <input className="form-control" type="text" title="input" value={this.props.actionButtonText} onChange={this.handleActionButtonTextChange}/>
+                    <div className="form-group">
+                        <input className="form-control" type="text" title="input" value={this.props.actionButtonText} onChange={this.handleActionButtonTextChange}/>
+                    </div>
                 </div>
+
+                <div className="form-row">
+                    <div className="form-group">
+                        <input className="form-control" type="text" title="input" value={this.props.headerBackGround} onChange={this.handleHeaderBackGroundChange}/>
+                    </div>
                 </div>
             </form>
         );

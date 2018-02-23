@@ -5,10 +5,11 @@ import * as HTMLCode from "./HTMLCode.js"
 export class Option1 extends Component{
     constructor(props){
         super(props);
-        this.state = {headerText: "Heading", subHeadingText: "Sub-Heading", actionButtonText: "Learn More"};
+        this.state = {headerText: "Heading", subHeadingText: "Sub-Heading", actionButtonText: "Learn More", headerBackGround: "#f8f9fa;"};
         this.handleHeaderTextChange = this.handleHeaderTextChange.bind(this);
         this.handleSubHeadingTextChange = this.handleSubHeadingTextChange.bind(this);
         this.handleActionButtonTextChange = this.handleActionButtonTextChange.bind(this);
+        this.handleHeaderBackGroundChange = this.handleHeaderBackGroundChange.bind(this);
         
     }
 
@@ -30,6 +31,12 @@ export class Option1 extends Component{
         });
     }
 
+    handleHeaderBackGroundChange(updatedText){
+        this.setState({
+            headerBackGround : updatedText
+        });
+    }
+
     render(){
         return(
             <div>
@@ -38,8 +45,9 @@ export class Option1 extends Component{
                         <h2 className="text-center" >Option 1</h2>
                         <HTMLCode.Option1 
                         headerText = {this.state.headerText}
+                        headerBackGround = {this.state.headerBackGround}
                         subHeadingText = {this.state.subHeadingText}
-                        actionButtonText = {this.state.actionButtonText}
+                        actionButtonText = {this.state.actionButtonText}                     
                         />
                     </div>
                 </div>
@@ -71,6 +79,8 @@ export class Option1 extends Component{
                     headerText = {this.state.headerText}
                     subHeadingText = {this.state.subHeadingText}
                     actionButtonText = {this.state.actionButtonText}
+                    headerBackGround = {this.state.headerBackGround}
+                    onHeaderBackGroundChange = {this.handleHeaderBackGroundChange}
                     onHeaderTextChange = {this.handleHeaderTextChange}
                     onSubHeadingTextChange = {this.handleSubHeadingTextChange}
                     onActionButtonTextChange = {this.handleActionButtonTextChange}
@@ -85,7 +95,10 @@ export class Option1 extends Component{
 export class Option2 extends Component{
     render(){
         return(
+            <div>
             <h2 className="text-center" >Option 2</h2>
+            <h3>EVERFI</h3>
+            </div>
         );
     }
 }

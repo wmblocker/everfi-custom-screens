@@ -9,7 +9,7 @@ export class Option1 extends Component{
     render(){
         return(
             <div className="option-1" id="option1">
-                    <div className="header">
+                    <div className="header" style={{background: this.props.headerBackGround  }}>
                         <p className="header-text">{this.props.headerText}</p>
                     </div>
                     <div className="col-wrap">
