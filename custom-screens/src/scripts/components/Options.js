@@ -62,7 +62,7 @@ export class Option1 extends Component{
                         subHeadingText = {this.state.subHeadingText}
                         actionButtonText = {this.state.actionButtonText}
                         headerBackGround = {this.state.headerBackGround}
-                        barColor = {this.state.bar}
+                        barColor = {this.state.barColor}
                         onHeaderBackGroundChange = {this.handleHeaderBackGroundChange}
                         onHeaderTextChange = {this.handleHeaderTextChange}
                         onSubHeadingTextChange = {this.handleSubHeadingTextChange}
@@ -78,7 +78,7 @@ export class Option1 extends Component{
                         headerBorder = {this.state.headerBorder}
                         subHeadingText = {this.state.subHeadingText}
                         actionButtonText = {this.state.actionButtonText}
-                        barColor = {this.state.bar}
+                        barColor = {this.state.barColor}
                         />
                     </div>
                 </div>

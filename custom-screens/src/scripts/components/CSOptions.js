@@ -75,6 +75,7 @@ export class Option1 extends Component {
                             <div className="form-row">
                                 <h4 className="w-100">Bar</h4>
                                 <div className="form-group">
+                                    <label for="barColor" > Bar Color</label>
                                     <input className="form-control" type="text" title="input" value={this.props.barColor} onChange={this.handleBarColorChange} />
                                 </div>
                             </div>
