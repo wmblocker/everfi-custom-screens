@@ -93,20 +93,10 @@ export class Option1 extends Component{
 
     render(){
         return(
-            <div>
                 <div className="row mt-3">
                     <div className="col-md-3 bg-light">
                         <CSOptions.Option1 
-                        headerText = {this.state.headerText}
-                        headerTextColor = {this.state.headerTextColor}
-                        headerBorderColor = {this.state.headerBorderColor}
-                        subHeadingText = {this.state.subHeadingText}
-                        actionButtonText = {this.state.actionButtonText}
-                        actionButtonColor = {this.state.actionButtonColor}
-                        headerBackGroundColor = {this.state.headerBackGroundColor}
-                        mainMessageText = {this.state.mainMessageText}
-                        barColor = {this.state.barColor}
-                        isSubHeadingBold = {this.state.isSubHeadingBold}
+                        state = {this.state}
                         onHeaderBackGroundColorChange = {this.handleHeaderBackGroundColorChange}
                         onHeaderTextChange = {this.handleHeaderTextChange}
                         onMainMessageTextChange = {this.handleMainMessageTextChange}
@@ -122,20 +112,10 @@ export class Option1 extends Component{
                     <div className="col-md-9" id="option1">
                         <CSSStyles.Option1 />
                         <HTMLCode.Option1 
-                        headerText = {this.state.headerText}
-                        headerBackGroundColor = {this.state.headerBackGroundColor}
-                        headerBorderColor = {this.state.headerBorderColor}
-                        headerTextColor = {this.state.headerTextColor}
-                        mainMessageText = {this.state.mainMessageText}
-                        subHeadingText = {this.state.subHeadingText}
-                        actionButtonText = {this.state.actionButtonText}
-                        actionButtonColor = {this.state.actionButtonColor}
-                        barColor = {this.state.barColor}
-                        isSubHeadingBold = {this.state.isSubHeadingBold}
+                        state = {this.state}
                         />
                     </div>
                 </div>
-            </div>
         );
     }
 }
