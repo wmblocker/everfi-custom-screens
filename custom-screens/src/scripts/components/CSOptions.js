@@ -3,55 +3,45 @@ import React, { Component } from 'react';
 export class Option1 extends Component {
     constructor(props) {
         super(props);
-        this.handleHeaderTextChange = this.handleHeaderTextChange.bind(this);
-        this.handleSubHeadingTextChange = this.handleSubHeadingTextChange.bind(this);
-        this.handleMainMessageTextChange = this.handleMainMessageTextChange.bind(this);
-        this.handleActionButtonTextChange = this.handleActionButtonTextChange.bind(this);
-        this.handleActionButtonColorChange = this.handleActionButtonColorChange.bind(this);
-        this.handleHeaderBackGroundColorChange = this.handleHeaderBackGroundColorChange.bind(this);
-        this.handleHeaderBorderColorChange = this.handleHeaderBorderColorChange.bind(this);
-        this.handleHeaderTextColorChange = this.handleHeaderTextColorChange.bind(this);
-        this.handleBarColorChange = this.handleBarColorChange.bind(this);
-        this.handleIsSubHeadingBoldChange = this.handleIsSubHeadingBoldChange.bind(this);
     }
 
-    handleHeaderTextChange(e) {
+    handleHeaderTextChange = (e) => {
         this.props.onHeaderTextChange(e.target.value);
     }
 
-    handleSubHeadingTextChange(e) {
+    handleSubHeadingTextChange = (e) => {
         this.props.onSubHeadingTextChange(e.target.value);
     }
 
-    handleMainMessageTextChange(e) {
+    handleMainMessageTextChange = (e) => {
         this.props.onMainMessageTextChange(e.target.value);
     }
 
-    handleActionButtonTextChange(e) {
+    handleActionButtonTextChange = (e) => {
         this.props.onActionButtonTextChange(e.target.value);
     }
 
-    handleActionButtonColorChange(e) {
+    handleActionButtonColorChange = (e) => {
         this.props.onActionButtonColorChange(e.target.value);
     }
 
-    handleHeaderBackGroundColorChange(e) {
+    handleHeaderBackGroundColorChange = (e) => {
         this.props.onHeaderBackGroundColorChange(e.target.value);
     }
 
-    handleHeaderBorderColorChange(e) {
+    handleHeaderBorderColorChange = (e) => {
         this.props.onHeaderBorderColorChange(e.target.value);
     }
 
-    handleHeaderTextColorChange(e) {
+    handleHeaderTextColorChange = (e) => {
         this.props.onHeaderTextColorChange(e.target.value);
     }
 
-    handleBarColorChange(e){
+    handleBarColorChange = (e) => {
         this.props.onBarColorChange(e.target.value);
     }
 
-    handleIsSubHeadingBoldChange(e){
+    handleIsSubHeadingBoldChange = (e) => {
         if(e.target.checked == true){
         this.props.onIsSubHeadingBoldChange("bold");
         }

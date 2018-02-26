@@ -17,75 +17,64 @@ export class Option1 extends Component{
             isSubHeadingBold: "normal",
             mainMessageText: "Wherever you are in life, there is a plan to help you meet your needs.Visit us to learn more about the options available to you."
         };
-        this.handleHeaderTextChange = this.handleHeaderTextChange.bind(this);
-        this.handleMainMessageTextChange = this.handleMainMessageTextChange.bind(this);
-        this.handleSubHeadingTextChange = this.handleSubHeadingTextChange.bind(this);
-        this.handleIsSubHeadingBoldChange = this.handleIsSubHeadingBoldChange.bind(this);
-        this.handleActionButtonTextChange = this.handleActionButtonTextChange.bind(this);
-        this.handleActionButtonColorChange = this.handleActionButtonColorChange.bind(this);
-        this.handleHeaderBackGroundColorChange = this.handleHeaderBackGroundColorChange.bind(this);
-        this.handleHeaderBorderColorChange = this.handleHeaderBorderColorChange.bind(this);
-        this.handleHeaderTextColorChange = this.handleHeaderTextColorChange.bind(this);
-        this.handleBarColorChange = this.handleBarColorChange.bind(this);
-
     }
 
-    handleHeaderTextChange(updatedText){
+    handleHeaderTextChange = (updatedText) => {
         this.setState({
             headerText : updatedText
         });
     }
 
-    handleSubHeadingTextChange(updatedText){
+    handleSubHeadingTextChange = (updatedText) => {
         this.setState({
             subHeadingText : updatedText
         });
     }
 
-    handleIsSubHeadingBoldChange(updatedText){
+    handleIsSubHeadingBoldChange = (updatedText) => {
         this.setState({
             isSubHeadingBold: updatedText
         })
     }
 
-    handleMainMessageTextChange(updatedText){
+    handleMainMessageTextChange = (updatedText) => {
         this.setState({
             mainMessageText : updatedText
         });
     }
 
 
-    handleActionButtonTextChange(updatedText){
+    handleActionButtonTextChange = (updatedText) => {
         this.setState({
             actionButtonText : updatedText
         });
     }
 
-    handleActionButtonColorChange(updatedText){
+    handleActionButtonColorChange = (updatedText) => {
         this.setState({
             actionButtonColor : updatedText
         });
     }
 
-    handleHeaderBackGroundColorChange(updatedText){
+    handleHeaderBackGroundColorChange = (updatedText) => {
         this.setState({
             headerBackGroundColor : updatedText
         });
     }
 
-    handleHeaderBorderColorChange(updatedText){
+    handleHeaderBorderColorChange = (updatedText) => {
         this.setState({
             headerBorderColor : updatedText
         });
     }
 
-    handleHeaderTextColorChange(updatedText){
+    handleHeaderTextColorChange = (updatedText) => {
         this.setState({
             headerTextColor : updatedText
         });
     }
     
-    handleBarColorChange(updatedText){
+    handleBarColorChange = (updatedText) => {
         this.setState({
             barColor : updatedText
         });
