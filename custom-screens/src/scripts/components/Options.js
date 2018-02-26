@@ -11,11 +11,13 @@ export class Option1 extends Component{
             headerBackGroundColor: "#f8f9fa", 
             headerBorderColor: "#ee5030", 
             barColor: "#f8f9fa",
+            isSubHeadingBold: "normal",
             mainMessageText: "Wherever you are in life, there is a plan to help you meet your needs.Visit us to learn more about the options available to you."
         };
         this.handleHeaderTextChange = this.handleHeaderTextChange.bind(this);
         this.handleMainMessageTextChange = this.handleMainMessageTextChange.bind(this);
         this.handleSubHeadingTextChange = this.handleSubHeadingTextChange.bind(this);
+        this.handleIsSubHeadingBoldChange = this.handleIsSubHeadingBoldChange.bind(this);
         this.handleActionButtonTextChange = this.handleActionButtonTextChange.bind(this);
         this.handleHeaderBackGroundColorChange = this.handleHeaderBackGroundColorChange.bind(this);
         this.handleHeaderBorderColorChange = this.handleHeaderBorderColorChange.bind(this);
@@ -33,6 +35,12 @@ export class Option1 extends Component{
         this.setState({
             subHeadingText : updatedText
         });
+    }
+
+    handleIsSubHeadingBoldChange(updatedText){
+        this.setState({
+            isSubHeadingBold: updatedText
+        })
     }
 
     handleMainMessageTextChange(updatedText){
@@ -79,6 +87,7 @@ export class Option1 extends Component{
                         headerBackGroundColor = {this.state.headerBackGroundColor}
                         mainMessageText = {this.state.mainMessageText}
                         barColor = {this.state.barColor}
+                        isSubHeadingBold = {this.state.isSubHeadingBold}
                         onHeaderBackGroundColorChange = {this.handleHeaderBackGroundColorChange}
                         onHeaderTextChange = {this.handleHeaderTextChange}
                         onMainMessageTextChange = {this.handleMainMessageTextChange}
@@ -86,6 +95,7 @@ export class Option1 extends Component{
                         onActionButtonTextChange = {this.handleActionButtonTextChange}
                         onHeaderBorderColorChange = {this.handleHeaderBorderColorChange}
                         onBarColorChange = {this.handleBarColorChange}
+                        onIsSubHeadingBoldChange = {this.handleIsSubHeadingBoldChange}
                     />
                     </div>
                     <div className="col-md-9">
@@ -97,6 +107,7 @@ export class Option1 extends Component{
                         subHeadingText = {this.state.subHeadingText}
                         actionButtonText = {this.state.actionButtonText}
                         barColor = {this.state.barColor}
+                        isSubHeadingBold = {this.state.isSubHeadingBold}
                         />
                     </div>
                 </div>

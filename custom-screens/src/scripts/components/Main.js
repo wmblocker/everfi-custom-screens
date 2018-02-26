@@ -10,12 +10,12 @@ class Main extends Component{
             <Switch>
             <div className="row">
                 <main className="col-md-12">
-                    <div class="dropdown show">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div className="dropdown show">
+                        <a className="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                            Choose a screen option
                         </a>
 
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
                             <Link className="dropdown-item" to="/everfi-custom-screens/option1">Option 1</Link>
                             <Link className="dropdown-item" to="/everfi-custom-screens/option2">Option 2</Link>
                             <Link className="dropdown-item"  to="/everfi-custom-screens/option3">Option 3</Link>

@@ -21,7 +21,9 @@ export class Option1 extends Component{
                             </div>
                         </div>
                         <div className="col-75">
-                            <p className="sub-heading">{this.props.subHeadingText}</p>
+                            <p className="sub-heading" style={{
+                                fontWeight: this.props.isSubHeadingBold
+                                }}>{this.props.subHeadingText}</p>
                             <p className="mainMessage">{this.props.mainMessageText}</p>
                             <a className="action-button" href="#" target="_blank">{this.props.actionButtonText}</a>
                     </div>

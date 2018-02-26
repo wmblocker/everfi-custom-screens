@@ -11,7 +11,7 @@ export class Option1 extends Component {
         this.handleHeaderBackGroundColorChange = this.handleHeaderBackGroundColorChange.bind(this);
         this.handleHeaderBorderColorChange = this.handleHeaderBorderColorChange.bind(this);
         this.handleBarColorChange = this.handleBarColorChange.bind(this);
-
+        this.handleIsSubHeadingBoldChange = this.handleIsSubHeadingBoldChange.bind(this);
     }
 
     handleHeaderTextChange(e) {
@@ -42,6 +42,15 @@ export class Option1 extends Component {
         this.props.onBarColorChange(e.target.value);
     }
 
+    handleIsSubHeadingBoldChange(e){
+        if(e.target.checked == true){
+        this.props.onIsSubHeadingBoldChange("bold");
+        }
+        else{
+            this.props.onIsSubHeadingBoldChange("normal");
+        }
+    }
+
     render() {
         return (       
             <div id="customizationOptions" className="py-3">
@@ -55,19 +64,19 @@ export class Option1 extends Component {
                             <div className="form-row">
                                 <h4 className="w-100">Header</h4>
                                 <div className="form-group col-md-12">
-                                    <label for="headerText">Text</label>
+                                    <label htmlFor="headerText">Text</label>
                                     <input className="form-control" type="text" title="input" value={this.props.headerText} onChange={this.handleHeaderTextChange} />
                                 </div>
                                 <div className="form-group col-md-6">
-                                    <label for="headerTextColor">Text Color</label>
+                                    <label htmlFor="headerTextColor">Text Color</label>
                                     <input className="form-control" type="text" title="input" />
                                 </div>
                                 <div className="form-group col-md-6">
-                                    <label for="headerBackGroundColor">Background Color</label>
+                                    <label htmlFor="headerBackGroundColor">Background Color</label>
                                     <input className="form-control" type="text" title="input" value={this.props.headerBackGroundColor} onChange={this.handleHeaderBackGroundColorChange} />
                                 </div>
                                 <div className="form-group col-md-6">
-                                    <label for="headerBorderColor">Border Color</label>
+                                    <label htmlFor="headerBorderColor">Border Color</label>
                                     <input className="form-control" type="text" title="input" value={this.props.headerBorderColor} onChange={this.handleHeaderBorderColorChange} />
                                 </div>
                                 
@@ -84,7 +93,7 @@ export class Option1 extends Component {
                             <div className="form-row">
                                 <h4 className="w-100">Bar</h4>
                                 <div className="form-group">
-                                    <label for="barColor" > Bar Color</label>
+                                    <label htmlFor="barColor" > Bar Color</label>
                                     <input className="form-control" type="text" title="input" value={this.props.barColor} onChange={this.handleBarColorChange} />
                                 </div>
                             </div>
@@ -100,15 +109,19 @@ export class Option1 extends Component {
                             <div className="form-row">
                                 <h4 className="w-100">Main Content</h4>
                                 <div className="form-group col-md-12">
-                                    <label for="subHeadingText"> Sub Heading Text </label>
+                                    <label htmlFor="subHeadingText"> Sub Heading Text </label>
+                                    <div className="form-check form-check-inline ml-4">
+                                        <input className="form-check-input" type="checkbox" value={this.props.isSubHeadingBold} onChange={this.handleIsSubHeadingBoldChange} />
+                                        <label className="form-check-label" for="boldedSubHeading">Bold</label>
+                                    </div>
                                     <textarea className="form-control" rows="5" title="input" value={this.props.subHeadingText} onChange={this.handleSubHeadingTextChange} />
                                 </div>
                                 <div className="form-group col-md-12">
-                                    <label for="mainMessageText"> Main Text </label>
+                                    <label htmlFor="mainMessageText"> Main Text </label>
                                     <textarea className="form-control" rows="5" title="input" value={this.props.mainMessageText} onChange={this.handleMainMessageTextChange} />
                                 </div>
                                 <div className="form-group col-md-6">
-                                    <label for="Button Text"> Button Text </label>
+                                    <label htmlFor="Button Text"> Button Text </label>
                                     <input className="form-control" type="text" value={this.props.actionButtonText} onChange={this.handleActionButtonTextChange} />
                                 </div>
                             </div>
