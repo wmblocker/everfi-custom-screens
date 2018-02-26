@@ -2,13 +2,13 @@ import React, {Component} from "react";
 import * as CSSStyles from "./CSSStyles.js";
 
 
-export class Option1 extends Component{
+export class Option4 extends Component{
     constructor(props){
         super(props);
     }
     render(){
         return(
-            <div className="option-1">
+            <div className="option-4">
                     <div className="cs-header" style={{
                         background: this.props.state.headerBackGroundColor,
                         borderBottomColor: this.props.state.headerBorderColor

@@ -4,6 +4,33 @@ import * as HTMLCode from "./HTMLCode.js"
 import * as CSSStyles from "./CSSStyles.js"
 
 export class Option1 extends Component{
+    render(){
+        return(
+            <h2 className="text-center" >Option 1</h2>
+        );
+    }
+}
+
+export class Option2 extends Component{
+    render(){
+        return(
+            <div>
+            <h2 className="text-center" >Option 2</h2>
+            <h3>EVERFI</h3>
+            </div>
+        );
+    }
+}
+
+export class Option3 extends Component{
+    render(){
+        return(
+            <h2 className="text-center" >Option 3</h2>
+        );
+    }
+}
+
+export class Option4 extends Component{
     constructor(props){
         super(props);
         this.state = {
@@ -83,8 +110,8 @@ export class Option1 extends Component{
     render(){
         return(
                 <div className="row mt-3">
-                    <div className="col-md-3 bg-light">
-                        <CSOptions.Option1 
+                    <div className="col-md-3 bg-white">
+                        <CSOptions.Option4 
                         state = {this.state}
                         onHeaderBackGroundColorChange = {this.handleHeaderBackGroundColorChange}
                         onHeaderTextChange = {this.handleHeaderTextChange}
@@ -99,39 +126,12 @@ export class Option1 extends Component{
                     />
                     </div>
                     <div className="col-md-9" id="option1">
-                        <CSSStyles.Option1 />
-                        <HTMLCode.Option1 
+                        <CSSStyles.Option4 />
+                        <HTMLCode.Option4 
                         state = {this.state}
                         />
                     </div>
                 </div>
-        );
-    }
-}
-
-export class Option2 extends Component{
-    render(){
-        return(
-            <div>
-            <h2 className="text-center" >Option 2</h2>
-            <h3>EVERFI</h3>
-            </div>
-        );
-    }
-}
-
-export class Option3 extends Component{
-    render(){
-        return(
-            <h2 className="text-center" >Option 3</h2>
-        );
-    }
-}
-
-export class Option4 extends Component{
-    render(){
-        return(
-            <h2 className="text-center" >Option 4</h2>
         );
     }
 }

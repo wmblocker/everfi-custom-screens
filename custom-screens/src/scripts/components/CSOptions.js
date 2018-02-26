@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export class Option1 extends Component {
+export class Option4 extends Component {
     constructor(props) {
         super(props);
     }
@@ -58,12 +58,12 @@ export class Option1 extends Component {
     render() {
         return (       
             <div id="customizationOptions" className="py-3">
-            <h4 className="">Option 1 Customizations</h4>
+            <h4 className="">Option 4 Customizations</h4>
                 <div className="card mt-3">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#headerOptionsCollapse">Header Customization Options</button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#headerOptionsCollapse-1">Header Customization Options</button></h3>
                     </div>
-                    <div id="headerOptionsCollapse" className="collapse" data-parent="accordion">
+                    <div id="headerOptionsCollapse-1" className="collapse" data-parent="accordion-1">
                         <div className="card-body">
                             <div className="form-row">
                                 <h4 className="w-100">Header</h4>
@@ -90,9 +90,9 @@ export class Option1 extends Component {
                 </div>
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#barOptionsCollapse">Bar Customization Options</button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#barOptionsCollapse-1">Bar Customization Options</button></h3>
                     </div>
-                    <div id="barOptionsCollapse" className="collapse" data-parent="accordion">
+                    <div id="barOptionsCollapse-1" className="collapse" data-parent="accordion-1">
                         <div className="card-body">
                             <div className="form-row">
                                 <h4 className="w-100">Bar</h4>
@@ -106,9 +106,9 @@ export class Option1 extends Component {
                 </div>
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#mainOptionsCollapse">Main Customization Options</button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#mainOptionsCollapse-1">Main Customization Options</button></h3>
                     </div>
-                    <div id="mainOptionsCollapse" className="collapse" data-parent="accordion">
+                    <div id="mainOptionsCollapse-1" className="collapse" data-parent="accordion-1">
                         <div className="card-body">
                             <div className="form-row">
                                 <h4 className="w-100">Main Content</h4>
@@ -116,13 +116,13 @@ export class Option1 extends Component {
                                     <label htmlFor="subHeadingText"> Sub Heading Text </label>
                                     <div className="form-check form-check-inline ml-4">
                                         <input className="form-check-input" type="checkbox" value={this.props.state.isSubHeadingBold} onChange={this.handleIsSubHeadingBoldChange} />
-                                        <label className="form-check-label" for="boldedSubHeading">Bold</label>
+                                        <label className="form-check-label" htmlFor="boldedSubHeading">Bold</label>
                                     </div>
                                     <textarea className="form-control" rows="5" title="input" value={this.props.state.subHeadingText} onChange={this.handleSubHeadingTextChange} />
                                 </div>
                                 <div className="form-group col-md-12">
-                                    <label htmlFor="mainMessageText"> Main Text </label>
-                                    <textarea className="form-control" rows="5" title="input" value={this.props.state.mainMessageText} onChange={this.handleMainMessageTextChange} />
+                                    <label htmlFor="mainMessageText-1"> Main Text </label>
+                                    <textarea className="form-control" rows="5"  value={this.props.state.mainMessageText} onChange={this.handleMainMessageTextChange} />
                                 </div>
                                 <div className="form-group col-md-6">
                                     <label htmlFor="Button Text"> Button Text </label>
@@ -138,9 +138,9 @@ export class Option1 extends Component {
                 </div>
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#sendCollapse">Send this design to your CSM</button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#sendCollapse-1">Send this design to your CSM</button></h3>
                     </div>
-                    <div id="sendCollapse" className="collapse" data-parent="accordion">
+                    <div id="sendCollapse-1" className="collapse" data-parent="accordion">
                         <div className="card-body">
                             <div className="form-row">
                                 <h4 className="w-100"></h4>
@@ -155,3 +155,4 @@ export class Option1 extends Component {
         );
     }
 }
+
