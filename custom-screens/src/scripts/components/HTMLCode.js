@@ -13,7 +13,7 @@ export class Option1 extends Component{
                         background: this.props.headerBackGroundColor,
                         borderBottomColor: this.props.headerBorderColor
                         }}>
-                        <p className="header-text">{this.props.headerText}</p>
+                        <p className="header-text" style={{color: this.props.headerTextColor}}>{this.props.headerText}</p>
                     </div>
                     <div className="col-wrap">
                         <div className="col-25">
@@ -25,7 +25,7 @@ export class Option1 extends Component{
                                 fontWeight: this.props.isSubHeadingBold
                                 }}>{this.props.subHeadingText}</p>
                             <p className="mainMessage">{this.props.mainMessageText}</p>
-                            <a className="action-button" href="#" target="_blank">{this.props.actionButtonText}</a>
+                            <a className="action-button" style={{backgroundColor: this.props.actionButtonColor}} href="#" target="_blank">{this.props.actionButtonText}</a>
                     </div>
                 </div>
             </div>

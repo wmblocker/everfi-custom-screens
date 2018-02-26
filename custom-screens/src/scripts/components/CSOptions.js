@@ -8,8 +8,10 @@ export class Option1 extends Component {
         this.handleSubHeadingTextChange = this.handleSubHeadingTextChange.bind(this);
         this.handleMainMessageTextChange = this.handleMainMessageTextChange.bind(this);
         this.handleActionButtonTextChange = this.handleActionButtonTextChange.bind(this);
+        this.handleActionButtonColorChange = this.handleActionButtonColorChange.bind(this);
         this.handleHeaderBackGroundColorChange = this.handleHeaderBackGroundColorChange.bind(this);
         this.handleHeaderBorderColorChange = this.handleHeaderBorderColorChange.bind(this);
+        this.handleHeaderTextColorChange = this.handleHeaderTextColorChange.bind(this);
         this.handleBarColorChange = this.handleBarColorChange.bind(this);
         this.handleIsSubHeadingBoldChange = this.handleIsSubHeadingBoldChange.bind(this);
     }
@@ -30,12 +32,20 @@ export class Option1 extends Component {
         this.props.onActionButtonTextChange(e.target.value);
     }
 
+    handleActionButtonColorChange(e) {
+        this.props.onActionButtonColorChange(e.target.value);
+    }
+
     handleHeaderBackGroundColorChange(e) {
         this.props.onHeaderBackGroundColorChange(e.target.value);
     }
 
     handleHeaderBorderColorChange(e) {
         this.props.onHeaderBorderColorChange(e.target.value);
+    }
+
+    handleHeaderTextColorChange(e) {
+        this.props.onHeaderTextColorChange(e.target.value);
     }
 
     handleBarColorChange(e){
@@ -69,7 +79,7 @@ export class Option1 extends Component {
                                 </div>
                                 <div className="form-group col-md-6">
                                     <label htmlFor="headerTextColor">Text Color</label>
-                                    <input className="form-control" type="text" title="input" />
+                                    <input className="form-control" type="text" title="input" value={this.props.headerTextColor} onChange={this.handleHeaderTextColorChange} />
                                 </div>
                                 <div className="form-group col-md-6">
                                     <label htmlFor="headerBackGroundColor">Background Color</label>
@@ -123,6 +133,10 @@ export class Option1 extends Component {
                                 <div className="form-group col-md-6">
                                     <label htmlFor="Button Text"> Button Text </label>
                                     <input className="form-control" type="text" value={this.props.actionButtonText} onChange={this.handleActionButtonTextChange} />
+                                </div>
+                                <div className="form-group col-md-6">
+                                    <label htmlFor="Button Text"> Button Color </label>
+                                    <input className="form-control" type="text" value={this.props.actionButtonColor} onChange={this.handleActionButtonColorChange} />
                                 </div>
                             </div>
                         </div>
