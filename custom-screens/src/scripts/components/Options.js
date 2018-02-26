@@ -5,12 +5,20 @@ import * as HTMLCode from "./HTMLCode.js"
 export class Option1 extends Component{
     constructor(props){
         super(props);
-        this.state = {headerText: "Heading", subHeadingText: "Sub-Heading", actionButtonText: "Learn More", headerBackGround: "#f8f9fa", headerBorder: "#ee5030", barColor: "#f8f9fa"};
+        this.state = {
+            headerText: "Did You Know?", 
+            subHeadingText: "We offer Associates tools to help manage insurace costs.", actionButtonText: "Learn More", 
+            headerBackGroundColor: "#f8f9fa", 
+            headerBorderColor: "#ee5030", 
+            barColor: "#f8f9fa",
+            mainMessageText: "Wherever you are in life, there is a plan to help you meet your needs.Visit us to learn more about the options available to you."
+        };
         this.handleHeaderTextChange = this.handleHeaderTextChange.bind(this);
+        this.handleMainMessageTextChange = this.handleMainMessageTextChange.bind(this);
         this.handleSubHeadingTextChange = this.handleSubHeadingTextChange.bind(this);
         this.handleActionButtonTextChange = this.handleActionButtonTextChange.bind(this);
-        this.handleHeaderBackGroundChange = this.handleHeaderBackGroundChange.bind(this);
-        this.handleHeaderBorderChange = this.handleHeaderBorderChange.bind(this);
+        this.handleHeaderBackGroundColorChange = this.handleHeaderBackGroundColorChange.bind(this);
+        this.handleHeaderBorderColorChange = this.handleHeaderBorderColorChange.bind(this);
         this.handleBarColorChange = this.handleBarColorChange.bind(this);
 
     }
@@ -27,21 +35,28 @@ export class Option1 extends Component{
         });
     }
 
+    handleMainMessageTextChange(updatedText){
+        this.setState({
+            mainMessageText : updatedText
+        });
+    }
+
+
     handleActionButtonTextChange(updatedText){
         this.setState({
             actionButtonText : updatedText
         });
     }
 
-    handleHeaderBackGroundChange(updatedText){
+    handleHeaderBackGroundColorChange(updatedText){
         this.setState({
-            headerBackGround : updatedText
+            headerBackGroundColor : updatedText
         });
     }
 
-    handleHeaderBorderChange(updatedText){
+    handleHeaderBorderColorChange(updatedText){
         this.setState({
-            headerBorder : updatedText
+            headerBorderColor : updatedText
         });
     }
     
@@ -58,24 +73,27 @@ export class Option1 extends Component{
                     <div className="col-md-3 bg-light">
                         <CSOptions.Option1 
                         headerText = {this.state.headerText}
-                        headerBorder = {this.state.headerBorder}
+                        headerBorderColor = {this.state.headerBorderColor}
                         subHeadingText = {this.state.subHeadingText}
                         actionButtonText = {this.state.actionButtonText}
-                        headerBackGround = {this.state.headerBackGround}
+                        headerBackGroundColor = {this.state.headerBackGroundColor}
+                        mainMessageText = {this.state.mainMessageText}
                         barColor = {this.state.barColor}
-                        onHeaderBackGroundChange = {this.handleHeaderBackGroundChange}
+                        onHeaderBackGroundColorChange = {this.handleHeaderBackGroundColorChange}
                         onHeaderTextChange = {this.handleHeaderTextChange}
+                        onMainMessageTextChange = {this.handleMainMessageTextChange}
                         onSubHeadingTextChange = {this.handleSubHeadingTextChange}
                         onActionButtonTextChange = {this.handleActionButtonTextChange}
-                        onHeaderBorderChange = {this.handleHeaderBorderChange}
+                        onHeaderBorderColorChange = {this.handleHeaderBorderColorChange}
                         onBarColorChange = {this.handleBarColorChange}
                     />
                     </div>
                     <div className="col-md-9">
                         <HTMLCode.Option1 
                         headerText = {this.state.headerText}
-                        headerBackGround = {this.state.headerBackGround}
-                        headerBorder = {this.state.headerBorder}
+                        headerBackGroundColor = {this.state.headerBackGroundColor}
+                        headerBorderColor = {this.state.headerBorderColor}
+                        mainMessageText = {this.state.mainMessageText}
                         subHeadingText = {this.state.subHeadingText}
                         actionButtonText = {this.state.actionButtonText}
                         barColor = {this.state.barColor}

@@ -6,9 +6,10 @@ export class Option1 extends Component {
         super(props);
         this.handleHeaderTextChange = this.handleHeaderTextChange.bind(this);
         this.handleSubHeadingTextChange = this.handleSubHeadingTextChange.bind(this);
+        this.handleMainMessageTextChange = this.handleMainMessageTextChange.bind(this);
         this.handleActionButtonTextChange = this.handleActionButtonTextChange.bind(this);
-        this.handleHeaderBackGroundChange = this.handleHeaderBackGroundChange.bind(this);
-        this.handleHeaderBorderChange = this.handleHeaderBorderChange.bind(this);
+        this.handleHeaderBackGroundColorChange = this.handleHeaderBackGroundColorChange.bind(this);
+        this.handleHeaderBorderColorChange = this.handleHeaderBorderColorChange.bind(this);
         this.handleBarColorChange = this.handleBarColorChange.bind(this);
 
     }
@@ -21,16 +22,20 @@ export class Option1 extends Component {
         this.props.onSubHeadingTextChange(e.target.value);
     }
 
+    handleMainMessageTextChange(e) {
+        this.props.onMainMessageTextChange(e.target.value);
+    }
+
     handleActionButtonTextChange(e) {
         this.props.onActionButtonTextChange(e.target.value);
     }
 
-    handleHeaderBackGroundChange(e) {
-        this.props.onHeaderBackGroundChange(e.target.value);
+    handleHeaderBackGroundColorChange(e) {
+        this.props.onHeaderBackGroundColorChange(e.target.value);
     }
 
-    handleHeaderBorderChange(e) {
-        this.props.onHeaderBorderChange(e.target.value);
+    handleHeaderBorderColorChange(e) {
+        this.props.onHeaderBorderColorChange(e.target.value);
     }
 
     handleBarColorChange(e){
@@ -59,7 +64,11 @@ export class Option1 extends Component {
                                 </div>
                                 <div className="form-group col-md-6">
                                     <label for="headerBackGroundColor">Background Color</label>
-                                    <input className="form-control" type="text" title="input" value={this.props.headerBackGround} onChange={this.handleHeaderBackGroundChange} />
+                                    <input className="form-control" type="text" title="input" value={this.props.headerBackGroundColor} onChange={this.handleHeaderBackGroundColorChange} />
+                                </div>
+                                <div className="form-group col-md-6">
+                                    <label for="headerBorderColor">Border Color</label>
+                                    <input className="form-control" type="text" title="input" value={this.props.headerBorderColor} onChange={this.handleHeaderBorderColorChange} />
                                 </div>
                                 
                             </div>
@@ -90,11 +99,17 @@ export class Option1 extends Component {
                         <div className="card-body">
                             <div className="form-row">
                                 <h4 className="w-100">Main Content</h4>
-                                <div className="form-group">
-                                    <input className="form-control" type="text" title="input" value={this.props.actionButtonText} onChange={this.handleActionButtonTextChange} />
+                                <div className="form-group col-md-12">
+                                    <label for="subHeadingText"> Sub Heading Text </label>
+                                    <textarea className="form-control" rows="5" title="input" value={this.props.subHeadingText} onChange={this.handleSubHeadingTextChange} />
                                 </div>
-                                <div className="form-group">
-                                    <input className="form-control" type="text" title="input" value={this.props.subHeadingText} onChange={this.handleSubHeadingTextChange} />
+                                <div className="form-group col-md-12">
+                                    <label for="mainMessageText"> Main Text </label>
+                                    <textarea className="form-control" rows="5" title="input" value={this.props.mainMessageText} onChange={this.handleMainMessageTextChange} />
+                                </div>
+                                <div className="form-group col-md-6">
+                                    <label for="Button Text"> Button Text </label>
+                                    <input className="form-control" type="text" value={this.props.actionButtonText} onChange={this.handleActionButtonTextChange} />
                                 </div>
                             </div>
                         </div>
