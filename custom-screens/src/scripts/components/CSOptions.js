@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Email from "mailer";
 
 export class Option1 extends Component {
     constructor(props) {
@@ -59,6 +59,11 @@ export class Option1 extends Component {
         else{
             this.props.onIsSubHeadingBoldChange("normal");
         }
+    }
+
+    sendCode(){
+        var html = document.getElementById("option1");
+        console.log(html.innerHTML);
     }
 
     render() {
@@ -137,6 +142,21 @@ export class Option1 extends Component {
                                 <div className="form-group col-md-6">
                                     <label htmlFor="Button Text"> Button Color </label>
                                     <input className="form-control" type="text" value={this.props.actionButtonColor} onChange={this.handleActionButtonColorChange} />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="card">
+                    <div className="card-header">
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#sendCollapse">Send this design to your CSM</button></h3>
+                    </div>
+                    <div id="sendCollapse" className="collapse" data-parent="accordion">
+                        <div className="card-body">
+                            <div className="form-row">
+                                <h4 className="w-100"></h4>
+                                <div className="form-group col-md-6">
+                                    <button className="btn btn-primary" onClick={this.sendCode}>Send this design</button>
                                 </div>
                             </div>
                         </div>

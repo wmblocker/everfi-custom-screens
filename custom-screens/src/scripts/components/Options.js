@@ -9,7 +9,7 @@ export class Option1 extends Component{
         this.state = {
             headerText: "Did You Know?",
             headerTextColor: "#fff", 
-            subHeadingText: "We offer Associates tools to help manage insurace costs.", actionButtonText: "Learn More", 
+            subHeadingText: "We offer Associates tools to help manage insurance costs.", actionButtonText: "Learn More", 
             actionButtonColor: "#208aee",
             headerBackGroundColor: "#5bbaed", 
             headerBorderColor: "#208aee", 
@@ -94,7 +94,6 @@ export class Option1 extends Component{
     render(){
         return(
             <div>
-                <CSSStyles.Option1 />
                 <div className="row mt-3">
                     <div className="col-md-3 bg-light">
                         <CSOptions.Option1 
@@ -120,7 +119,8 @@ export class Option1 extends Component{
                         onIsSubHeadingBoldChange = {this.handleIsSubHeadingBoldChange}
                     />
                     </div>
-                    <div className="col-md-9">
+                    <div className="col-md-9" id="option1">
+                        <CSSStyles.Option1 />
                         <HTMLCode.Option1 
                         headerText = {this.state.headerText}
                         headerBackGroundColor = {this.state.headerBackGroundColor}
@@ -133,30 +133,6 @@ export class Option1 extends Component{
                         barColor = {this.state.barColor}
                         isSubHeadingBold = {this.state.isSubHeadingBold}
                         />
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-md-6 code-box">
-                        <pre><code>
-                        &lt;div&gt;<br />
-                        &lt;div className=&quot;option-1&quot;&gt;<br />
-                                &lt;div className=&quot;header&quot;&gt;<br />
-                                    &lt;p className=&quot;header-text&quot;&gt;{this.state.headerText}&lt;/p&gt;<br />
-                                &lt;/div&gt;<br />
-                                &lt;div className=&quot;col-wrap&quot;&gt;<br />
-                                    &lt;div className=&quot;col-25&quot;&gt;<br />
-                                        &lt;div className=&quot;bar&quot;&gt;<br />
-                                        &lt;/div&gt;<br />
-                                    &lt;/div&gt;<br />
-                                    &lt;div className=&quot;col-75&quot;&gt;<br />
-                                        &lt;p className=&quot;sub-heading&quot;&gt;{this.state.subHeadingText}&lt;/p&gt;<br />
-                                        &lt;a className=&quot;action-button&quot; href=&quot;#&quot; target=&quot;_blank&quot;&gt;{this.state.actionButtonText}&lt;/a&gt;<br />
-                                    &lt;/div&gt;<br />
-                                &lt;/div&gt;<br />
-                            &lt;/div&gt;<br />
-                        &lt;/div&gt;<br />
-            </code>
-                        </pre>
                     </div>
                 </div>
             </div>

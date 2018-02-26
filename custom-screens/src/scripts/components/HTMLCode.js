@@ -8,20 +8,20 @@ export class Option1 extends Component{
     }
     render(){
         return(
-            <div className="option-1" id="option1">
-                    <div className="header" style={{
+            <div className="option-1">
+                    <div className="cs-header" style={{
                         background: this.props.headerBackGroundColor,
                         borderBottomColor: this.props.headerBorderColor
                         }}>
-                        <p className="header-text" style={{color: this.props.headerTextColor}}>{this.props.headerText}</p>
+                        <p className="cs-header-text" style={{color: this.props.headerTextColor}}>{this.props.headerText}</p>
                     </div>
                     <div className="col-wrap">
                         <div className="col-25">
-                            <div className="bar" style={{background: this.props.barColor}}>
+                            <div className="cs-bar" style={{background: this.props.barColor}}>
                             </div>
                         </div>
                         <div className="col-75">
-                            <p className="sub-heading" style={{
+                            <p className="cs-sub-heading" style={{
                                 fontWeight: this.props.isSubHeadingBold
                                 }}>{this.props.subHeadingText}</p>
                             <p className="mainMessage">{this.props.mainMessageText}</p>
