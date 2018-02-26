@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Email from "mailer";
 
 export class Option1 extends Component {
     constructor(props) {
