@@ -52,6 +52,10 @@ export class Option1 extends Component {
         this.props.onHeaderBorderColorChange(e.target.value);
     }
 
+    handleHeaderBorderColorChange = (e) => {
+        this.props.onHeaderBorderColorChange(e.target.value);
+    }
+
     handleHeaderTextColorChange = (e) => {
         this.props.onHeaderTextColorChange(e.target.value);
     }
@@ -68,6 +72,11 @@ export class Option1 extends Component {
             this.props.onIsSubHeadingBoldChange("normal");
         }
     }
+
+    handleLinesColorChange = (e) => {
+        this.props.onLinesColorChange(e.target.value);
+    }
+
 
     sendCode(){
         var html = document.getElementById("option1");
@@ -90,6 +99,19 @@ export class Option1 extends Component {
                                 <FormGroup formGroup="col-md-6" label="Text Color" value={this.props.state.headerTextColor} onChange={this.handleHeaderTextColorChange} />
                                 <FormGroup formGroup="col-md-6" label="Background Color" value={this.props.state.headerBackGroundColor} onChange={this.handleHeaderBackGroundColorChange} />
                                 <FormGroup formGroup="col-md-6" label="Border Color" value={this.props.state.headerBorderColor} onChange={this.handleHeaderBorderColorChange} />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="card">
+                    <div className="card-header">
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#linesOptionsCollapse-1">Lines Customization Options</button></h3>
+                    </div>
+                    <div id="linesOptionsCollapse-1" className="collapse" data-parent="customizationOptions-1">
+                        <div className="card-body">
+                            <div className="form-row">
+                                <h4 className="w-100">Lines</h4>
+                                <FormGroup formGroup="col-md-6" label="Lines Color" value={this.props.state.linesColor} onChange={this.handleLinesColorChange} />
                             </div>
                         </div>
                     </div>
