@@ -1,5 +1,61 @@
 import React, {Component} from "react";
 
+export class Option3 extends Component{
+    render(){
+        const css = `
+        .modal-dialog {
+            height: 600px !important; }
+            .modal-dialog .modal-content .modal-body {
+              padding: 60px 0px 0px 0px !important; }
+          
+          .option-3 {
+            width: 100%;
+            height: 100%; }
+            .option-3 .cs-header {
+              height: 75px;
+              background-color: #f8f9fa; }
+              .option-3 .cs-header .cs-header-text {
+                color: #000;
+                font-size: 28px !important;
+                padding: 26px 0px 0px 88px !important; }
+            .option-3 .col-wrap {
+              width: 100%;
+              height: 100%;
+              padding: 0px 30px; }
+            .option-3 .cs-sub-heading {
+              font-size: 24px !important; }
+            .option-3 .lines {
+              border-left: 5px solid;
+              border-top: 5px solid;
+              border-color: #000000;
+              float: left;
+              height: 129px;
+              width: 107px;
+              position: absolute;
+              top: 35px;
+              left: 50px; }
+            .option-3 .col-98 {
+              width: 98%;
+              float: right;
+              padding: 40px 40px; }
+            .option-3 .action-button {
+              background-color: #25408f;
+              color: #fff;
+              padding: 10px 28px;
+              font-size: 16px;
+              border-radius: 7px;
+              margin-top: 20px;
+              margin-left: 15px;
+              display: inline-block; }
+        `
+        return(
+            <style>
+                {css}
+            </style>
+        )
+    }
+}
+
 export class Option4 extends Component{
     render(){
         const css = `

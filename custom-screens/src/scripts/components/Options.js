@@ -23,9 +23,99 @@ export class Option2 extends Component{
 }
 
 export class Option3 extends Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            headerText: "Did You Know?",
+            headerTextColor: "#fff", 
+            subHeadingText: "We offer Associates tools to help manage insurance costs.", actionButtonText: "Learn More", 
+            actionButtonColor: "#208aee",
+            headerBackGroundColor: "#5bbaed", 
+            isSubHeadingBold: "normal",
+            mainMessageText: "Wherever you are in life, there is a plan to help you meet your needs.Visit us to learn more about the options available to you.",
+            linesColor: "#208aee"
+        };
+    }
+
+    handleHeaderTextChange = (updatedText) => {
+        this.setState({
+            headerText : updatedText
+        });
+    }
+
+    handleSubHeadingTextChange = (updatedText) => {
+        this.setState({
+            subHeadingText : updatedText
+        });
+    }
+
+    handleIsSubHeadingBoldChange = (updatedText) => {
+        this.setState({
+            isSubHeadingBold: updatedText
+        })
+    }
+
+    handleMainMessageTextChange = (updatedText) => {
+        this.setState({
+            mainMessageText : updatedText
+        });
+    }
+
+
+    handleActionButtonTextChange = (updatedText) => {
+        this.setState({
+            actionButtonText : updatedText
+        });
+    }
+
+    handleActionButtonColorChange = (updatedText) => {
+        this.setState({
+            actionButtonColor : updatedText
+        });
+    }
+
+    handleHeaderBackGroundColorChange = (updatedText) => {
+        this.setState({
+            headerBackGroundColor : updatedText
+        });
+    }
+
+    handleHeaderTextColorChange = (updatedText) => {
+        this.setState({
+            headerTextColor : updatedText
+        });
+    }
+    
+    handleLinesColorChange = (updatedText) => {
+        this.setState({
+            linesColor : updatedText
+        });
+    }
+
     render(){
         return(
-            <h2 className="text-center" >Option 3</h2>
+            <div className="row mt-3">
+                    <div className="col-md-3 bg-white">
+                        <CSOptions.Option3 
+                        state = {this.state}
+                        onHeaderBackGroundColorChange = {this.handleHeaderBackGroundColorChange}
+                        onHeaderTextChange = {this.handleHeaderTextChange}
+                        onMainMessageTextChange = {this.handleMainMessageTextChange}
+                        onSubHeadingTextChange = {this.handleSubHeadingTextChange}
+                        onActionButtonTextChange = {this.handleActionButtonTextChange}
+                        onActionButtonColorChange = {this.handleActionButtonColorChange}
+                        onHeaderTextColorChange = {this.handleHeaderTextColorChange}
+                        onLinesColorChange = {this.handleLinesColorChange}
+                        onIsSubHeadingBoldChange = {this.handleIsSubHeadingBoldChange}
+                    />
+                    </div>
+                    <div className="col-md-9" id="option3">
+                        <CSSStyles.Option3 />
+                        <HTMLCode.Option3 
+                        state = {this.state}
+                        />
+                    </div>
+                </div>
         );
     }
 }
