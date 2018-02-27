@@ -5,10 +5,14 @@ class FormGroup extends Component{
         super(props);
     }
 
+    getFormClass(){
+        return "form-group " + this.props.formGroup;
+    }
+
     render(){
         return(
-            <div className={this.props.formGroup}>
-                <label>{this.props.label}</label>
+            <div className={this.getFormClass()}>
+                <label className="font-weight-bold">{this.props.label}</label>
                 <input className="form-control" type={this.props.type} value={this.props.value} onChange={this.props.onChange} />
             </div>
         );
@@ -82,10 +86,10 @@ export class Option4 extends Component {
                         <div className="card-body">
                             <div className="form-row">
                                 <h4 className="w-100">Header</h4>
-                                <FormGroup formGroup="form-group col-md-12" label="Text" value={this.props.state.headerText} onChange={this.handleHeaderTextChange} />
-                                <FormGroup formGroup="form-group col-md-6" label="Text Color" value={this.props.state.headerTextColor} onChange={this.handleHeaderTextColorChange} />
-                                <FormGroup formGroup="form-group col-md-6" label="Background Color" value={this.props.state.headerBackGroundColor} onChange={this.handleHeaderBackGroundColorChange} />
-                                <FormGroup formGroup="form-group col-md-6" label="Border Color" value={this.props.state.headerBorderColor} onChange={this.handleHeaderBorderColorChange} />
+                                <FormGroup formGroup="col-md-12" label="Text" value={this.props.state.headerText} onChange={this.handleHeaderTextChange} />
+                                <FormGroup formGroup="col-md-6" label="Text Color" value={this.props.state.headerTextColor} onChange={this.handleHeaderTextColorChange} />
+                                <FormGroup formGroup="col-md-6" label="Background Color" value={this.props.state.headerBackGroundColor} onChange={this.handleHeaderBackGroundColorChange} />
+                                <FormGroup formGroup="col-md-6" label="Border Color" value={this.props.state.headerBorderColor} onChange={this.handleHeaderBorderColorChange} />
                             </div>
                         </div>
                     </div>
@@ -98,10 +102,7 @@ export class Option4 extends Component {
                         <div className="card-body">
                             <div className="form-row">
                                 <h4 className="w-100">Bar</h4>
-                                <div className="form-group">
-                                    <label> Bar Color</label>
-                                    <input className="form-control" type="text" title="input" value={this.props.state.barColor} onChange={this.handleBarColorChange} />
-                                </div>
+                                <FormGroup formGroup="col-md-6" label="Bar Color" value={this.props.state.barColor} onChange={this.handleBarColorChange} />
                             </div>
                         </div>
                     </div>
@@ -115,25 +116,16 @@ export class Option4 extends Component {
                             <div className="form-row">
                                 <h4 className="w-100">Main Content</h4>
                                 <div className="form-group col-md-12">
-                                    <label> Sub Heading Text </label>
+                                    <label className="font-weight-bold"> Sub Heading Text </label>
                                     <div className="form-check form-check-inline ml-4">
                                         <input className="form-check-input" type="checkbox" value={this.props.state.isSubHeadingBold} onChange={this.handleIsSubHeadingBoldChange} />
                                         <label className="form-check-label" htmlFor="boldedSubHeading">Bold</label>
                                     </div>
                                     <textarea className="form-control" rows="5" title="input" value={this.props.state.subHeadingText} onChange={this.handleSubHeadingTextChange} />
                                 </div>
-                                <div className="form-group col-md-12">
-                                    <label> Main Text </label>
-                                    <textarea className="form-control" rows="5"  value={this.props.state.mainMessageText} onChange={this.handleMainMessageTextChange} />
-                                </div>
-                                <div className="form-group col-md-6">
-                                    <label> Button Text </label>
-                                    <input className="form-control" type="text" value={this.props.state.actionButtonText} onChange={this.handleActionButtonTextChange} />
-                                </div>
-                                <div className="form-group col-md-6">
-                                    <label> Button Color </label>
-                                    <input className="form-control" type="text" value={this.props.state.actionButtonColor} onChange={this.handleActionButtonColorChange} />
-                                </div>
+                                <FormGroup formGroup="col-md-12" label="Main Text" value={this.props.state.mainMessageText} onChange={this.handleMainMessageTextChange} />
+                                <FormGroup formGroup="col-md-6" label="Button Text" value={this.props.state.actionButtonText} onChange={this.handleActionButtonTextChange} />
+                                <FormGroup formGroup="col-md-6" label="Button Color" value={this.props.state.actionButtonColor} onChange={this.handleActionButtonColorChange} />
                             </div>
                         </div>
                     </div>
