@@ -38,7 +38,7 @@ export class Option1 extends Component{
               padding: 0px 0px; }
             .option-1 .cs-bar {
               width: 70%;
-              height: 523px;
+              height: 463px;
               background-color: #f8f9fa;
               float: right; }
             .option-1 .col-25 {
