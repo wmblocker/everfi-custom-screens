@@ -16,7 +16,8 @@ export class Option1 extends Component{
             isSubHeadingBold: "normal",
             mainMessageText: "Wherever you are in life, there is a plan to help you meet your needs.Visit us to learn more about the options available to you.",
             barColor: "#5bbaed",
-            linesColor: "#208aee"
+            linesColor: "#208aee",
+            buttonHref: "https://everfi.com"
         };
     }
 
@@ -87,6 +88,12 @@ export class Option1 extends Component{
         });
     }
 
+    handleButtonHrefChange = (updatedText) => {
+        this.setState({
+            buttonHref : updatedText
+        });
+    }
+
     render(){
         return(
             <div className="row mt-3">
@@ -104,6 +111,7 @@ export class Option1 extends Component{
                         onIsSubHeadingBoldChange = {this.handleIsSubHeadingBoldChange}
                         onBarColorChange = {this.handleBarColorChange}
                         onHeaderBorderColorChange = {this.handleHeaderBorderColorChange}
+                        onButtonHrefChange = {this.handleButtonHrefChange}
                     />
                     </div>
                     <div className="col-md-9" id="option1">
@@ -139,7 +147,8 @@ export class Option3 extends Component{
             headerBackGroundColor: "#5bbaed", 
             isSubHeadingBold: "normal",
             mainMessageText: "Wherever you are in life, there is a plan to help you meet your needs.Visit us to learn more about the options available to you.",
-            linesColor: "#208aee"
+            linesColor: "#208aee",
+            buttonHref: "https://everfi.com"
         };
     }
 
@@ -197,6 +206,13 @@ export class Option3 extends Component{
             linesColor : updatedText
         });
     }
+    handleButtonHrefChange = (updatedText) => {
+        this.setState({
+            buttonHref : updatedText
+        });
+    }
+
+
 
     render(){
         return(
@@ -213,6 +229,7 @@ export class Option3 extends Component{
                         onHeaderTextColorChange = {this.handleHeaderTextColorChange}
                         onLinesColorChange = {this.handleLinesColorChange}
                         onIsSubHeadingBoldChange = {this.handleIsSubHeadingBoldChange}
+                        onButtonHrefChange = {this.handleButtonHrefChange}
                     />
                     </div>
                     <div className="col-md-9" id="option3">
@@ -238,7 +255,8 @@ export class Option4 extends Component{
             headerBorderColor: "#208aee", 
             barColor: "#5bbaed",
             isSubHeadingBold: "normal",
-            mainMessageText: "Wherever you are in life, there is a plan to help you meet your needs.Visit us to learn more about the options available to you."
+            mainMessageText: "Wherever you are in life, there is a plan to help you meet your needs.Visit us to learn more about the options available to you.",
+            buttonHref: "https://everfi.com"
         };
     }
 
@@ -303,6 +321,12 @@ export class Option4 extends Component{
         });
     }
 
+    handleButtonHrefChange = (updatedText) => {
+        this.setState({
+            buttonHref : updatedText
+        });
+    }
+
     render(){
         return(
                 <div className="row mt-3">
@@ -319,9 +343,10 @@ export class Option4 extends Component{
                         onHeaderTextColorChange = {this.handleHeaderTextColorChange}
                         onBarColorChange = {this.handleBarColorChange}
                         onIsSubHeadingBoldChange = {this.handleIsSubHeadingBoldChange}
+                        onButtonHrefChange = {this.handleButtonHrefChange}
                     />
                     </div>
-                    <div className="col-md-9" id="option1">
+                    <div className="col-md-9" id="option4">
                         <CSSStyles.Option4 />
                         <HTMLCode.Option4 
                         state = {this.state}
@@ -341,9 +366,106 @@ export class Option5 extends Component{
 }
 
 export class Option6 extends Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            headerText: "Did You Know?",
+            leftColumnBackgroundColor: "#5bbaed",
+            rightColumnBackgroundColor: "#208aee",
+            headerTextColor: "#fff", 
+            actionButtonText: "Learn More", 
+            actionButtonColor: "#208aee",
+            isSubHeadingBold: "normal",
+            mainMessageText: "Wherever you are in life, there is a plan to help you meet your needs.Visit us to learn more about the options available to you.",
+            buttonHref: "https://everfi.com"
+        };
+    }
+
+    handleHeaderTextChange = (updatedText) => {
+        this.setState({
+            headerText : updatedText
+        });
+    }
+
+    handleMainMessageTextChange = (updatedText) => {
+        this.setState({
+            mainMessageText : updatedText
+        });
+    }
+
+
+    handleActionButtonTextChange = (updatedText) => {
+        this.setState({
+            actionButtonText : updatedText
+        });
+    }
+
+    handleActionButtonColorChange = (updatedText) => {
+        this.setState({
+            actionButtonColor : updatedText
+        });
+    }
+
+
+    handleHeaderTextColorChange = (updatedText) => {
+        this.setState({
+            headerTextColor : updatedText
+        });
+    }
+
+    handleButtonHrefChange = (updatedText) => {
+        this.setState({
+            buttonHref : updatedText
+        });
+    }
+
+    handleButtonHrefChange = (updatedText) => {
+        this.setState({
+            buttonHref : updatedText
+        });
+    }
+
+    handleLeftColumnBackgroundColorChange = (updatedText) => {
+        this.setState({
+            leftColumnBackgroundColor : updatedText
+        });
+    }
+
+    handleRightColumnBackgroundColorChange = (updatedText) => {
+        this.setState({
+            rightColumnBackgroundColor : updatedText
+        });
+    }
+
+
     render(){
         return(
-            <h2 className="text-center" >Option 6</h2>
+                <div className="row mt-3">
+                    <div className="col-md-3 bg-white">
+                        <CSOptions.Option6 
+                        state = {this.state}
+                        onHeaderBackGroundColorChange = {this.handleHeaderBackGroundColorChange}
+                        onLeftColumnBackgroundColorChange = {this.handleLeftColumnBackgroundColorChange}
+                        onRightColumnBackgroundColorChange={this.handleRightColumnBackgroundColorChange}
+                        onHeaderTextChange = {this.handleHeaderTextChange}
+                        onMainMessageTextChange = {this.handleMainMessageTextChange}
+                        onSubHeadingTextChange = {this.handleSubHeadingTextChange}
+                        onActionButtonTextChange = {this.handleActionButtonTextChange}
+                        onActionButtonColorChange = {this.handleActionButtonColorChange}
+                        onHeaderBorderColorChange = {this.handleHeaderBorderColorChange}
+                        onHeaderTextColorChange = {this.handleHeaderTextColorChange}
+                        onBarColorChange = {this.handleBarColorChange}
+                        onIsSubHeadingBoldChange = {this.handleIsSubHeadingBoldChange}
+                        onButtonHrefChange = {this.handleButtonHrefChange}
+                    />
+                    </div>
+                    <div className="col-md-9" id="option6">
+                        <CSSStyles.Option6 />
+                        <HTMLCode.Option6 
+                        state = {this.state}
+                        />
+                    </div>
+                </div>
         );
     }
 }

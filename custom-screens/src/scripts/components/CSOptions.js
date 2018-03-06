@@ -77,6 +77,10 @@ export class Option1 extends Component {
         this.props.onLinesColorChange(e.target.value);
     }
 
+    handleButtonHrefChange = (e) => {
+        this.props.onButtonHrefChange(e.target.value);
+    }
+
 
     sendCode(){
         var html = document.getElementById("option1");
@@ -148,7 +152,7 @@ export class Option1 extends Component {
                                 <FormGroup formGroup="col-md-12" label="Main Text" value={this.props.state.mainMessageText} onChange={this.handleMainMessageTextChange} />
                                 <FormGroup formGroup="col-md-6" label="Button Text" value={this.props.state.actionButtonText} onChange={this.handleActionButtonTextChange} />
                                 <FormGroup formGroup="col-md-6" label="Button Color" value={this.props.state.actionButtonColor} onChange={this.handleActionButtonColorChange} />
-                                <FormGroup formGroup="col-md-6" label="Button Href" value="" onChange="" />
+                                <FormGroup formGroup="col-md-6" label="Button Href" value={this.props.buttonHref} onChange={this.handleButtonHrefChange} />
                             </div>
                         </div>
                     </div>
@@ -219,6 +223,10 @@ export class Option3 extends Component {
         }
     }
 
+    handleButtonHrefChange = (e) => {
+        this.props.onButtonHrefChange(e.target.value);
+    }
+
     sendCode(){
         var html = document.getElementById("option3");
         console.log(html.innerHTML);
@@ -275,7 +283,7 @@ export class Option3 extends Component {
                                 <FormGroup formGroup="col-md-12" label="Main Text" value={this.props.state.mainMessageText} onChange={this.handleMainMessageTextChange} />
                                 <FormGroup formGroup="col-md-6" label="Button Text" value={this.props.state.actionButtonText} onChange={this.handleActionButtonTextChange} />
                                 <FormGroup formGroup="col-md-6" label="Button Color" value={this.props.state.actionButtonColor} onChange={this.handleActionButtonColorChange} />
-                                <FormGroup formGroup="col-md-6" label="Button Href" value="" onChange="" />
+                                <FormGroup formGroup="col-md-6" label="Button Href" value={this.props.buttonHref} onChange={this.handleButtonHrefChange} />
                             </div>
                         </div>
                     </div>
@@ -352,6 +360,10 @@ export class Option4 extends Component {
         }
     }
 
+    handleButtonHrefChange = (e) => {
+        this.props.onButtonHrefChange(e.target.value);
+    }
+
     sendCode(){
         var html = document.getElementById("option4");
         console.log(html.innerHTML);
@@ -409,7 +421,99 @@ export class Option4 extends Component {
                                 <FormGroup formGroup="col-md-12" label="Main Text" value={this.props.state.mainMessageText} onChange={this.handleMainMessageTextChange} />
                                 <FormGroup formGroup="col-md-6" label="Button Text" value={this.props.state.actionButtonText} onChange={this.handleActionButtonTextChange} />
                                 <FormGroup formGroup="col-md-6" label="Button Color" value={this.props.state.actionButtonColor} onChange={this.handleActionButtonColorChange} />
-                                <FormGroup formGroup="col-md-6" label="Button Href" value="" onChange="" />
+                                <FormGroup formGroup="col-md-6" label="Button Href" value={this.props.buttonHref} onChange={this.handleButtonHrefChange} />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="card">
+                    <div className="card-header">
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#sendCollapse-4">Send this design to your CSM</button></h3>
+                    </div>
+                    <div id="sendCollapse-4" className="collapse" data-parent="customizationOptions-4">
+                        <div className="card-body">
+                            <div className="form-row">
+                                <h4 className="w-100"></h4>
+                                <div className="form-group col-md-6">
+                                    <button className="btn btn-primary" onClick={this.sendCode}>Send this design</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+}
+
+export class Option6 extends Component {
+    constructor(props) {
+        super(props);
+    }
+
+    handleHeaderTextChange = (e) => {
+        this.props.onHeaderTextChange(e.target.value);
+    }
+
+    handleMainMessageTextChange = (e) => {
+        this.props.onMainMessageTextChange(e.target.value);
+    }
+
+    handleActionButtonTextChange = (e) => {
+        this.props.onActionButtonTextChange(e.target.value);
+    }
+
+    handleActionButtonColorChange = (e) => {
+        this.props.onActionButtonColorChange(e.target.value);
+    }
+
+    handleHeaderTextColorChange = (e) => {
+        this.props.onHeaderTextColorChange(e.target.value);
+    }
+
+    handleBarColorChange = (e) => {
+        this.props.onBarColorChange(e.target.value);
+    }
+
+    handleButtonHrefChange = (e) => {
+        this.props.onButtonHrefChange(e.target.value);
+    }
+
+    sendCode(){
+        var html = document.getElementById("option4");
+        console.log(html.innerHTML);
+    }
+
+    render() {
+        return (       
+            <div id="customizationOptions-4" className="py-3">
+            <h4 className="">Option 4 Customizations</h4>
+                <div className="card mt-3">
+                    <div className="card-header">
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#headerOptionsCollapse-4">Header Customization Options</button></h3>
+                    </div>
+                    <div id="headerOptionsCollapse-4" className="collapse" data-parent="customizationOptions-4">
+                        <div className="card-body">
+                            <div className="form-row">
+                                <h4 className="w-100">Header</h4>
+                                <FormGroup formGroup="col-md-12" label="Text" value={this.props.state.headerText} onChange={this.handleHeaderTextChange} />
+                                <FormGroup formGroup="col-md-6" label="Text Color" value={this.props.state.headerTextColor} onChange={this.handleHeaderTextColorChange} />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="card">
+                    <div className="card-header">
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#mainOptionsCollapse-4">Main Customization Options</button></h3>
+                    </div>
+                    <div id="mainOptionsCollapse-4" className="collapse" data-parent="customizationOptions-4">
+                        <div className="card-body">
+                            <div className="form-row">
+                                <h4 className="w-100">Main Content</h4>
+                                <FormGroup formGroup="col-md-12" label="Main Text" value={this.props.state.mainMessageText} onChange={this.handleMainMessageTextChange} />
+                                <FormGroup formGroup="col-md-6" label="Button Text" value={this.props.state.actionButtonText} onChange={this.handleActionButtonTextChange} />
+                                <FormGroup formGroup="col-md-6" label="Button Color" value={this.props.state.actionButtonColor} onChange={this.handleActionButtonColorChange} />
+                                <FormGroup formGroup="col-md-6" label="Button Href" value={this.props.buttonHref} onChange={this.handleButtonHrefChange} />
                             </div>
                         </div>
                     </div>

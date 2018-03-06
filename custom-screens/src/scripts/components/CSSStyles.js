@@ -17,11 +17,20 @@ export class Option1 extends Component{
               .option-1 .cs-header .cs-header-text {
                 color: #000;
                 font-size: 30px !important;
-                padding: 25px 0px 0px 70px !important; }
+                padding: 25px 0px 0px 75px !important; }
             .option-1 .cs-sub-heading{
                 font-size:24px !important;
             }
-            .option-1 .lines {
+            .option-1 .col-wrap {
+              width: 100%;
+              height: 100%;
+              padding: 0px 0px; }
+            .option-1 .cs-bar {
+              width: 75%;
+              height: 463px;
+              background-color: #f8f9fa;
+              float: right; }
+              .option-1 .lines {
                 border-left: 5px solid;
                 border-top: 5px solid;
                 border-color: #000000;
@@ -30,23 +39,13 @@ export class Option1 extends Component{
                 width: 107px;
                 position: absolute;
                 top: 35px;
-                left: 50px; 
-            }
-            .option-1 .col-wrap {
-              width: 100%;
-              height: 100%;
-              padding: 0px 0px; }
-            .option-1 .cs-bar {
-              width: 70%;
-              height: 463px;
-              background-color: #f8f9fa;
-              float: right; }
-            .option-1 .col-25 {
-              width: 25%;
+                left: 50px; }
+            .option-1 .col-30 {
+              width: 30%;
               height: auto;
               float: left; }
-            .option-1 .col-75 {
-              width: 75%;
+            .option-1 .col-70 {
+              width: 70%;
               float: right;
               padding: 40px 40px; }
             .option-1 .action-button {
@@ -171,6 +170,18 @@ export class Option4 extends Component{
               margin-top: 20px;
               margin-left: 15px;
               display: inline-block; }
+        `
+        return(
+            <style>
+                {css}
+            </style>
+        )
+    }
+}
+
+export class Option6 extends Component{
+    render(){
+        const css = `
         `
         return(
             <style>

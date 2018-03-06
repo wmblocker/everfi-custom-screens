@@ -11,27 +11,23 @@ ul li {
   .modal-dialog .modal-content .modal-body {
     padding: 60px 0px 0px 0px !important; }
 
-.option-1 {
+.option-6 {
   width: 100%;
   height: 100%; }
-  .option-1 .cs-header {
+  .option-6 .cs-header {
     height: 75px;
-    background-color: #f8f9fa; }
-    .option-1 .cs-header .cs-header-text {
+    background-color: #000; }
+    .option-6 .cs-header .cs-header-text {
       color: #000;
       font-size: 28px;
       padding: 26px 0px 0px 88px; }
-  .option-1 .col-wrap {
+  .option-6 .col-wrap {
     width: 100%;
     height: 100%;
     padding: 0px 30px; }
-  .option-1 .cs-sub-heading {
+  .option-6 .cs-sub-heading {
     font-size: 24px !important; }
-  .option-1 .cs-bar {
-    width: 70%;
-    height: 463px;
-    background-color: #f8f9fa; }
-  .option-1 .lines {
+  .option-6 .lines {
     border-left: 5px solid;
     border-top: 5px solid;
     border-color: #000000;
@@ -41,47 +37,11 @@ ul li {
     position: absolute;
     top: -25px !important;
     left: 50px; }
-  .option-1 .action-button {
-    background-color: #25408f;
-    color: #fff;
-    padding: 10px 28px;
-    font-size: 16px;
-    border-radius: 7px;
-    margin-top: 20px;
-    margin-left: 15px;
-    display: inline-block; }
-
-.option-3 {
-  width: 100%;
-  height: 100%; }
-  .option-3 .cs-header {
-    height: 75px;
-    background-color: #f8f9fa; }
-    .option-3 .cs-header .cs-header-text {
-      color: #000;
-      font-size: 28px;
-      padding: 26px 0px 0px 88px; }
-  .option-3 .col-wrap {
-    width: 100%;
-    height: 100%;
-    padding: 0px 30px; }
-  .option-3 .cs-sub-heading {
-    font-size: 24px !important; }
-  .option-3 .lines {
-    border-left: 5px solid;
-    border-top: 5px solid;
-    border-color: #000000;
+  .option-6 .col-50 {
+    width: 50%;
     float: left;
-    height: 129px;
-    width: 107px;
-    position: absolute;
-    top: -25px !important;
-    left: 50px; }
-  .option-3 .col-98 {
-    width: 98%;
-    float: right;
     padding: 40px 40px; }
-  .option-3 .action-button {
+  .option-6 .action-button {
     background-color: #25408f;
     color: #fff;
     padding: 10px 28px;

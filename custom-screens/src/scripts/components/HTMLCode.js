@@ -15,16 +15,16 @@ export class Option1 extends Component{
                         <p className="cs-header-text" style={{color: this.props.state.headerTextColor}}>{this.props.state.headerText}</p>
                     </div>
                     <div className="col-wrap">
-                        <div className="col-25">
+                        <div className="col-30">
                             <div className="cs-bar" style={{background: this.props.state.barColor}}>
                             </div>
                         </div>
-                        <div className="col-75">
+                        <div className="col-70">
                             <p className="cs-sub-heading" style={{
                                 fontWeight: this.props.state.isSubHeadingBold
                                 }}>{this.props.state.subHeadingText}</p>
                             <p className="mainMessage">{this.props.state.mainMessageText}</p>
-                            <a className="action-button" style={{backgroundColor: this.props.state.actionButtonColor}} href="#" target="_blank">{this.props.state.actionButtonText}</a>
+                            <a className="action-button" style={{backgroundColor: this.props.state.actionButtonColor}} href={this.props.state.buttonHref} target="_blank">{this.props.state.actionButtonText}</a>
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@ export class Option3 extends Component{
                                 fontWeight: this.props.state.isSubHeadingBold
                                 }}>{this.props.state.subHeadingText}</p>
                             <p className="mainMessage">{this.props.state.mainMessageText}</p>
-                            <a className="action-button" style={{backgroundColor: this.props.state.actionButtonColor}} href="#" target="_blank">{this.props.state.actionButtonText}</a>
+                            <a className="action-button" style={{backgroundColor: this.props.state.actionButtonColor}} href={this.props.state.buttonHref}  target="_blank">{this.props.state.actionButtonText}</a>
                     </div>
                 </div>
             </div>
@@ -83,7 +83,31 @@ export class Option4 extends Component{
                                 fontWeight: this.props.state.isSubHeadingBold
                                 }}>{this.props.state.subHeadingText}</p>
                             <p className="mainMessage">{this.props.state.mainMessageText}</p>
-                            <a className="action-button" style={{backgroundColor: this.props.state.actionButtonColor}} href="#" target="_blank">{this.props.state.actionButtonText}</a>
+                            <a className="action-button" style={{backgroundColor: this.props.state.actionButtonColor}} href={this.props.state.buttonHref}  target="_blank">{this.props.state.actionButtonText}</a>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+}
+
+export class Option6 extends Component{
+    constructor(props){
+        super(props);
+    }
+    render(){
+        return(
+            <div className="option-6">
+                    <div className="col-wrap">
+                        <div className="col-50">
+                            <div className="cs-header">
+                                <p className="cs-header-text" style={{color: this.props.state.headerTextColor}}>{this.props.state.headerText}
+                                </p>
+                            </div>
+                        </div>
+                        <div className="col-50">
+                            <p className="mainMessage">{this.props.state.mainMessageText}</p>
+                            <a className="action-button" style={{backgroundColor: this.props.state.actionButtonColor}} href={this.props.state.buttonHref}  target="_blank">{this.props.state.actionButtonText}</a>
                     </div>
                 </div>
             </div>
