@@ -479,15 +479,24 @@ export class Option6 extends Component {
         this.props.onButtonHrefChange(e.target.value);
     }
 
+    handleRightColumnBackgroundColorChange = (e) => {
+        this.props.onRightColumnBackGroundColorChange(e.target.value)
+    }
+
+    handleLeftColumnBackgroundColorChange = (e) => {
+        this.props.onLeftColumnBackGroundColorChange(e.target.value)
+    }
+
+
     sendCode(){
-        var html = document.getElementById("option4");
+        var html = document.getElementById("option6");
         console.log(html.innerHTML);
     }
 
     render() {
         return (       
             <div id="customizationOptions-4" className="py-3">
-            <h4 className="">Option 4 Customizations</h4>
+            <h4 className="">Option 6 Customizations</h4>
                 <div className="card mt-3">
                     <div className="card-header">
                         <h3><button className="btn btn-link" data-toggle="collapse" data-target="#headerOptionsCollapse-4">Header Customization Options</button></h3>

@@ -370,11 +370,11 @@ export class Option6 extends Component{
         super(props);
         this.state = {
             headerText: "Did You Know?",
-            leftColumnBackgroundColor: "#5bbaed",
-            rightColumnBackgroundColor: "#208aee",
-            headerTextColor: "#fff", 
+            leftColumnBackGroundColor: "#fff",
+            rightColumnBackGroundColor: "#208aee",
+            headerTextColor: "#000", 
             actionButtonText: "Learn More", 
-            actionButtonColor: "#208aee",
+            actionButtonColor: "#5bbaed",
             isSubHeadingBold: "normal",
             mainMessageText: "Wherever you are in life, there is a plan to help you meet your needs.Visit us to learn more about the options available to you.",
             buttonHref: "https://everfi.com"
@@ -427,13 +427,13 @@ export class Option6 extends Component{
 
     handleLeftColumnBackgroundColorChange = (updatedText) => {
         this.setState({
-            leftColumnBackgroundColor : updatedText
+            leftColumnBackGroundColor : updatedText
         });
     }
 
-    handleRightColumnBackgroundColorChange = (updatedText) => {
+    handleRightColumnBackGroundColorChange = (updatedText) => {
         this.setState({
-            rightColumnBackgroundColor : updatedText
+            rightColumnBackGroundColor : updatedText
         });
     }
 
@@ -445,8 +445,8 @@ export class Option6 extends Component{
                         <CSOptions.Option6 
                         state = {this.state}
                         onHeaderBackGroundColorChange = {this.handleHeaderBackGroundColorChange}
-                        onLeftColumnBackgroundColorChange = {this.handleLeftColumnBackgroundColorChange}
-                        onRightColumnBackgroundColorChange={this.handleRightColumnBackgroundColorChange}
+                        onLeftColumnBackGroundColorChange = {this.handleLeftColumnBackGroundColorChange}
+                        onRightColumnBackGroundColorChange={this.handleRightColumnBackGroundColorChange}
                         onHeaderTextChange = {this.handleHeaderTextChange}
                         onMainMessageTextChange = {this.handleMainMessageTextChange}
                         onSubHeadingTextChange = {this.handleSubHeadingTextChange}

@@ -99,13 +99,13 @@ export class Option6 extends Component{
         return(
             <div className="option-6">
                     <div className="col-wrap">
-                        <div className="col-50">
+                        <div className="col-50" style={{backgroundColor: this.props.state.leftColumnBackGroundColor}}>
                             <div className="cs-header">
                                 <p className="cs-header-text" style={{color: this.props.state.headerTextColor}}>{this.props.state.headerText}
                                 </p>
                             </div>
                         </div>
-                        <div className="col-50">
+                        <div className="col-50" style={{backgroundColor: this.props.state.rightColumnBackGroundColor}}>
                             <p className="mainMessage">{this.props.state.mainMessageText}</p>
                             <a className="action-button" style={{backgroundColor: this.props.state.actionButtonColor}} href={this.props.state.buttonHref}  target="_blank">{this.props.state.actionButtonText}</a>
                     </div>

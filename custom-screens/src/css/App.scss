@@ -21,49 +21,37 @@ ul{
     }
 }
 
-
+.lines{
+    top:-25px !important;
+}
 
 
 .option-6{
     width:100%;
     height:100%;
     .cs-header{
-        height:75px;
-        background-color: #f8f9fa;
         .cs-header-text{
             color:#000;
             font-size: 28px;
-            padding: 26px 0px 0px 88px;
+            padding: 125px 0px 0px 88px;
         }
+    }
+
+    .main-message{
+        margin-top:30px;
     }
 
     .col-wrap{
         width: 100%;
         height: 100%;
-        padding: 0px 30px;
+        padding: 0px 0px;
     }
-
-    .cs-sub-heading{
-        font-size:24px !important;
-    }
-
-
-    .lines {
-        border-left: 5px solid;
-        border-top: 5px solid;
-        border-color: #000000;
-        float: left;
-        height: 129px;
-        width: 107px;
-        position: absolute;
-        top: -25px !important;
-        left: 50px;
-        }
     
-    .col-98{
-        width: 98%; 
-        float: right;
-        padding: 40px 40px;
+    .col-50{
+        width: 50%; 
+        float: left;
+        height: 500px;
+        padding: 0px 40px;
     }
 
     .action-button{
@@ -74,6 +62,9 @@ ul{
         border-radius: 7px;
         margin-top: 20px;
         margin-left:15px;
+        position: absolute;
+        bottom: 30px;
+        right: 50px;
         display: inline-block;
     }
 }
