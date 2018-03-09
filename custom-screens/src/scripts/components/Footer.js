@@ -4,8 +4,7 @@ class Footer extends Component{
     render(){
         return( 
             <footer>
-                <nav className="navbar fixed-bottom navbar-dark bg-secondary justify-content-center">
-                    <p className="navbar-brand m-0 p-0" href="#">© 2018 - EverFi</p>
+                <nav className="navbar fixed-bottom justify-content-center py-4" style={{backgroundColor: "#393939"}}>
                 </nav>
             </footer>
         );
