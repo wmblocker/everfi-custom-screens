@@ -9,7 +9,7 @@ export class Option1 extends Component{
         return(
             <div className="option-1">
                     <div className="cs-header" style={{
-                        background: this.props.state.headerBackGroundColor
+                        background: this.props.state.headerBackGroundColor,borderBottomColor: this.props.state.headerBorderColor
                         }}>
                         <div className="lines" style={{borderColor: this.props.state.linesColor}}></div>
                         <p className="cs-header-text" style={{color: this.props.state.headerTextColor}}>{this.props.state.headerText}</p>
