@@ -150,7 +150,7 @@ export class Option4 extends Component{
               padding: 0px 0px; }
             .option-4 .cs-bar {
               width: 100%;
-              height: 523px;
+              height: 463px;
               background-color: #f8f9fa;
               float: right; }
             .option-4 .col-25 {

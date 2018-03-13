@@ -89,9 +89,8 @@ export class Option1 extends Component {
 
     render() {
         return (       
-            <div id="customizationOptions-1" className="py-3">
-            <h4 className="">Option 1 Customizations</h4>
-                <div className="card mt-3">
+            <div id="customizationOptions-1">
+                <div className="card">
                     <div className="card-header">
                         <h3><button className="btn btn-link" data-toggle="collapse" data-target="#headerOptionsCollapse-1">Header Customization Options</button></h3>
                     </div>
@@ -234,9 +233,8 @@ export class Option3 extends Component {
 
     render() {
         return (       
-            <div id="customizationOptions-3" className="py-3">
-            <h4 className="">Option 3 Customizations</h4>
-                <div className="card mt-3">
+            <div id="customizationOptions-3">
+                <div className="card">
                     <div className="card-header">
                         <h3><button className="btn btn-link" data-toggle="collapse" data-target="#headerOptionsCollapse-3">Header Customization Options</button></h3>
                     </div>
@@ -371,9 +369,8 @@ export class Option4 extends Component {
 
     render() {
         return (       
-            <div id="customizationOptions-4" className="py-3">
-            <h4 className="">Option 4 Customizations</h4>
-                <div className="card mt-3">
+            <div id="customizationOptions-4">
+                <div className="card">
                     <div className="card-header">
                         <h3><button className="btn btn-link" data-toggle="collapse" data-target="#headerOptionsCollapse-4">Header Customization Options</button></h3>
                     </div>
@@ -495,9 +492,8 @@ export class Option6 extends Component {
 
     render() {
         return (       
-            <div id="customizationOptions-4" className="py-3">
-            <h4 className="">Option 6 Customizations</h4>
-                <div className="card mt-3">
+            <div id="customizationOptions-4">
+                <div className="card">
                     <div className="card-header">
                         <h3><button className="btn btn-link" data-toggle="collapse" data-target="#headerOptionsCollapse-4">Header Customization Options</button></h3>
                     </div>

@@ -12,7 +12,7 @@ export class Option1 extends Component{
             subHeadingText: "We offer Associates tools to help manage insurance costs.", actionButtonText: "Learn More", 
             actionButtonColor: "#208aee",
             headerBackGroundColor: "#5bbaed",
-            headerBorderColor: "#208aee",  
+            headerBorderColor: "#51aaa3",  
             isSubHeadingBold: "normal",
             mainMessageText: "Wherever you are in life, there is a plan to help you meet your needs.Visit us to learn more about the options available to you.",
             barColor: "#5bbaed",
@@ -97,7 +97,7 @@ export class Option1 extends Component{
     render(){
         return(
             <div className="row mt-3">
-                    <div className="col-md-3 bg-white">
+                    <div className="col-md-3 aside-options-list">
                         <CSOptions.Option1 
                         state = {this.state}
                         onHeaderBackGroundColorChange = {this.handleHeaderBackGroundColorChange}
@@ -217,7 +217,7 @@ export class Option3 extends Component{
     render(){
         return(
             <div className="row mt-3">
-                    <div className="col-md-3 bg-white">
+                    <div className="col-md-3 aside-options-list">
                         <CSOptions.Option3 
                         state = {this.state}
                         onHeaderBackGroundColorChange = {this.handleHeaderBackGroundColorChange}
@@ -252,7 +252,7 @@ export class Option4 extends Component{
             subHeadingText: "We offer Associates tools to help manage insurance costs.", actionButtonText: "Learn More", 
             actionButtonColor: "#208aee",
             headerBackGroundColor: "#5bbaed", 
-            headerBorderColor: "#208aee", 
+            headerBorderColor: "#51aaa3", 
             barColor: "#5bbaed",
             isSubHeadingBold: "normal",
             mainMessageText: "Wherever you are in life, there is a plan to help you meet your needs.Visit us to learn more about the options available to you.",
@@ -330,7 +330,7 @@ export class Option4 extends Component{
     render(){
         return(
                 <div className="row mt-3">
-                    <div className="col-md-3 bg-white">
+                    <div className="col-md-3 aside-options-list">
                         <CSOptions.Option4 
                         state = {this.state}
                         onHeaderBackGroundColorChange = {this.handleHeaderBackGroundColorChange}
@@ -441,7 +441,7 @@ export class Option6 extends Component{
     render(){
         return(
                 <div className="row mt-3">
-                    <div className="col-md-3 bg-white">
+                    <div className="col-md-3 aside-options-list">
                         <CSOptions.Option6 
                         state = {this.state}
                         onHeaderBackGroundColorChange = {this.handleHeaderBackGroundColorChange}

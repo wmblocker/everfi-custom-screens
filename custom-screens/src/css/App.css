@@ -6,6 +6,68 @@ ul li {
   ul li a {
     color: #fff; }
 
+body {
+  background-color: #A3A3A3; }
+
+.option-1, .option-2, .option-3, .option-4, .option-5, .option-6, .option-7, .option-8 {
+  max-width: 1024px;
+  background: #ffffff;
+  box-shadow: 3px 3px 9px 0px #737373; }
+
+.aside-options-list {
+  background-color: #D8D8D8;
+  padding: 0px; }
+
+.card {
+  border: none;
+  border-radius: 0px; }
+
+.card-header {
+  padding: 0px;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+
+.collapse {
+  display: none;
+  background: #f3f3f3;
+  color: #5a5a5a; }
+
+.collapsing {
+  background: #f3f3f3;
+  color: #5a5a5a; }
+
+.btn-link {
+  line-height: 50px;
+  background-color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0px 0px 0px 15px;
+  color: #4D4D4D;
+  text-align: left;
+  width: 100%;
+  border: none; }
+
+.btn-link:hover {
+  text-decoration: none;
+  background-color: #f3f3f3;
+  color: #4D4D4D; }
+
+.btn-link:focus {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #4D4D4D; }
+
+.btn-primary {
+  background-color: #EE4620;
+  border-color: #EE4620; }
+
+h3 {
+  margin: 0px; }
+
+.form-control {
+  color: #949494; }
+
 .modal-dialog {
   height: 600px !important; }
   .modal-dialog .modal-content .modal-body {
@@ -44,6 +106,9 @@ ul li {
     bottom: 30px;
     right: 50px;
     display: inline-block; }
+
+.col-md-9 {
+  height: 538px !important; }
 
 .code-box {
   margin: 20px 0px 40px 0px;
