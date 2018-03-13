@@ -551,3 +551,135 @@ export class Option6 extends Component {
     }
 }
 
+export class Option7 extends Component {
+    constructor(props) {
+        super(props);
+    }
+
+    handleHeaderTextChange = (e) => {
+        this.props.onHeaderTextChange(e.target.value);
+    }
+
+    handleMainMessageTextChange1 = (e) => {
+        this.props.onMainMessageTextChange1(e.target.value);
+    }
+
+    handleMainMessageTextColorChange1 = (e) => {
+        this.props.onMainMessageTextColorChange1(e.target.value);
+    }
+
+    handleMainMessageTextChange2 = (e) => {
+        this.props.onMainMessageTextChange2(e.target.value);
+    }
+
+    handleMainMessageTextColorChange2 = (e) => {
+        this.props.onMainMessageTextColorChange2(e.target.value);
+    }
+
+    handleActionButtonTextChange1 = (e) => {
+        this.props.onActionButtonTextChange1(e.target.value);
+    }
+
+    handleActionButtonColorChange1 = (e) => {
+        this.props.onActionButtonColorChange1(e.target.value);
+    }
+
+    handleActionButtonTextChange2 = (e) => {
+        this.props.onActionButtonTextChange2(e.target.value);
+    }
+
+    handleActionButtonColorChange2 = (e) => {
+        this.props.onActionButtonColorChange2(e.target.value);
+    }
+
+    handleHeaderTextColorChange = (e) => {
+        this.props.onHeaderTextColorChange(e.target.value);
+    }
+
+
+    handleButtonHrefChange1 = (e) => {
+        this.props.onButtonHrefChange(e.target.value);
+    }
+
+    handleButtonHrefChange2 = (e) => {
+        this.props.onButtonHrefChange2(e.target.value);
+    }
+
+    handleRightColumnBackGroundColorChange = (e) => {
+        this.props.onRightColumnBackGroundColorChange(e.target.value)
+    }
+
+    handleLeftColumnBackGroundColorChange = (e) => {
+        this.props.onLeftColumnBackGroundColorChange(e.target.value)
+    }
+
+
+    sendCode(){
+        var html = document.getElementById("option7");
+        console.log(html.innerHTML);
+    }
+
+    render() {
+        return (       
+            <div id="customizationOptions-7">
+                <div className="card">
+                    <div className="card-header">
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#headerOptionsCollapse-7">Header Customization Options</button></h3>
+                    </div>
+                    <div id="headerOptionsCollapse-7" className="collapse" data-parent="customizationOptions-7">
+                        <div className="card-body">
+                            <div className="form-row">
+                                <h4 className="w-100">Header</h4>
+                                <FormGroup formGroup="col-md-12" label="Text" value={this.props.state.headerText} onChange={this.handleHeaderTextChange} />
+                                <FormGroup formGroup="col-md-6" label="Text Color" value={this.props.state.headerTextColor} onChange={this.handleHeaderTextColorChange} />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="card">
+                    <div className="card-header">
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#mainOptionsCollapse-7">Main Customization Options</button></h3>
+                    </div>
+                    <div id="mainOptionsCollapse-7" className="collapse" data-parent="customizationOptions-7">
+                        <div className="card-body">
+                            <div className="form-row">
+                                <h4 className="w-100">Main Content</h4>
+                                <FormGroup formGroup="col-md-6" label="Left Column Background Color" value={this.props.state.leftColumnBackGroundColor} onChange={this.handleLeftColumnBackGroundColorChange} />
+                                <FormGroup formGroup="col-md-6" label="Right Column Background Color" value={this.props.state.rightColumnBackGroundColor} onChange={this.handleRightColumnBackGroundColorChange} />
+                                <label className="font-weight-bold"> Main Message Text </label>
+                                <textarea className="form-control" rows="5" title="input" value={this.props.state.mainMessageText1} onChange={this.handleMainMessageTextChange1} />
+                                <FormGroup formGroup="col-md-6" label="Main Message Text Color" value={this.props.state.mainMessageTextColor1} onChange={this.handleMainMessageTextColorChange1} />
+                                <FormGroup formGroup="col-md-6" label="Button Text" value={this.props.state.actionButtonText1} onChange={this.handleActionButtonTextChange1} />
+                                <FormGroup formGroup="col-md-6" label="Button Color" value={this.props.state.actionButtonColor1} onChange={this.handleActionButtonColorChange1} />
+                                <FormGroup formGroup="col-md-6" label="Button Href" value={this.props.buttonHref1} onChange={this.handleButtonHrefChange1} />
+                                <hr />
+                                <label className="font-weight-bold"> Main Message Text </label>
+                                <textarea className="form-control" rows="5" title="input" value={this.props.state.mainMessageText2} onChange={this.handleMainMessageTextChange2} />
+                                <FormGroup formGroup="col-md-6" label="Main Message Text Color" value={this.props.state.mainMessageTextColor2} onChange={this.handleMainMessageTextColorChange2} />
+                                <FormGroup formGroup="col-md-6" label="Button Text" value={this.props.state.actionButtonText2} onChange={this.handleActionButtonTextChange2} />
+                                <FormGroup formGroup="col-md-6" label="Button Color" value={this.props.state.actionButtonColor2} onChange={this.handleActionButtonColorChange2} />
+                                <FormGroup formGroup="col-md-6" label="Button Href" value={this.props.buttonHref2} onChange={this.handleButtonHrefChange2} />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="card">
+                    <div className="card-header">
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#sendCollapse-4">Send this design to your CSM</button></h3>
+                    </div>
+                    <div id="sendCollapse-4" className="collapse" data-parent="customizationOptions-4">
+                        <div className="card-body">
+                            <div className="form-row">
+                                <h4 className="w-100"></h4>
+                                <div className="form-group col-md-6">
+                                    <button className="btn btn-primary" onClick={this.sendCode}>Send this design</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+}
+

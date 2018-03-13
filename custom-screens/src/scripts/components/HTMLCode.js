@@ -114,3 +114,30 @@ export class Option6 extends Component{
         );
     }
 }
+
+export class Option7 extends Component{
+    constructor(props){
+        super(props);
+    }
+    render(){
+        return(
+            <div className="option-7">
+                    <div className="col-wrap">
+                        <div className="col-50" style={{backgroundColor: this.props.state.leftColumnBackGroundColor}}>
+                            <div className="cs-header">
+                                <p className="cs-header-text" style={{color: this.props.state.headerTextColor}}>{this.props.state.headerText}
+                                </p>
+                            </div>
+                        </div>
+                        <div className="col-50" style={{backgroundColor: this.props.state.rightColumnBackGroundColor}}>
+                            <p className="mainMessage" style={{color: this.props.state.mainMessageTextColor1}}>{this.props.state.mainMessageText1}</p>
+                            <a className="action-button" style={{backgroundColor: this.props.state.actionButtonColor1}} href={this.props.state.buttonHref1}  target="_blank">{this.props.state.actionButtonText1}</a>
+                            
+                            <p className="mainMessage" style={{marginTop: "40px", color: this.props.state.mainMessageTextColor2}}>{this.props.state.mainMessageText2}</p>
+                            <a className="action-button" style={{backgroundColor: this.props.state.actionButtonColor2}} href={this.props.state.buttonHref2}  target="_blank">{this.props.state.actionButtonText2}</a>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+}

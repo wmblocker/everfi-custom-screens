@@ -474,11 +474,145 @@ export class Option6 extends Component{
     }
 }
 
+
 export class Option7 extends Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            headerText: "Did You Know?",
+            leftColumnBackGroundColor: "#fff",
+            rightColumnBackGroundColor: "#208aee",
+            headerTextColor: "#000", 
+            actionButtonText1: "Learn More", 
+            actionButtonColor1: "#5bbaed",
+            actionButtonText2: "Learn More", 
+            actionButtonColor2: "#5bbaed",
+            isSubHeadingBold: "normal",
+            mainMessageText1: "Wherever you are in life, there is a plan to help you meet your needs.Visit us to learn more about the options available to you.",
+            mainMessageTextColor1: "#fff",
+            mainMessageText2: "Wherever you are in life, there is a plan to help you meet your needs.Visit us to learn more about the options available to you.",
+            mainMessageTextColor2: "#fff",
+            buttonHref1: "https://everfi.com",
+            buttonHref2: "https://everfi.com"
+        };
+    }
+
+    handleHeaderTextChange = (updatedText) => {
+        this.setState({
+            headerText : updatedText
+        });
+    }
+
+    handleMainMessageTextChange1 = (updatedText) => {
+        this.setState({
+            mainMessageText1 : updatedText
+        });
+    }
+
+    handleMainMessageTextColorChange1 = (updatedText) => {
+        this.setState({
+            mainMessageTextColor1 : updatedText
+        });
+    }
+
+    handleMainMessageTextChange2 = (updatedText) => {
+        this.setState({
+            mainMessageText2 : updatedText
+        });
+    }
+
+    handleMainMessageTextColorChange2 = (updatedText) => {
+        this.setState({
+            mainMessageTextColor2 : updatedText
+        });
+    }
+
+    handleActionButtonTextChange = (updatedText) => {
+        this.setState({
+            actionButtonText1 : updatedText
+        });
+    }
+
+    handleActionButtonColorChange1 = (updatedText) => {
+        this.setState({
+            actionButtonColor1 : updatedText
+        });
+    }
+
+    handleActionButtonTextChange2 = (updatedText) => {
+        this.setState({
+            actionButtonText2 : updatedText
+        });
+    }
+
+    handleActionButtonColorChange2 = (updatedText) => {
+        this.setState({
+            actionButtonColor2 : updatedText
+        });
+    }
+
+    handleHeaderTextColorChange = (updatedText) => {
+        this.setState({
+            headerTextColor : updatedText
+        });
+    }
+
+    handleButtonHrefChange1 = (updatedText) => {
+        this.setState({
+            buttonHref1 : updatedText
+        });
+    }
+
+    handleButtonHrefChange2 = (updatedText) => {
+        this.setState({
+            buttonHref2 : updatedText
+        });
+    }
+    
+
+    handleLeftColumnBackGroundColorChange = (updatedText) => {
+        this.setState({
+            leftColumnBackGroundColor : updatedText
+        });
+    }
+
+    handleRightColumnBackGroundColorChange = (updatedText) => {
+        this.setState({
+            rightColumnBackGroundColor : updatedText
+        });
+    }
+
+
     render(){
         return(
-            <h2 className="text-center" >Option 7</h2>
+                <div className="row mt-3">
+                    <div className="col-md-3 aside-options-list">
+                        <CSOptions.Option7 
+                        state = {this.state}
+                        onHeaderBackGroundColorChange = {this.handleHeaderBackGroundColorChange}
+                        onLeftColumnBackGroundColorChange = {this.handleLeftColumnBackGroundColorChange}
+                        onRightColumnBackGroundColorChange={this.handleRightColumnBackGroundColorChange}
+                        onHeaderTextChange = {this.handleHeaderTextChange}
+                        onMainMessageTextChange = {this.handleMainMessageTextChange}
+                        onMainMessageTextColorChange = {this.handleMainMessageTextColorChange}
+                        onMainMessageTextChange2 = {this.handleMainMessageTextChange2}
+                        onMainMessageTextColorChange2 = {this.handleMainMessageTextColorChange2}
+                        onActionButtonTextChange1 = {this.handleActionButtonTextChange1}
+                        onActionButtonColorChange1 = {this.handleActionButtonColorChange1}
+                        onActionButtonTextChange2 = {this.handleActionButtonTextChange2}
+                        onActionButtonColorChange2 = {this.handleActionButtonColorChange2}
+                        onHeaderTextColorChange = {this.handleHeaderTextColorChange}
+                        onBarColorChange = {this.handleBarColorChange}
+                        onButtonHrefChange = {this.handleButtonHrefChange}
+                    />
+                    </div>
+                    <div className="col-md-9" id="option6">
+                        <CSSStyles.Option7 />
+                        <HTMLCode.Option7 
+                        state = {this.state}
+                        />
+                    </div>
+                </div>
         );
     }
 }
-
