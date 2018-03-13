@@ -106,7 +106,7 @@ export class Option6 extends Component{
                             </div>
                         </div>
                         <div className="col-50" style={{backgroundColor: this.props.state.rightColumnBackGroundColor}}>
-                            <p className="mainMessage">{this.props.state.mainMessageText}</p>
+                            <p className="mainMessage" style={{color: this.props.state.mainMessageTextColor}}>{this.props.state.mainMessageText}</p>
                             <a className="action-button" style={{backgroundColor: this.props.state.actionButtonColor}} href={this.props.state.buttonHref}  target="_blank">{this.props.state.actionButtonText}</a>
                     </div>
                 </div>

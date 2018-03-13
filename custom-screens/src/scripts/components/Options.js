@@ -377,6 +377,7 @@ export class Option6 extends Component{
             actionButtonColor: "#5bbaed",
             isSubHeadingBold: "normal",
             mainMessageText: "Wherever you are in life, there is a plan to help you meet your needs.Visit us to learn more about the options available to you.",
+            mainMessageTextColor: "#fff",
             buttonHref: "https://everfi.com"
         };
     }
@@ -393,6 +394,11 @@ export class Option6 extends Component{
         });
     }
 
+    handleMainMessageTextColorChange = (updatedText) => {
+        this.setState({
+            mainMessageTextColor : updatedText
+        });
+    }
 
     handleActionButtonTextChange = (updatedText) => {
         this.setState({
@@ -425,7 +431,7 @@ export class Option6 extends Component{
         });
     }
 
-    handleLeftColumnBackgroundColorChange = (updatedText) => {
+    handleLeftColumnBackGroundColorChange = (updatedText) => {
         this.setState({
             leftColumnBackGroundColor : updatedText
         });
@@ -449,13 +455,11 @@ export class Option6 extends Component{
                         onRightColumnBackGroundColorChange={this.handleRightColumnBackGroundColorChange}
                         onHeaderTextChange = {this.handleHeaderTextChange}
                         onMainMessageTextChange = {this.handleMainMessageTextChange}
-                        onSubHeadingTextChange = {this.handleSubHeadingTextChange}
+                        onMainMessageTextColorChange = {this.handleMainMessageTextColorChange}
                         onActionButtonTextChange = {this.handleActionButtonTextChange}
                         onActionButtonColorChange = {this.handleActionButtonColorChange}
-                        onHeaderBorderColorChange = {this.handleHeaderBorderColorChange}
                         onHeaderTextColorChange = {this.handleHeaderTextColorChange}
                         onBarColorChange = {this.handleBarColorChange}
-                        onIsSubHeadingBoldChange = {this.handleIsSubHeadingBoldChange}
                         onButtonHrefChange = {this.handleButtonHrefChange}
                     />
                     </div>

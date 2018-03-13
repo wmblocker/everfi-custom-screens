@@ -415,7 +415,7 @@ export class Option4 extends Component {
                                     </div>
                                     <textarea className="form-control" rows="5" title="input" value={this.props.state.subHeadingText} onChange={this.handleSubHeadingTextChange} />
                                 </div>
-                                <FormGroup formGroup="col-md-12" label="Main Text" value={this.props.state.mainMessageText} onChange={this.handleMainMessageTextChange} />
+                                <textarea className="form-control" rows="5" title="input"value={this.props.state.mainMessageText} onChange={this.handleMainMessageTextChange} />
                                 <FormGroup formGroup="col-md-6" label="Button Text" value={this.props.state.actionButtonText} onChange={this.handleActionButtonTextChange} />
                                 <FormGroup formGroup="col-md-6" label="Button Color" value={this.props.state.actionButtonColor} onChange={this.handleActionButtonColorChange} />
                                 <FormGroup formGroup="col-md-6" label="Button Href" value={this.props.buttonHref} onChange={this.handleButtonHrefChange} />
@@ -456,6 +456,10 @@ export class Option6 extends Component {
         this.props.onMainMessageTextChange(e.target.value);
     }
 
+    handleMainMessageTextColorChange = (e) => {
+        this.props.onMainMessageTextColorChange(e.target.value);
+    }
+
     handleActionButtonTextChange = (e) => {
         this.props.onActionButtonTextChange(e.target.value);
     }
@@ -476,11 +480,11 @@ export class Option6 extends Component {
         this.props.onButtonHrefChange(e.target.value);
     }
 
-    handleRightColumnBackgroundColorChange = (e) => {
+    handleRightColumnBackGroundColorChange = (e) => {
         this.props.onRightColumnBackGroundColorChange(e.target.value)
     }
 
-    handleLeftColumnBackgroundColorChange = (e) => {
+    handleLeftColumnBackGroundColorChange = (e) => {
         this.props.onLeftColumnBackGroundColorChange(e.target.value)
     }
 
@@ -515,7 +519,11 @@ export class Option6 extends Component {
                         <div className="card-body">
                             <div className="form-row">
                                 <h4 className="w-100">Main Content</h4>
-                                <FormGroup formGroup="col-md-12" label="Main Text" value={this.props.state.mainMessageText} onChange={this.handleMainMessageTextChange} />
+                                <label className="font-weight-bold"> Main Message Text </label>
+                                <textarea className="form-control" rows="5" title="input" value={this.props.state.mainMessageText} onChange={this.handleMainMessageTextChange} />
+                                <FormGroup formGroup="col-md-6" label="Main Message Text Color" value={this.props.state.mainMessageTextColor} onChange={this.handleMainMessageTextColorChange} />
+                                <FormGroup formGroup="col-md-6" label="Left Column Background Color" value={this.props.state.leftColumnBackGroundColor} onChange={this.handleLeftColumnBackGroundColorChange} />
+                                <FormGroup formGroup="col-md-6" label="Right Column Background Color" value={this.props.state.rightColumnBackGroundColor} onChange={this.handleRightColumnBackGroundColorChange} />
                                 <FormGroup formGroup="col-md-6" label="Button Text" value={this.props.state.actionButtonText} onChange={this.handleActionButtonTextChange} />
                                 <FormGroup formGroup="col-md-6" label="Button Color" value={this.props.state.actionButtonColor} onChange={this.handleActionButtonColorChange} />
                                 <FormGroup formGroup="col-md-6" label="Button Href" value={this.props.buttonHref} onChange={this.handleButtonHrefChange} />
