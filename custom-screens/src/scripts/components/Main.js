@@ -23,6 +23,7 @@ class Main extends Component{
                             <Link className="dropdown-item"  to="/everfi-custom-screens/option5">Option 5</Link>
                             <Link className="dropdown-item"  to="/everfi-custom-screens/option6">Option 6</Link>
                             <Link className="dropdown-item"  to="/everfi-custom-screens/option7">Option 7</Link>
+                            <Link className="dropdown-item"  to="/everfi-custom-screens/option8">Option 8</Link>
                         </div>
                     </div>
                     <Route path="/everfi-custom-screens/option1" component={Options.Option1} />
@@ -32,6 +33,7 @@ class Main extends Component{
                     <Route path="/everfi-custom-screens/option5" component={Options.Option5} />
                     <Route path="/everfi-custom-screens/option6" component={Options.Option6} />
                     <Route path="/everfi-custom-screens/option7" component={Options.Option7} />
+                    <Route path="/everfi-custom-screens/option8" component={Options.Option8} />
                 </main>
             </div>
             </Switch>

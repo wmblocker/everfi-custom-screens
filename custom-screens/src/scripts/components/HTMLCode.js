@@ -141,3 +141,28 @@ export class Option7 extends Component{
         );
     }
 }
+export class Option8 extends Component{
+    constructor(props){
+        super(props);
+    }
+    render(){
+        return(
+            <div className="option-8" style={{background: this.props.state.bodyBackGroundColor}}>
+                    <div className="cs-header" style={{
+                        borderBottomColor: this.props.state.headerBorderColor
+                        }}>
+                        <p className="cs-header-text" style={{color: this.props.state.headerTextColor}}>{this.props.state.headerText}</p>
+                    </div>
+                    <div className="col-wrap">
+                        <div className="col-100">
+                            <p className="cs-sub-heading" style={{color: this.props.state.mainMessageTextColor,
+                                fontWeight: this.props.state.isSubHeadingBold
+                                }}>{this.props.state.subHeadingText}</p>
+                            <p className="mainMessage" style={{color: this.props.state.mainMessageTextColor}}>{this.props.state.mainMessageText}</p>
+                            <a className="action-button" style={{backgroundColor: this.props.state.actionButtonColor}} href={this.props.state.buttonHref}  target="_blank">{this.props.state.actionButtonText}</a>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+}

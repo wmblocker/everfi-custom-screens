@@ -606,9 +606,128 @@ export class Option7 extends Component{
                         onButtonHrefChange = {this.handleButtonHrefChange}
                     />
                     </div>
-                    <div className="col-md-9" id="option6">
+                    <div className="col-md-9" id="option7">
                         <CSSStyles.Option7 />
                         <HTMLCode.Option7 
+                        state = {this.state}
+                        />
+                    </div>
+                </div>
+        );
+    }
+}
+
+export class Option8 extends Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            headerText: "Did You Know?",
+            headerTextColor: "#fff", 
+            subHeadingText: "We offer Associates tools to help manage insurance costs.", actionButtonText: "Learn More", 
+            actionButtonColor: "#208aee",
+            bodyBackGroundColor: "#5bbaed", 
+            headerBorderColor: "#51aaa3", 
+            barColor: "#5bbaed",
+            isSubHeadingBold: "normal",
+            mainMessageText: "Wherever you are in life, there is a plan to help you meet your needs.Visit us to learn more about the options available to you.",
+            mainMessageTextColor: "#fff",
+            buttonHref: "https://everfi.com"
+        };
+    }
+
+    handleHeaderTextChange = (updatedText) => {
+        this.setState({
+            headerText : updatedText
+        });
+    }
+
+    handleSubHeadingTextChange = (updatedText) => {
+        this.setState({
+            subHeadingText : updatedText
+        });
+    }
+
+    handleIsSubHeadingBoldChange = (updatedText) => {
+        this.setState({
+            isSubHeadingBold: updatedText
+        })
+    }
+
+    handleMainMessageTextChange = (updatedText) => {
+        this.setState({
+            mainMessageText : updatedText
+        });
+    }
+
+
+    handleActionButtonTextChange = (updatedText) => {
+        this.setState({
+            actionButtonText : updatedText
+        });
+    }
+
+    handleActionButtonColorChange = (updatedText) => {
+        this.setState({
+            actionButtonColor : updatedText
+        });
+    }
+
+
+    handleHeaderBorderColorChange = (updatedText) => {
+        this.setState({
+            headerBorderColor : updatedText
+        });
+    }
+
+    handleHeaderTextColorChange = (updatedText) => {
+        this.setState({
+            headerTextColor : updatedText
+        });
+    }
+    
+    handlebodyBackGroundColorChange = (updatedText) => {
+        this.setState({
+            headerTextColor : updatedText
+        });
+    }
+
+    handleButtonHrefChange = (updatedText) => {
+        this.setState({
+            buttonHref : updatedText
+        });
+    }
+
+    handleMainMessageTextColorChange = (updatedText) => {
+        this.setState({
+            mainMessageTextColor : updatedText
+        });
+    }
+
+    render(){
+        return(
+                <div className="row mt-3">
+                    <div className="col-md-3 aside-options-list">
+                        <CSOptions.Option8 
+                        state = {this.state}
+                        onHeaderTextChange = {this.handleHeaderTextChange}
+                        onBodyBackGroundColorChange={this.handlebodyBackGroundColorChange}
+                        onMainMessageTextChange = {this.handleMainMessageTextChange}
+                        onMainMessageTextColorChange = {this.handleMainMessageTextColorChange}
+                        onSubHeadingTextChange = {this.handleSubHeadingTextChange}
+                        onActionButtonTextChange = {this.handleActionButtonTextChange}
+                        onActionButtonColorChange = {this.handleActionButtonColorChange}
+                        onHeaderBorderColorChange = {this.handleHeaderBorderColorChange}
+                        onHeaderTextColorChange = {this.handleHeaderTextColorChange}
+                        
+                        onIsSubHeadingBoldChange = {this.handleIsSubHeadingBoldChange}
+                        onButtonHrefChange = {this.handleButtonHrefChange}
+                    />
+                    </div>
+                    <div className="col-md-9" id="option8
+                    
+                    ">
+                        <CSSStyles.Option8 />
+                        <HTMLCode.Option8 
                         state = {this.state}
                         />
                     </div>

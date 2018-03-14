@@ -277,3 +277,50 @@ export class Option7 extends Component{
         )
     }
 }
+
+export class Option8 extends Component{
+    render(){
+        const css = `
+        .modal-dialog {
+            height: 600px !important; }
+            .modal-dialog .modal-content .modal-body {
+              padding: 0px !important; }
+        .option-8 {
+            width: 100%;
+            height: 100%; }
+            .option-8 .cs-header {
+              height: 104px;
+              background-color: transparent;
+              border-bottom: 6px solid #ee5030; 
+              width:380px;}
+              .option-8 .cs-header .cs-header-text {
+                color: #000;
+                font-size: 30px !important;
+                padding: 25px 0px 0px 30px !important; }
+            .option-8 .cs-sub-heading{
+                font-size:24px !important;
+            }
+            .option-8 .col-wrap {
+              width: 100%;
+              height: 100%;
+              padding: 0px 0px; }
+            .option-8 .col-100 {
+              width: 100%;
+              padding: 40px 30px; }
+            .option-8 .action-button {
+              background-color: #25408f;
+              color: #fff;
+              padding: 10px 28px;
+              font-size: 16px;
+              border-radius: 7px;
+              margin-top: 20px;
+              margin-left: 15px;
+              display: inline-block; }
+        `
+        return(
+            <style>
+                {css}
+            </style>
+        )
+    }
+}
