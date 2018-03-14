@@ -19,6 +19,9 @@ body {
   padding: 0px;
   margin-bottom: 40px; }
 
+.option-image {
+  height: 100px; }
+
 .card {
   border: none;
   border-radius: 0px; }
@@ -135,6 +138,19 @@ h3 {
     margin-top: 20px;
     margin-left: 15px;
     display: inline-block; }
+
+.screen-dropdown {
+  width: 25.55%;
+  height: 50px;
+  margin-left: -15px;
+  margin-top: -15px;
+  margin-bottom: -15px;
+  border-radius: 0px;
+  text-align: left; }
+
+.dropdown-toggle::after {
+  margin-left: 65%;
+  vertical-align: 0.155em; }
 
 .col-md-9 {
   height: 538px !important; }

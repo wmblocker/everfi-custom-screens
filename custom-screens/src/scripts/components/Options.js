@@ -358,9 +358,28 @@ export class Option4 extends Component{
 }
 
 export class Option5 extends Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            headerText: "Did You Know?",
+            headerTextColor: "#fff", 
+            subHeadingText: "We offer Associates tools to help manage insurance costs.", actionButtonText: "Learn More", 
+            actionButtonColor: "#208aee",
+            headerBackGroundColor: "#5bbaed", 
+            headerBorderColor: "#51aaa3", 
+            barColor: "#5bbaed",
+            isSubHeadingBold: "normal",
+            mainMessageText: "Wherever you are in life, there is a plan to help you meet your needs.Visit us to learn more about the options available to you.",
+            buttonHref: "https://everfi.com"
+        };
+    }
+
+
     render(){
         return(
-            <h2 className="text-center" >Option 5</h2>
+                <div className="row mt-3">
+                
+                </div>
         );
     }
 }

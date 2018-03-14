@@ -306,8 +306,6 @@ export class Option3 extends Component {
     }
 }
 
-
-
 export class Option4 extends Component {
     constructor(props) {
         super(props);

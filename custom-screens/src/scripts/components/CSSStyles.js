@@ -291,7 +291,7 @@ export class Option8 extends Component{
             .option-8 .cs-header {
               height: 104px;
               background-color: transparent;
-              border-bottom: 6px solid #ee5030; 
+              border-bottom: 3px solid #ee5030; 
               width:380px;}
               .option-8 .cs-header .cs-header-text {
                 color: #000;
