@@ -1,7 +1,15 @@
 {
-  "main.css": "static/css/main.7ceb2def.css",
-  "main.css.map": "static/css/main.7ceb2def.css.map",
-  "main.js": "static/js/main.a175e1eb.js",
-  "main.js.map": "static/js/main.a175e1eb.js.map",
-  "static/media/everfi-white-transparent.png": "static/media/everfi-white-transparent.16a55c27.png"
+  "main.css": "static/css/main.dac188e0.css",
+  "main.css.map": "static/css/main.dac188e0.css.map",
+  "main.js": "static/js/main.bae734e9.js",
+  "main.js.map": "static/js/main.bae734e9.js.map",
+  "static/media/everfi-white-transparent.png": "static/media/everfi-white-transparent.16a55c27.png",
+  "static/media/option1.png": "static/media/option1.96626b01.png",
+  "static/media/option2.png": "static/media/option2.5fb6e828.png",
+  "static/media/option3.png": "static/media/option3.530af5a3.png",
+  "static/media/option4.png": "static/media/option4.93874c68.png",
+  "static/media/option5.png": "static/media/option5.ccfdbe40.png",
+  "static/media/option6.png": "static/media/option6.9f794023.png",
+  "static/media/option7.png": "static/media/option7.8693df13.png",
+  "static/media/option8.png": "static/media/option8.a2a1f147.png"
 }
