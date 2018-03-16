@@ -596,7 +596,7 @@ export class Option7 extends Component {
 
 
     handleButtonHrefChange1 = (e) => {
-        this.props.onButtonHrefChange(e.target.value);
+        this.props.onButtonHrefChange1(e.target.value);
     }
 
     handleButtonHrefChange2 = (e) => {

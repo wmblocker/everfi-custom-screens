@@ -546,7 +546,7 @@ export class Option7 extends Component{
         });
     }
 
-    handleActionButtonTextChange = (updatedText) => {
+    handleActionButtonTextChange1 = (updatedText) => {
         this.setState({
             actionButtonText1 : updatedText
         });
@@ -612,8 +612,8 @@ export class Option7 extends Component{
                         onLeftColumnBackGroundColorChange = {this.handleLeftColumnBackGroundColorChange}
                         onRightColumnBackGroundColorChange={this.handleRightColumnBackGroundColorChange}
                         onHeaderTextChange = {this.handleHeaderTextChange}
-                        onMainMessageTextChange = {this.handleMainMessageTextChange}
-                        onMainMessageTextColorChange = {this.handleMainMessageTextColorChange}
+                        onMainMessageTextChange1 = {this.handleMainMessageTextChange1}
+                        onMainMessageTextColorChange1 = {this.handleMainMessageTextColorChange1}
                         onMainMessageTextChange2 = {this.handleMainMessageTextChange2}
                         onMainMessageTextColorChange2 = {this.handleMainMessageTextColorChange2}
                         onActionButtonTextChange1 = {this.handleActionButtonTextChange1}
@@ -622,7 +622,8 @@ export class Option7 extends Component{
                         onActionButtonColorChange2 = {this.handleActionButtonColorChange2}
                         onHeaderTextColorChange = {this.handleHeaderTextColorChange}
                         onBarColorChange = {this.handleBarColorChange}
-                        onButtonHrefChange = {this.handleButtonHrefChange}
+                        onButtonHrefChange1 = {this.handleButtonHrefChange1}
+                        onButtonHrefChange2 = {this.handleButtonHrefChange2}
                     />
                     </div>
                     <div className="col-md-9" id="option7">
