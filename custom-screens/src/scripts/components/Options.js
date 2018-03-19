@@ -357,32 +357,6 @@ export class Option4 extends Component{
     }
 }
 
-export class Option5 extends Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            headerText: "Did You Know?",
-            headerTextColor: "#fff", 
-            subHeadingText: "We offer Associates tools to help manage insurance costs.", actionButtonText: "Learn More", 
-            actionButtonColor: "#208aee",
-            headerBackGroundColor: "#5bbaed", 
-            headerBorderColor: "#51aaa3", 
-            barColor: "#5bbaed",
-            isSubHeadingBold: "normal",
-            mainMessageText: "Wherever you are in life, there is a plan to help you meet your needs.Visit us to learn more about the options available to you.",
-            buttonHref: "https://everfi.com"
-        };
-    }
-
-
-    render(){
-        return(
-                <div className="row mt-3">
-                
-                </div>
-        );
-    }
-}
 
 export class Option6 extends Component{
     constructor(props){
@@ -743,9 +717,7 @@ export class Option8 extends Component{
                         onButtonHrefChange = {this.handleButtonHrefChange}
                     />
                     </div>
-                    <div className="col-md-9" id="option8
-                    
-                    ">
+                    <div className="col-md-9" id="option8">
                         <CSSStyles.Option8 />
                         <HTMLCode.Option8 
                         state = {this.state}

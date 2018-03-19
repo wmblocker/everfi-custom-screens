@@ -83,8 +83,13 @@ export class Option1 extends Component {
 
 
     sendCode(){
-        var html = document.getElementById("option1");
-        console.log(html.innerHTML);
+        var html = document.getElementById("option1").innerHTML;
+        var copyElem = document.createElement("input");
+        copyElem.setAttribute("value", html);
+        document.body.appendChild(copyElem);
+        copyElem.select();
+        document.execCommand("copy");
+        document.body.removeChild(copyElem);
     }
 
     render() {
@@ -158,14 +163,13 @@ export class Option1 extends Component {
                 </div>
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#sendCollapse-1">Send this design to your CSM</button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#sendCollapse-1">Review</button></h3>
                     </div>
                     <div id="sendCollapse-1" className="collapse" data-parent="customizationOptions-1">
                         <div className="card-body">
                             <div className="form-row">
-                                <h4 className="w-100"></h4>
                                 <div className="form-group col-md-6">
-                                    <button className="btn btn-primary" onClick={this.sendCode}>Send this design</button>
+                                    <button className="btn btn-primary" onClick={this.sendCode}>Copy Code</button>
                                 </div>
                             </div>
                         </div>
@@ -227,8 +231,13 @@ export class Option3 extends Component {
     }
 
     sendCode(){
-        var html = document.getElementById("option3");
-        console.log(html.innerHTML);
+        var html = document.getElementById("option3").innerHTML;
+        var copyElem = document.createElement("input");
+        copyElem.setAttribute("value", html);
+        document.body.appendChild(copyElem);
+        copyElem.select();
+        document.execCommand("copy");
+        document.body.removeChild(copyElem);
     }
 
     render() {
@@ -288,14 +297,13 @@ export class Option3 extends Component {
                 </div>
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#sendCollapse-3">Send this design to your CSM</button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#sendCollapse-3">Review</button></h3>
                     </div>
                     <div id="sendCollapse-3" className="collapse" data-parent="customizationOptions-3">
                         <div className="card-body">
                             <div className="form-row">
-                                <h4 className="w-100"></h4>
                                 <div className="form-group col-md-6">
-                                    <button className="btn btn-primary" onClick={this.sendCode}>Send this design</button>
+                                    <button className="btn btn-primary" onClick={this.sendCode}>Copy Code</button>
                                 </div>
                             </div>
                         </div>
@@ -361,8 +369,13 @@ export class Option4 extends Component {
     }
 
     sendCode(){
-        var html = document.getElementById("option4");
-        console.log(html.innerHTML);
+        var html = document.getElementById("option4").innerHTML;
+        var copyElem = document.createElement("input");
+        copyElem.setAttribute("value", html);
+        document.body.appendChild(copyElem);
+        copyElem.select();
+        document.execCommand("copy");
+        document.body.removeChild(copyElem);
     }
 
     render() {
@@ -423,14 +436,13 @@ export class Option4 extends Component {
                 </div>
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#sendCollapse-4">Send this design to your CSM</button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#sendCollapse-7">Review</button></h3>
                     </div>
-                    <div id="sendCollapse-4" className="collapse" data-parent="customizationOptions-4">
+                    <div id="sendCollapse-7" className="collapse" data-parent="customizationOptions-7">
                         <div className="card-body">
                             <div className="form-row">
-                                <h4 className="w-100"></h4>
                                 <div className="form-group col-md-6">
-                                    <button className="btn btn-primary" onClick={this.sendCode}>Send this design</button>
+                                    <button className="btn btn-primary" onClick={this.sendCode}>Copy Code</button>
                                 </div>
                             </div>
                         </div>
@@ -488,8 +500,13 @@ export class Option6 extends Component {
 
 
     sendCode(){
-        var html = document.getElementById("option6");
-        console.log(html.innerHTML);
+        var html = document.getElementById("option6").innerHTML;
+        var copyElem = document.createElement("input");
+        copyElem.setAttribute("value", html);
+        document.body.appendChild(copyElem);
+        copyElem.select();
+        document.execCommand("copy");
+        document.body.removeChild(copyElem);
     }
 
     render() {
@@ -531,14 +548,13 @@ export class Option6 extends Component {
                 </div>
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#sendCollapse-4">Send this design to your CSM</button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#sendCollapse-7">Review</button></h3>
                     </div>
-                    <div id="sendCollapse-4" className="collapse" data-parent="customizationOptions-4">
+                    <div id="sendCollapse-7" className="collapse" data-parent="customizationOptions-7">
                         <div className="card-body">
                             <div className="form-row">
-                                <h4 className="w-100"></h4>
                                 <div className="form-group col-md-6">
-                                    <button className="btn btn-primary" onClick={this.sendCode}>Send this design</button>
+                                    <button className="btn btn-primary" onClick={this.sendCode}>Copy Code</button>
                                 </div>
                             </div>
                         </div>
@@ -613,8 +629,13 @@ export class Option7 extends Component {
 
 
     sendCode(){
-        var html = document.getElementById("option7");
-        console.log(html.innerHTML);
+        var html = document.getElementById("option7").innerHTML;
+        var copyElem = document.createElement("input");
+        copyElem.setAttribute("value", html);
+        document.body.appendChild(copyElem);
+        copyElem.select();
+        document.execCommand("copy");
+        document.body.removeChild(copyElem);
     }
 
     render() {
@@ -663,14 +684,13 @@ export class Option7 extends Component {
                 </div>
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#sendCollapse-4">Send this design to your CSM</button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#sendCollapse-7">Review</button></h3>
                     </div>
-                    <div id="sendCollapse-4" className="collapse" data-parent="customizationOptions-4">
+                    <div id="sendCollapse-7" className="collapse" data-parent="customizationOptions-7">
                         <div className="card-body">
                             <div className="form-row">
-                                <h4 className="w-100"></h4>
                                 <div className="form-group col-md-6">
-                                    <button className="btn btn-primary" onClick={this.sendCode}>Send this design</button>
+                                    <button className="btn btn-primary" onClick={this.sendCode}>Copy Code</button>
                                 </div>
                             </div>
                         </div>
@@ -741,9 +761,15 @@ export class Option8 extends Component {
     }
 
     sendCode(){
-        var html = document.getElementById("option8");
-        console.log(html.innerHTML);
+        var html = document.getElementById("option8").innerHTML;
+        var copyElem = document.createElement("input");
+        copyElem.setAttribute("value", html);
+        document.body.appendChild(copyElem);
+        copyElem.select();
+        document.execCommand("copy");
+        document.body.removeChild(copyElem);
     }
+
     render() {
         return (       
             <div id="customizationOptions-8">
@@ -776,8 +802,10 @@ export class Option8 extends Component {
                                         <input className="form-check-input" type="checkbox" value={this.props.state.isSubHeadingBold} onChange={this.handleIsSubHeadingBoldChange} />
                                         <label className="form-check-label" htmlFor="boldedSubHeading">Bold</label>
                                     </div>
+                                    
                                     <textarea className="form-control" rows="5" title="input" value={this.props.state.subHeadingText} onChange={this.handleSubHeadingTextChange} />
                                 </div>
+                                <label className="font-weight-bold"> Main Message Text </label>
                                 <textarea className="form-control" rows="5" title="input"value={this.props.state.mainMessageText} onChange={this.handleMainMessageTextChange} />
                                 <FormGroup formGroup="col-md-6" label="Main Message Text Color" value={this.props.state.mainMessageTextColor} onChange={this.handleMainMessageTextColorChange} />
                                 <FormGroup formGroup="col-md-6" label="Button Text" value={this.props.state.actionButtonText} onChange={this.handleActionButtonTextChange} />
@@ -789,14 +817,13 @@ export class Option8 extends Component {
                 </div>
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#sendCollapse-8">Send this design to your CSM</button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#sendCollapse-8">Review</button></h3>
                     </div>
                     <div id="sendCollapse-8" className="collapse" data-parent="customizationOptions-8">
                         <div className="card-body">
                             <div className="form-row">
-                                <h4 className="w-100"></h4>
                                 <div className="form-group col-md-6">
-                                    <button className="btn btn-primary" onClick={this.sendCode}>Send this design</button>
+                                    <button className="btn btn-primary" onClick={this.sendCode}>Copy Code</button>
                                 </div>
                             </div>
                         </div>

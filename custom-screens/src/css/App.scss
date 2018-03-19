@@ -192,9 +192,14 @@ h3{
     height: 50px;
     margin-left: -15px;
     margin-top: -15px;
-    margin-bottom: -15px;
+    margin-bottom: -17px;
     border-radius: 0px;
     text-align: left;
+    border-bottom:1px solid rgba(0, 0, 0, 0.125);
+    background-color: #fff !important;
+    color:#4D4D4D;
+    font-weight:600;
+    
 }
 
 .dropdown-toggle::after {
