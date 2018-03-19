@@ -152,6 +152,7 @@ export class Option1 extends Component {
                                         <label className="form-check-label" htmlFor="boldedSubHeading">Bold</label>
                                     </div>
                                     <textarea className="form-control" rows="5" title="input" value={this.props.state.subHeadingText} onChange={this.handleSubHeadingTextChange} />
+                                    <textarea className="form-control" rows="5" title="input"value={this.props.state.mainMessageText} onChange={this.handleMainMessageTextChange} />
                                 </div>
                             </div>
                         </div>
@@ -296,6 +297,7 @@ export class Option3 extends Component {
                                         <label className="form-check-label" htmlFor="boldedSubHeading">Bold</label>
                                     </div>
                                     <textarea className="form-control" rows="5" title="input" value={this.props.state.subHeadingText} onChange={this.handleSubHeadingTextChange} />
+                                    <textarea className="form-control" rows="5" title="input"value={this.props.state.mainMessageText} onChange={this.handleMainMessageTextChange} />
                                 </div>
                             </div>
                         </div>
