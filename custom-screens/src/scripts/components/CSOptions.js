@@ -153,7 +153,17 @@ export class Option1 extends Component {
                                     </div>
                                     <textarea className="form-control" rows="5" title="input" value={this.props.state.subHeadingText} onChange={this.handleSubHeadingTextChange} />
                                 </div>
-                                <FormGroup formGroup="col-md-12" label="Main Text" value={this.props.state.mainMessageText} onChange={this.handleMainMessageTextChange} />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="card">
+                    <div className="card-header">
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#buttonCollapse-8">Button</button></h3>
+                    </div>
+                    <div id="buttonCollapse-8" className="collapse" data-parent="buttonOptions-8">
+                        <div className="card-body">
+                            <div className="form-row">
                                 <FormGroup formGroup="col-md-6" label="Button Text" value={this.props.state.actionButtonText} onChange={this.handleActionButtonTextChange} />
                                 <FormGroup formGroup="col-md-6" label="Button Color" value={this.props.state.actionButtonColor} onChange={this.handleActionButtonColorChange} />
                                 <FormGroup formGroup="col-md-6" label="Button Href" value={this.props.buttonHref} onChange={this.handleButtonHrefChange} />
@@ -287,7 +297,17 @@ export class Option3 extends Component {
                                     </div>
                                     <textarea className="form-control" rows="5" title="input" value={this.props.state.subHeadingText} onChange={this.handleSubHeadingTextChange} />
                                 </div>
-                                <FormGroup formGroup="col-md-12" label="Main Text" value={this.props.state.mainMessageText} onChange={this.handleMainMessageTextChange} />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="card">
+                    <div className="card-header">
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#buttonCollapse-8">Button</button></h3>
+                    </div>
+                    <div id="buttonCollapse-8" className="collapse" data-parent="buttonOptions-8">
+                        <div className="card-body">
+                            <div className="form-row">
                                 <FormGroup formGroup="col-md-6" label="Button Text" value={this.props.state.actionButtonText} onChange={this.handleActionButtonTextChange} />
                                 <FormGroup formGroup="col-md-6" label="Button Color" value={this.props.state.actionButtonColor} onChange={this.handleActionButtonColorChange} />
                                 <FormGroup formGroup="col-md-6" label="Button Href" value={this.props.buttonHref} onChange={this.handleButtonHrefChange} />
@@ -427,6 +447,17 @@ export class Option4 extends Component {
                                     <textarea className="form-control" rows="5" title="input" value={this.props.state.subHeadingText} onChange={this.handleSubHeadingTextChange} />
                                 </div>
                                 <textarea className="form-control" rows="5" title="input"value={this.props.state.mainMessageText} onChange={this.handleMainMessageTextChange} />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="card">
+                    <div className="card-header">
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#buttonCollapse-8">Button</button></h3>
+                    </div>
+                    <div id="buttonCollapse-8" className="collapse" data-parent="buttonOptions-8">
+                        <div className="card-body">
+                            <div className="form-row">
                                 <FormGroup formGroup="col-md-6" label="Button Text" value={this.props.state.actionButtonText} onChange={this.handleActionButtonTextChange} />
                                 <FormGroup formGroup="col-md-6" label="Button Color" value={this.props.state.actionButtonColor} onChange={this.handleActionButtonColorChange} />
                                 <FormGroup formGroup="col-md-6" label="Button Href" value={this.props.buttonHref} onChange={this.handleButtonHrefChange} />
@@ -511,12 +542,12 @@ export class Option6 extends Component {
 
     render() {
         return (       
-            <div id="customizationOptions-4">
+            <div id="customizationOptions-6">
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#headerOptionsCollapse-4">Header Customization Options</button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#headerOptionsCollapse-6">Header Customization Options</button></h3>
                     </div>
-                    <div id="headerOptionsCollapse-4" className="collapse" data-parent="customizationOptions-4">
+                    <div id="headerOptionsCollapse-6" className="collapse" data-parent="customizationOptions-6">
                         <div className="card-body">
                             <div className="form-row">
                                 <h4 className="w-100">Header</h4>
@@ -528,9 +559,9 @@ export class Option6 extends Component {
                 </div>
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#mainOptionsCollapse-4">Main Customization Options</button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#mainOptionsCollapse-6">Main Customization Options</button></h3>
                     </div>
-                    <div id="mainOptionsCollapse-4" className="collapse" data-parent="customizationOptions-4">
+                    <div id="mainOptionsCollapse-6" className="collapse" data-parent="customizationOptions-6">
                         <div className="card-body">
                             <div className="form-row">
                                 <h4 className="w-100">Main Content</h4>
@@ -548,9 +579,9 @@ export class Option6 extends Component {
                 </div>
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#sendCollapse-7">Review</button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#sendCollapse-6">Review</button></h3>
                     </div>
-                    <div id="sendCollapse-7" className="collapse" data-parent="customizationOptions-7">
+                    <div id="sendCollapse-6" className="collapse" data-parent="customizationOptions-6">
                         <div className="card-body">
                             <div className="form-row">
                                 <div className="form-group col-md-6">
@@ -801,13 +832,23 @@ export class Option8 extends Component {
                                     <div className="form-check form-check-inline ml-4">
                                         <input className="form-check-input" type="checkbox" value={this.props.state.isSubHeadingBold} onChange={this.handleIsSubHeadingBoldChange} />
                                         <label className="form-check-label" htmlFor="boldedSubHeading">Bold</label>
-                                    </div>
-                                    
+                                    </div>                             
                                     <textarea className="form-control" rows="5" title="input" value={this.props.state.subHeadingText} onChange={this.handleSubHeadingTextChange} />
                                 </div>
                                 <label className="font-weight-bold"> Main Message Text </label>
                                 <textarea className="form-control" rows="5" title="input"value={this.props.state.mainMessageText} onChange={this.handleMainMessageTextChange} />
                                 <FormGroup formGroup="col-md-6" label="Main Message Text Color" value={this.props.state.mainMessageTextColor} onChange={this.handleMainMessageTextColorChange} />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="card">
+                    <div className="card-header">
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#buttonCollapse-8">Button</button></h3>
+                    </div>
+                    <div id="buttonCollapse-8" className="collapse" data-parent="buttonOptions-8">
+                        <div className="card-body">
+                            <div className="form-row">
                                 <FormGroup formGroup="col-md-6" label="Button Text" value={this.props.state.actionButtonText} onChange={this.handleActionButtonTextChange} />
                                 <FormGroup formGroup="col-md-6" label="Button Color" value={this.props.state.actionButtonColor} onChange={this.handleActionButtonColorChange} />
                                 <FormGroup formGroup="col-md-6" label="Button Href" value={this.props.buttonHref} onChange={this.handleButtonHrefChange} />
