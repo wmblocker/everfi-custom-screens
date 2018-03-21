@@ -97,28 +97,15 @@ export class Option1 extends Component {
             <div id="customizationOptions-1">
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#headerOptionsCollapse-1">Header Customization Options</button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#headerOptionsCollapse-1">Header <i class="fa fa-chevron-down"></i></button></h3>
                     </div>
                     <div id="headerOptionsCollapse-1" className="collapse" data-parent="customizationOptions-1">
                         <div className="card-body">
                             <div className="form-row">
-                                <h4 className="w-100">Header</h4>
-                                <FormGroup formGroup="col-md-12" label="Text" value={this.props.state.headerText} onChange={this.handleHeaderTextChange} />
+                                <FormGroup formGroup="col-md-12" label="Header Text" value={this.props.state.headerText} onChange={this.handleHeaderTextChange} />
                                 <FormGroup formGroup="col-md-6" label="Text Color" value={this.props.state.headerTextColor} onChange={this.handleHeaderTextColorChange} />
                                 <FormGroup formGroup="col-md-6" label="Background Color" value={this.props.state.headerBackGroundColor} onChange={this.handleHeaderBackGroundColorChange} />
                                 <FormGroup formGroup="col-md-6" label="Border Color" value={this.props.state.headerBorderColor} onChange={this.handleHeaderBorderColorChange} />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="card">
-                    <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#linesOptionsCollapse-1">Lines Customization Options</button></h3>
-                    </div>
-                    <div id="linesOptionsCollapse-1" className="collapse" data-parent="customizationOptions-1">
-                        <div className="card-body">
-                            <div className="form-row">
-                                <h4 className="w-100">Lines</h4>
                                 <FormGroup formGroup="col-md-6" label="Lines Color" value={this.props.state.linesColor} onChange={this.handleLinesColorChange} />
                             </div>
                         </div>
@@ -126,61 +113,53 @@ export class Option1 extends Component {
                 </div>
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#barOptionsCollapse-1">Bar Customization Options</button></h3>
-                    </div>
-                    <div id="barOptionsCollapse-1" className="collapse" data-parent="customizationOptions-1">
-                        <div className="card-body">
-                            <div className="form-row">
-                                <h4 className="w-100">Bar</h4>
-                                <FormGroup formGroup="col-md-6" label="Bar Color" value={this.props.state.barColor} onChange={this.handleBarColorChange} />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="card">
-                    <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#mainOptionsCollapse-1">Main Customization Options</button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#mainOptionsCollapse-1">Main <i class="fa fa-chevron-down"></i></button></h3>
                     </div>
                     <div id="mainOptionsCollapse-1" className="collapse" data-parent="customizationOptions-1">
                         <div className="card-body">
                             <div className="form-row">
-                                <h4 className="w-100">Main Content</h4>
                                 <div className="form-group col-md-12">
                                     <label className="font-weight-bold"> Sub Heading Text </label>
                                     <div className="form-check form-check-inline ml-4">
                                         <input className="form-check-input" type="checkbox" value={this.props.state.isSubHeadingBold} onChange={this.handleIsSubHeadingBoldChange} />
                                         <label className="form-check-label" htmlFor="boldedSubHeading">Bold</label>
                                     </div>
-                                    <textarea className="form-control" rows="5" title="input" value={this.props.state.subHeadingText} onChange={this.handleSubHeadingTextChange} />
+                                    <textarea className="form-control" rows="5" title="input" value={this.props.state.subHeadingText} onChange={this.handleSubHeadingTextChange} /><br />
+                                    <label className="font-weight-bold"> Body Text </label>
                                     <textarea className="form-control" rows="5" title="input"value={this.props.state.mainMessageText} onChange={this.handleMainMessageTextChange} />
+                                    
                                 </div>
+                            </div>
+                            <div className="form-row">
+                                    <FormGroup formGroup="col-md-6" label="Bar Color" value={this.props.state.barColor} onChange={this.handleBarColorChange} />
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#buttonCollapse-8">Button</button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#buttonCollapse-8">Button <i class="fa fa-chevron-down"></i></button></h3>
                     </div>
                     <div id="buttonCollapse-8" className="collapse" data-parent="buttonOptions-8">
                         <div className="card-body">
                             <div className="form-row">
                                 <FormGroup formGroup="col-md-6" label="Button Text" value={this.props.state.actionButtonText} onChange={this.handleActionButtonTextChange} />
                                 <FormGroup formGroup="col-md-6" label="Button Color" value={this.props.state.actionButtonColor} onChange={this.handleActionButtonColorChange} />
-                                <FormGroup formGroup="col-md-6" label="Button Href" value={this.props.buttonHref} onChange={this.handleButtonHrefChange} />
+                                <FormGroup formGroup="col-md-6" label="Button Href" value={this.props.buttonHref} onChange={this.handleButtonHrefChange} /> <i class="fa fa-question-circle"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#sendCollapse-1">Review</button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#sendCollapse-1">Review <i class="fa fa-chevron-down"></i></button></h3>
                     </div>
-                    <div id="sendCollapse-1" className="collapse" data-parent="customizationOptions-1">
+                    <div id="sendCollapse-1" className="collapse show" data-parent="customizationOptions-1">
                         <div className="card-body">
                             <div className="form-row">
-                                <div className="form-group col-md-6">
-                                    <button className="btn btn-primary" onClick={this.sendCode}>Copy Code</button>
+                                <div className="form-group col-md-12">
+                                    <p>Copy code to your clipboard</p>
+                                    <button className="btn btn-primary btn-send" onClick={this.sendCode}>Copy Code</button>
                                 </div>
                             </div>
                         </div>
@@ -256,7 +235,7 @@ export class Option3 extends Component {
             <div id="customizationOptions-3">
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#headerOptionsCollapse-3">Header Customization Options</button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#headerOptionsCollapse-3">Header </button></h3>
                     </div>
                     <div id="headerOptionsCollapse-3" className="collapse" data-parent="customizationOptions-3">
                         <div className="card-body">
@@ -271,7 +250,7 @@ export class Option3 extends Component {
                 </div>
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#linesOptionsCollapse-3">Lines Customization Options</button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#linesOptionsCollapse-3">Lines </button></h3>
                     </div>
                     <div id="linesOptionsCollapse-3" className="collapse" data-parent="customizationOptions-3">
                         <div className="card-body">
@@ -284,7 +263,7 @@ export class Option3 extends Component {
                 </div>
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#mainOptionsCollapse-3">Main Customization Options</button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#mainOptionsCollapse-3">Main </button></h3>
                     </div>
                     <div id="mainOptionsCollapse-3" className="collapse" data-parent="customizationOptions-3">
                         <div className="card-body">
@@ -325,7 +304,7 @@ export class Option3 extends Component {
                         <div className="card-body">
                             <div className="form-row">
                                 <div className="form-group col-md-6">
-                                    <button className="btn btn-primary" onClick={this.sendCode}>Copy Code</button>
+                                    <button className="btn btn-primary btn-send" onClick={this.sendCode}>Copy Code</button>
                                 </div>
                             </div>
                         </div>
@@ -405,7 +384,7 @@ export class Option4 extends Component {
             <div id="customizationOptions-4">
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#headerOptionsCollapse-4">Header Customization Options</button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#headerOptionsCollapse-4">Header </button></h3>
                     </div>
                     <div id="headerOptionsCollapse-4" className="collapse" data-parent="customizationOptions-4">
                         <div className="card-body">
@@ -421,7 +400,7 @@ export class Option4 extends Component {
                 </div>
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#barOptionsCollapse-4">Bar Customization Options</button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#barOptionsCollapse-4">Bar </button></h3>
                     </div>
                     <div id="barOptionsCollapse-4" className="collapse" data-parent="customizationOptions-4">
                         <div className="card-body">
@@ -434,7 +413,7 @@ export class Option4 extends Component {
                 </div>
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#mainOptionsCollapse-4">Main Customization Options</button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#mainOptionsCollapse-4">Main </button></h3>
                     </div>
                     <div id="mainOptionsCollapse-4" className="collapse" data-parent="customizationOptions-4">
                         <div className="card-body">
@@ -475,7 +454,7 @@ export class Option4 extends Component {
                         <div className="card-body">
                             <div className="form-row">
                                 <div className="form-group col-md-6">
-                                    <button className="btn btn-primary" onClick={this.sendCode}>Copy Code</button>
+                                    <button className="btn btn-primary btn-send" onClick={this.sendCode}>Copy Code</button>
                                 </div>
                             </div>
                         </div>
@@ -547,7 +526,7 @@ export class Option6 extends Component {
             <div id="customizationOptions-6">
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#headerOptionsCollapse-6">Header Customization Options</button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#headerOptionsCollapse-6">Header </button></h3>
                     </div>
                     <div id="headerOptionsCollapse-6" className="collapse" data-parent="customizationOptions-6">
                         <div className="card-body">
@@ -561,7 +540,7 @@ export class Option6 extends Component {
                 </div>
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#mainOptionsCollapse-6">Main Customization Options</button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#mainOptionsCollapse-6">Main </button></h3>
                     </div>
                     <div id="mainOptionsCollapse-6" className="collapse" data-parent="customizationOptions-6">
                         <div className="card-body">
@@ -587,7 +566,7 @@ export class Option6 extends Component {
                         <div className="card-body">
                             <div className="form-row">
                                 <div className="form-group col-md-6">
-                                    <button className="btn btn-primary" onClick={this.sendCode}>Copy Code</button>
+                                    <button className="btn btn-primary btn-send" onClick={this.sendCode}>Copy Code</button>
                                 </div>
                             </div>
                         </div>
@@ -676,7 +655,7 @@ export class Option7 extends Component {
             <div id="customizationOptions-7">
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#headerOptionsCollapse-7">Header Customization Options</button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#headerOptionsCollapse-7">Header </button></h3>
                     </div>
                     <div id="headerOptionsCollapse-7" className="collapse" data-parent="customizationOptions-7">
                         <div className="card-body">
@@ -690,7 +669,7 @@ export class Option7 extends Component {
                 </div>
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#mainOptionsCollapse-7">Main Customization Options</button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#mainOptionsCollapse-7">Main </button></h3>
                     </div>
                     <div id="mainOptionsCollapse-7" className="collapse" data-parent="customizationOptions-7">
                         <div className="card-body">
@@ -723,7 +702,7 @@ export class Option7 extends Component {
                         <div className="card-body">
                             <div className="form-row">
                                 <div className="form-group col-md-6">
-                                    <button className="btn btn-primary" onClick={this.sendCode}>Copy Code</button>
+                                    <button className="btn btn-primary btn-send" onClick={this.sendCode}>Copy Code</button>
                                 </div>
                             </div>
                         </div>
@@ -808,7 +787,7 @@ export class Option8 extends Component {
             <div id="customizationOptions-8">
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#headerOptionsCollapse-8">Header Customization Options</button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#headerOptionsCollapse-8">Header </button></h3>
                     </div>
                     <div id="headerOptionsCollapse-8" className="collapse" data-parent="customizationOptions-8">
                         <div className="card-body">
@@ -823,7 +802,7 @@ export class Option8 extends Component {
                 </div>
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#mainOptionsCollapse-8">Main Customization Options</button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#mainOptionsCollapse-8">Main </button></h3>
                     </div>
                     <div id="mainOptionsCollapse-8" className="collapse" data-parent="customizationOptions-8">
                         <div className="card-body">
@@ -866,7 +845,7 @@ export class Option8 extends Component {
                         <div className="card-body">
                             <div className="form-row">
                                 <div className="form-group col-md-6">
-                                    <button className="btn btn-primary" onClick={this.sendCode}>Copy Code</button>
+                                    <button className="btn btn-primary btn-send" onClick={this.sendCode}>Copy Code</button>
                                 </div>
                             </div>
                         </div>
