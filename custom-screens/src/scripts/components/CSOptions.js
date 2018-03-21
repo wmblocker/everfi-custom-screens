@@ -95,6 +95,17 @@ export class Option1 extends Component {
     render() {
         return (       
             <div id="customizationOptions-1">
+            <div className="card">
+                    <div className="card-header">
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#globalOptionsCollapse-1">Global Customization Options</button></h3>
+                    </div>
+                    <div id="globalOptionsCollapse-1" className="collapse" data-parent="customizationOptions-1">
+                        <div className="card-body">
+                            <div className="form-row">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className="card">
                     <div className="card-header">
                         <h3><button className="btn btn-link" data-toggle="collapse" data-target="#headerOptionsCollapse-1">Header Customization Options</button></h3>
@@ -102,7 +113,6 @@ export class Option1 extends Component {
                     <div id="headerOptionsCollapse-1" className="collapse" data-parent="customizationOptions-1">
                         <div className="card-body">
                             <div className="form-row">
-                                <h4 className="w-100">Header</h4>
                                 <FormGroup formGroup="col-md-12" label="Text" value={this.props.state.headerText} onChange={this.handleHeaderTextChange} />
                                 <FormGroup formGroup="col-md-6" label="Text Color" value={this.props.state.headerTextColor} onChange={this.handleHeaderTextColorChange} />
                                 <FormGroup formGroup="col-md-6" label="Background Color" value={this.props.state.headerBackGroundColor} onChange={this.handleHeaderBackGroundColorChange} />
@@ -118,7 +128,6 @@ export class Option1 extends Component {
                     <div id="linesOptionsCollapse-1" className="collapse" data-parent="customizationOptions-1">
                         <div className="card-body">
                             <div className="form-row">
-                                <h4 className="w-100">Lines</h4>
                                 <FormGroup formGroup="col-md-6" label="Lines Color" value={this.props.state.linesColor} onChange={this.handleLinesColorChange} />
                             </div>
                         </div>
@@ -131,7 +140,6 @@ export class Option1 extends Component {
                     <div id="barOptionsCollapse-1" className="collapse" data-parent="customizationOptions-1">
                         <div className="card-body">
                             <div className="form-row">
-                                <h4 className="w-100">Bar</h4>
                                 <FormGroup formGroup="col-md-6" label="Bar Color" value={this.props.state.barColor} onChange={this.handleBarColorChange} />
                             </div>
                         </div>
@@ -144,7 +152,6 @@ export class Option1 extends Component {
                     <div id="mainOptionsCollapse-1" className="collapse" data-parent="customizationOptions-1">
                         <div className="card-body">
                             <div className="form-row">
-                                <h4 className="w-100">Main Content</h4>
                                 <div className="form-group col-md-12">
                                     <label className="font-weight-bold"> Sub Heading Text </label>
                                     <div className="form-check form-check-inline ml-4">
