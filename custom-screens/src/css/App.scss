@@ -23,7 +23,7 @@ body {
   }
 
 .aside-options-list{
-	background-color: #D8D8D8;
+	background-color: #f3f3f3;
     padding: 0px;
     margin-bottom:40px;
 }
@@ -31,6 +31,14 @@ body {
 .option-image{
     height:100px;
 }
+
+.fa-chevron-down{
+  position: absolute;
+  color: #bfbfbf;
+  right: 18px;
+  top: 18px;
+  font-size: 16px;
+  }
 
 .card{
     border: none;
@@ -41,6 +49,16 @@ body {
     margin-bottom: 0;
     background-color: rgba(0,0,0,.03);
     border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.card-body {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.card-body .fa-question-circle{
+  position: relative;
+  right: 58px;
+  top: 4px;
 }
 
 .collapse {
@@ -68,7 +86,6 @@ body {
 
 .btn-link:hover{
     text-decoration: none;
-    background-color: #f3f3f3;
     color: #4D4D4D;
 }
 .btn-link:focus{
@@ -200,6 +217,40 @@ h3{
     color:#4D4D4D;
     font-weight:600;
     
+}
+
+.screen-dropdown{
+    line-height: 40px;
+    width: 25.65% !important;
+}
+.dropdown-menu{
+    padding: .5rem .8rem;
+    margin: .125rem 0 0;
+    background-color: #f3f3f3;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0px;
+    box-shadow: 11px 11px 28px -6px #8a8a8a;
+    left: -5px !important;
+    top: -5px !important;
+}
+.dropdown-item{
+    width: 183px;
+    padding: 0px;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    margin: 5px 0px;
+    box-shadow: 1px 1px 5px 0px #b1b1b1;
+}
+.option-image{
+    width: 100%;
+    height: 110px;
+    transition: all;
+}
+.option-image:hover{
+    opacity: .7;
 }
 
 .dropdown-toggle::after {
