@@ -97,7 +97,7 @@ export class Option1 extends Component {
             <div id="customizationOptions-1">
             <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#globalOptionsCollapse-1">Global Customization Options</button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#globalOptionsCollapse-1">Global <i class="fa fa-chevron-down" /></button></h3>
                     </div>
                     <div id="globalOptionsCollapse-1" className="collapse" data-parent="customizationOptions-1">
                         <div className="card-body">
@@ -113,52 +113,21 @@ export class Option1 extends Component {
                     <div id="headerOptionsCollapse-1" className="collapse" data-parent="customizationOptions-1">
                         <div className="card-body">
                             <div className="form-row">
-<<<<<<< HEAD
+
                                 <FormGroup formGroup="col-md-12" label="Text" value={this.props.state.headerText} onChange={this.handleHeaderTextChange} />
                                 <FormGroup formGroup="col-md-6" label="Text Color" value={this.props.state.headerTextColor} onChange={this.handleHeaderTextColorChange} />
                                 <FormGroup formGroup="col-md-6" label="Background Color" value={this.props.state.headerBackGroundColor} onChange={this.handleHeaderBackGroundColorChange} />
                                 <FormGroup formGroup="col-md-6" label="Border Color" value={this.props.state.headerBorderColor} onChange={this.handleHeaderBorderColorChange} />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="card">
-                    <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#linesOptionsCollapse-1">Lines Customization Options</button></h3>
-                    </div>
-                    <div id="linesOptionsCollapse-1" className="collapse" data-parent="customizationOptions-1">
-                        <div className="card-body">
-                            <div className="form-row">
-=======
-                                <FormGroup formGroup="col-md-12" label="Header Text" value={this.props.state.headerText} onChange={this.handleHeaderTextChange} />
-                                <FormGroup formGroup="col-md-6" label="Text Color" value={this.props.state.headerTextColor} onChange={this.handleHeaderTextColorChange} />
-                                <FormGroup formGroup="col-md-6" label="Background Color" value={this.props.state.headerBackGroundColor} onChange={this.handleHeaderBackGroundColorChange} />
-                                <FormGroup formGroup="col-md-6" label="Border Color" value={this.props.state.headerBorderColor} onChange={this.handleHeaderBorderColorChange} />
->>>>>>> a6c3339f8eff8fb105ae99d3b19fda84e8905c69
                                 <FormGroup formGroup="col-md-6" label="Lines Color" value={this.props.state.linesColor} onChange={this.handleLinesColorChange} />
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div className="card">
                     <div className="card-header">
-<<<<<<< HEAD
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#barOptionsCollapse-1">Bar Customization Options</button></h3>
-                    </div>
-                    <div id="barOptionsCollapse-1" className="collapse" data-parent="customizationOptions-1">
-                        <div className="card-body">
-                            <div className="form-row">
-                                <FormGroup formGroup="col-md-6" label="Bar Color" value={this.props.state.barColor} onChange={this.handleBarColorChange} />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="card">
-                    <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#mainOptionsCollapse-1">Main Customization Options</button></h3>
-=======
                         <h3><button className="btn btn-link" data-toggle="collapse" data-target="#mainOptionsCollapse-1">Main <i class="fa fa-chevron-down"></i></button></h3>
->>>>>>> a6c3339f8eff8fb105ae99d3b19fda84e8905c69
+
                     </div>
                     <div id="mainOptionsCollapse-1" className="collapse" data-parent="customizationOptions-1">
                         <div className="card-body">
@@ -719,7 +688,7 @@ export class Option7 extends Component {
                     <div id="mainOptionsCollapse-7" className="collapse" data-parent="customizationOptions-7">
                         <div className="card-body">
                             <div className="form-row">
-                                <h4 className="w-100">Main Content</h4>
+                                <h4 className="w-100">Message 1</h4>
                                 <FormGroup formGroup="col-md-6" label="Left Column Background Color" value={this.props.state.leftColumnBackGroundColor} onChange={this.handleLeftColumnBackGroundColorChange} />
                                 <FormGroup formGroup="col-md-6" label="Right Column Background Color" value={this.props.state.rightColumnBackGroundColor} onChange={this.handleRightColumnBackGroundColorChange} />
                                 <label className="font-weight-bold"> Main Message Text </label>
@@ -729,6 +698,8 @@ export class Option7 extends Component {
                                 <FormGroup formGroup="col-md-6" label="Button Color" value={this.props.state.actionButtonColor1} onChange={this.handleActionButtonColorChange1} />
                                 <FormGroup formGroup="col-md-6" label="Button Href" value={this.props.buttonHref1} onChange={this.handleButtonHrefChange1} />
                                 <hr />
+                                <h4 className="w-100">Message 2</h4>
+
                                 <label className="font-weight-bold"> Main Message Text </label>
                                 <textarea className="form-control" rows="5" title="input" value={this.props.state.mainMessageText2} onChange={this.handleMainMessageTextChange2} />
                                 <FormGroup formGroup="col-md-6" label="Main Message Text Color" value={this.props.state.mainMessageTextColor2} onChange={this.handleMainMessageTextColorChange2} />
