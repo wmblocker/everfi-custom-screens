@@ -54,6 +54,9 @@ body {
 .card-body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
 }
+.card:last-child .card-body{
+    border-bottom:none;
+}
 
 .card-body .fa-question-circle{
   position: relative;
