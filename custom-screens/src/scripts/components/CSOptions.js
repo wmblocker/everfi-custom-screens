@@ -97,7 +97,7 @@ export class Option1 extends Component {
             <div id="customizationOptions-1">
             <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#globalOptionsCollapse-1">Global <i class="fa fa-chevron-down" /></button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#globalOptionsCollapse-1">Global <i className="fa fa-chevron-down" /></button></h3>
                     </div>
                     <div id="globalOptionsCollapse-1" className="collapse" data-parent="customizationOptions-1">
                         <div className="card-body">
@@ -108,7 +108,7 @@ export class Option1 extends Component {
                 </div>
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#headerOptionsCollapse-1">Header <i class="fa fa-chevron-down"></i></button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#headerOptionsCollapse-1">Header <i className="fa fa-chevron-down"></i></button></h3>
                     </div>
                     <div id="headerOptionsCollapse-1" className="collapse" data-parent="customizationOptions-1">
                         <div className="card-body">
@@ -124,7 +124,7 @@ export class Option1 extends Component {
 
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#mainOptionsCollapse-1">Main <i class="fa fa-chevron-down"></i></button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#mainOptionsCollapse-1">Main <i className="fa fa-chevron-down"></i></button></h3>
 
                     </div>
                     <div id="mainOptionsCollapse-1" className="collapse" data-parent="customizationOptions-1">
@@ -147,7 +147,7 @@ export class Option1 extends Component {
                 </div>
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#buttonCollapse-8">Button <i class="fa fa-chevron-down"></i></button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#buttonCollapse-8">Button <i className="fa fa-chevron-down"></i></button></h3>
                     </div>
                     <div id="buttonCollapse-8" className="collapse" data-parent="buttonOptions-8">
                         <div className="card-body">
@@ -161,7 +161,7 @@ export class Option1 extends Component {
                 </div>
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#additionalOptionsCollapse-1">Additional <i class="fa fa-chevron-down"></i></button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#additionalOptionsCollapse-1">Additional <i className="fa fa-chevron-down"></i></button></h3>
                     </div>
                     <div id="additionalOptionsCollapse-1" className="collapse" data-parent="customizationOptions-1">
                         <div className="card-body">
@@ -175,7 +175,7 @@ export class Option1 extends Component {
                 </div>
                 <div className="card">
                     <div className="card-header">
-                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#sendCollapse-1">Review <i class="fa fa-chevron-down"></i></button></h3>
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#sendCollapse-1">Review <i className="fa fa-chevron-down"></i></button></h3>
                     </div>
                     <div id="sendCollapse-1" className="collapse show" data-parent="customizationOptions-1">
                         <div className="card-body">
