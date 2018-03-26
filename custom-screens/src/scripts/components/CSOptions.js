@@ -24,6 +24,14 @@ export class Option1 extends Component {
         super(props);
     }
 
+    handlePrimaryColorChange = (e) => {
+        this.props.onPrimaryColorChange(e.target.value);
+    }
+
+    handleSecondaryColorChange = (e) => {
+        this.props.onSecondaryColorChange(e.target.value);
+    }
+
     handleHeaderTextChange = (e) => {
         this.props.onHeaderTextChange(e.target.value);
     }
@@ -102,6 +110,8 @@ export class Option1 extends Component {
                     <div id="globalOptionsCollapse-1" className="collapse" data-parent="customizationOptions-1">
                         <div className="card-body">
                             <div className="form-row">
+                                <FormGroup formGroup="col-md-6" label="Primary Brand Color" value={this.props.state.priamryColor} onChange={this.handlePrimaryColorChange} />
+                                <FormGroup formGroup="col-md-6" label="Secondary Brand Color" value={this.props.state.secondaryColor} onChange={this.handleSecondaryColorChange} />
                             </div>
                         </div>
                     </div>
@@ -198,6 +208,14 @@ export class Option3 extends Component {
         super(props);
     }
 
+    handlePrimaryColorChange = (e) => {
+        this.props.onPrimaryColorChange(e.target.value);
+    }
+
+    handleSecondaryColorChange = (e) => {
+        this.props.onSecondaryColorChange(e.target.value);
+    }
+
     handleHeaderTextChange = (e) => {
         this.props.onHeaderTextChange(e.target.value);
     }
@@ -256,6 +274,19 @@ export class Option3 extends Component {
     render() {
         return (       
             <div id="customizationOptions-3">
+            <div className="card">
+                    <div className="card-header">
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#globalOptionsCollapse-3">Global <i className="fa fa-chevron-down" /></button></h3>
+                    </div>
+                    <div id="globalOptionsCollapse-3" className="collapse" data-parent="customizationOptions-3">
+                        <div className="card-body">
+                            <div className="form-row">
+                                <FormGroup formGroup="col-md-6" label="Primary Brand Color" value={this.props.state.priamryColor} onChange={this.handlePrimaryColorChange} />
+                                <FormGroup formGroup="col-md-6" label="Secondary Brand Color" value={this.props.state.secondaryColor} onChange={this.handleSecondaryColorChange} />
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className="card">
                     <div className="card-header">
                         <h3><button className="btn btn-link" data-toggle="collapse" data-target="#headerOptionsCollapse-3">Header </button></h3>
@@ -343,6 +374,14 @@ export class Option4 extends Component {
         super(props);
     }
 
+    handlePrimaryColorChange = (e) => {
+        this.props.onPrimaryColorChange(e.target.value);
+    }
+
+    handleSecondaryColorChange = (e) => {
+        this.props.onSecondaryColorChange(e.target.value);
+    }
+
     handleHeaderTextChange = (e) => {
         this.props.onHeaderTextChange(e.target.value);
     }
@@ -405,6 +444,19 @@ export class Option4 extends Component {
     render() {
         return (       
             <div id="customizationOptions-4">
+            <div className="card">
+                    <div className="card-header">
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#globalOptionsCollapse-4">Global <i className="fa fa-chevron-down" /></button></h3>
+                    </div>
+                    <div id="globalOptionsCollapse-4" className="collapse" data-parent="customizationOptions-4">
+                        <div className="card-body">
+                            <div className="form-row">
+                                <FormGroup formGroup="col-md-6" label="Primary Brand Color" value={this.props.state.priamryColor} onChange={this.handlePrimaryColorChange} />
+                                <FormGroup formGroup="col-md-6" label="Secondary Brand Color" value={this.props.state.secondaryColor} onChange={this.handleSecondaryColorChange} />
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className="card">
                     <div className="card-header">
                         <h3><button className="btn btn-link" data-toggle="collapse" data-target="#headerOptionsCollapse-4">Header </button></h3>
@@ -493,6 +545,14 @@ export class Option6 extends Component {
         super(props);
     }
 
+    handlePrimaryColorChange = (e) => {
+        this.props.onPrimaryColorChange(e.target.value);
+    }
+
+    handleSecondaryColorChange = (e) => {
+        this.props.onSecondaryColorChange(e.target.value);
+    }
+
     handleHeaderTextChange = (e) => {
         this.props.onHeaderTextChange(e.target.value);
     }
@@ -547,6 +607,19 @@ export class Option6 extends Component {
     render() {
         return (       
             <div id="customizationOptions-6">
+            <div className="card">
+                    <div className="card-header">
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#globalOptionsCollapse-6">Global <i className="fa fa-chevron-down" /></button></h3>
+                    </div>
+                    <div id="globalOptionsCollapse-6" className="collapse" data-parent="customizationOptions-6">
+                        <div className="card-body">
+                            <div className="form-row">
+                                <FormGroup formGroup="col-md-6" label="Primary Brand Color" value={this.props.state.priamryColor} onChange={this.handlePrimaryColorChange} />
+                                <FormGroup formGroup="col-md-6" label="Secondary Brand Color" value={this.props.state.secondaryColor} onChange={this.handleSecondaryColorChange} />
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className="card">
                     <div className="card-header">
                         <h3><button className="btn btn-link" data-toggle="collapse" data-target="#headerOptionsCollapse-6">Header </button></h3>
@@ -603,6 +676,14 @@ export class Option6 extends Component {
 export class Option7 extends Component {
     constructor(props) {
         super(props);
+    }
+
+    handlePrimaryColorChange = (e) => {
+        this.props.onPrimaryColorChange(e.target.value);
+    }
+
+    handleSecondaryColorChange = (e) => {
+        this.props.onSecondaryColorChange(e.target.value);
     }
 
     handleHeaderTextChange = (e) => {
@@ -676,6 +757,19 @@ export class Option7 extends Component {
     render() {
         return (       
             <div id="customizationOptions-7">
+            <div className="card">
+                    <div className="card-header">
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#globalOptionsCollapse-7">Global <i className="fa fa-chevron-down" /></button></h3>
+                    </div>
+                    <div id="globalOptionsCollapse-7" className="collapse" data-parent="customizationOptions-7">
+                        <div className="card-body">
+                            <div className="form-row">
+                                <FormGroup formGroup="col-md-6" label="Primary Brand Color" value={this.props.state.priamryColor} onChange={this.handlePrimaryColorChange} />
+                                <FormGroup formGroup="col-md-6" label="Secondary Brand Color" value={this.props.state.secondaryColor} onChange={this.handleSecondaryColorChange} />
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className="card">
                     <div className="card-header">
                         <h3><button className="btn btn-link" data-toggle="collapse" data-target="#headerOptionsCollapse-7">Header </button></h3>
@@ -741,6 +835,22 @@ export class Option7 extends Component {
 export class Option8 extends Component {
     constructor(props) {
         super(props);
+    }
+
+    handlePrimaryColorChange = (e) => {
+        this.props.onPrimaryColorChange(e.target.value);
+    }
+
+    handleSecondaryColorChange = (e) => {
+        this.props.onSecondaryColorChange(e.target.value);
+    }
+
+    handleHeaderTextChange = (e) => {
+        this.props.onHeaderTextChange(e.target.value);
+    }
+
+    handleMainMessageTextChange1 = (e) => {
+        this.props.onMainMessageTextChange1(e.target.value);
     }
 
     handleHeaderTextChange = (e) => {
@@ -810,6 +920,19 @@ export class Option8 extends Component {
     render() {
         return (       
             <div id="customizationOptions-8">
+            <div className="card">
+                    <div className="card-header">
+                        <h3><button className="btn btn-link" data-toggle="collapse" data-target="#globalOptionsCollapse-8">Global <i className="fa fa-chevron-down" /></button></h3>
+                    </div>
+                    <div id="globalOptionsCollapse-8" className="collapse" data-parent="customizationOptions-8">
+                        <div className="card-body">
+                            <div className="form-row">
+                                <FormGroup formGroup="col-md-6" label="Primary Brand Color" value={this.props.state.priamryColor} onChange={this.handlePrimaryColorChange} />
+                                <FormGroup formGroup="col-md-6" label="Secondary Brand Color" value={this.props.state.secondaryColor} onChange={this.handleSecondaryColorChange} />
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className="card">
                     <div className="card-header">
                         <h3><button className="btn btn-link" data-toggle="collapse" data-target="#headerOptionsCollapse-8">Header </button></h3>

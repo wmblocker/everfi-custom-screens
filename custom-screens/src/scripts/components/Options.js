@@ -7,6 +7,8 @@ export class Option1 extends Component{
     constructor(props){
         super(props);
         this.state = {
+            primaryColor: "",
+            secondaryColor: "",
             headerText: "Did You Know?",
             headerTextColor: "#fff", 
             subHeadingText: "We offer Associates tools to help manage insurance costs.", actionButtonText: "Learn More", 
@@ -20,6 +22,24 @@ export class Option1 extends Component{
             buttonHref: "https://everfi.com"
         };
     }
+
+    handlePriamryColorChange = (updatedText) => {
+        this.setState({
+            primaryColor : updatedText,
+            headerBackGroundColor : updatedText,
+            barColor: updatedText
+        });
+    }
+
+    handleSecondaryColorChange = (updatedText) => {
+        this.setState({
+            secondaryColor : updatedText,
+            headerBorderColor : updatedText,
+            actionButtonColor: updatedText,
+            linesColor: updatedText
+        });
+    }
+
 
     handleHeaderTextChange = (updatedText) => {
         this.setState({
@@ -100,6 +120,8 @@ export class Option1 extends Component{
                     <div className="col-md-3 aside-options-list">
                         <CSOptions.Option1 
                         state = {this.state}
+                        onPrimaryColorChange = {this.handlePriamryColorChange}
+                        onSecondaryColorChange = {this.handleSecondaryColorChange}
                         onHeaderBackGroundColorChange = {this.handleHeaderBackGroundColorChange}
                         onHeaderTextChange = {this.handleHeaderTextChange}
                         onMainMessageTextChange = {this.handleMainMessageTextChange}
@@ -140,6 +162,8 @@ export class Option3 extends Component{
     constructor(props){
         super(props);
         this.state = {
+            primaryColor: "",
+            secondaryColor: "",
             headerText: "Did You Know?",
             headerTextColor: "#fff", 
             subHeadingText: "We offer Associates tools to help manage insurance costs.", actionButtonText: "Learn More", 
@@ -150,6 +174,21 @@ export class Option3 extends Component{
             linesColor: "#208aee",
             buttonHref: "https://everfi.com"
         };
+    }
+
+    handlePriamryColorChange = (updatedText) => {
+        this.setState({
+            primaryColor : updatedText,
+            headerBackGroundColor : updatedText,
+        });
+    }
+
+    handleSecondaryColorChange = (updatedText) => {
+        this.setState({
+            secondaryColor : updatedText,
+            actionButtonColor: updatedText,
+            linesColor: updatedText
+        });
     }
 
     handleHeaderTextChange = (updatedText) => {
@@ -220,6 +259,8 @@ export class Option3 extends Component{
                     <div className="col-md-3 aside-options-list">
                         <CSOptions.Option3 
                         state = {this.state}
+                        onPrimaryColorChange = {this.handlePriamryColorChange}
+                        onSecondaryColorChange = {this.handleSecondaryColorChange}
                         onHeaderBackGroundColorChange = {this.handleHeaderBackGroundColorChange}
                         onHeaderTextChange = {this.handleHeaderTextChange}
                         onMainMessageTextChange = {this.handleMainMessageTextChange}
@@ -247,6 +288,8 @@ export class Option4 extends Component{
     constructor(props){
         super(props);
         this.state = {
+            primaryColor: "",
+            secondaryColor: "",
             headerText: "Did You Know?",
             headerTextColor: "#fff", 
             subHeadingText: "We offer Associates tools to help manage insurance costs.", actionButtonText: "Learn More", 
@@ -258,6 +301,22 @@ export class Option4 extends Component{
             mainMessageText: "Wherever you are in life, there is a plan to help you meet your needs.Visit us to learn more about the options available to you.",
             buttonHref: "https://everfi.com"
         };
+    }
+
+    handlePriamryColorChange = (updatedText) => {
+        this.setState({
+            primaryColor : updatedText,
+            headerBackGroundColor : updatedText,
+            barColor: updatedText
+        });
+    }
+
+    handleSecondaryColorChange = (updatedText) => {
+        this.setState({
+            secondaryColor : updatedText,
+            actionButtonColor: updatedText,
+            headerBorderColor: updatedText
+        });
     }
 
     handleHeaderTextChange = (updatedText) => {
@@ -333,6 +392,8 @@ export class Option4 extends Component{
                     <div className="col-md-3 aside-options-list">
                         <CSOptions.Option4 
                         state = {this.state}
+                        onPrimaryColorChange = {this.handlePriamryColorChange}
+                        onSecondaryColorChange = {this.handleSecondaryColorChange}
                         onHeaderBackGroundColorChange = {this.handleHeaderBackGroundColorChange}
                         onHeaderTextChange = {this.handleHeaderTextChange}
                         onMainMessageTextChange = {this.handleMainMessageTextChange}
@@ -362,6 +423,8 @@ export class Option6 extends Component{
     constructor(props){
         super(props);
         this.state = {
+            primaryColor: "",
+            secondaryColor: "",
             headerText: "Did You Know?",
             leftColumnBackGroundColor: "#fff",
             rightColumnBackGroundColor: "#208aee",
@@ -373,6 +436,20 @@ export class Option6 extends Component{
             mainMessageTextColor: "#fff",
             buttonHref: "https://everfi.com"
         };
+    }
+
+    handlePriamryColorChange = (updatedText) => {
+        this.setState({
+            primaryColor : updatedText,
+            rightColumnBackGroundColor : updatedText,
+        });
+    }
+
+    handleSecondaryColorChange = (updatedText) => {
+        this.setState({
+            secondaryColor : updatedText,
+            actionButtonColor: updatedText,
+        });
     }
 
     handleHeaderTextChange = (updatedText) => {
@@ -443,6 +520,8 @@ export class Option6 extends Component{
                     <div className="col-md-3 aside-options-list">
                         <CSOptions.Option6 
                         state = {this.state}
+                        onPrimaryColorChange = {this.handlePriamryColorChange}
+                        onSecondaryColorChange = {this.handleSecondaryColorChange}
                         onHeaderBackGroundColorChange = {this.handleHeaderBackGroundColorChange}
                         onLeftColumnBackGroundColorChange = {this.handleLeftColumnBackGroundColorChange}
                         onRightColumnBackGroundColorChange={this.handleRightColumnBackGroundColorChange}
@@ -472,6 +551,8 @@ export class Option7 extends Component{
     constructor(props){
         super(props);
         this.state = {
+            primaryColor: "",
+            secondaryColor: "",
             headerText: "Did You Know?",
             leftColumnBackGroundColor: "#fff",
             rightColumnBackGroundColor: "#208aee",
@@ -488,6 +569,21 @@ export class Option7 extends Component{
             buttonHref1: "https://everfi.com",
             buttonHref2: "https://everfi.com"
         };
+    }
+
+    handlePriamryColorChange = (updatedText) => {
+        this.setState({
+            primaryColor : updatedText,
+            rightColumnBackGroundColor : updatedText,
+        });
+    }
+
+    handleSecondaryColorChange = (updatedText) => {
+        this.setState({
+            secondaryColor : updatedText,
+            actionButtonColor1: updatedText,
+            actionButtonColor2: updatedText
+        });
     }
 
     handleHeaderTextChange = (updatedText) => {
@@ -582,6 +678,8 @@ export class Option7 extends Component{
                     <div className="col-md-3 aside-options-list">
                         <CSOptions.Option7 
                         state = {this.state}
+                        onPrimaryColorChange = {this.handlePriamryColorChange}
+                        onSecondaryColorChange = {this.handleSecondaryColorChange}
                         onHeaderBackGroundColorChange = {this.handleHeaderBackGroundColorChange}
                         onLeftColumnBackGroundColorChange = {this.handleLeftColumnBackGroundColorChange}
                         onRightColumnBackGroundColorChange={this.handleRightColumnBackGroundColorChange}
@@ -615,6 +713,8 @@ export class Option8 extends Component{
     constructor(props){
         super(props);
         this.state = {
+            primaryColor: "",
+            secondaryColor: "",
             headerText: "Did You Know?",
             headerTextColor: "#fff", 
             subHeadingText: "We offer Associates tools to help manage insurance costs.", actionButtonText: "Learn More", 
@@ -627,6 +727,20 @@ export class Option8 extends Component{
             mainMessageTextColor: "#fff",
             buttonHref: "https://everfi.com"
         };
+    }
+
+    handlePriamryColorChange = (updatedText) => {
+        this.setState({
+            bodyBackGroundColor : updatedText,
+        });
+    }
+
+    handleSecondaryColorChange = (updatedText) => {
+        this.setState({
+            secondaryColor : updatedText,
+            actionButtonColor: updatedText,
+            headerBorderColor: updatedText
+        });
     }
 
     handleHeaderTextChange = (updatedText) => {
@@ -703,6 +817,8 @@ export class Option8 extends Component{
                     <div className="col-md-3 aside-options-list">
                         <CSOptions.Option8 
                         state = {this.state}
+                        onPrimaryColorChange = {this.handlePriamryColorChange}
+                        onSecondaryColorChange = {this.handleSecondaryColorChange}
                         onHeaderTextChange = {this.handleHeaderTextChange}
                         onBodyBackGroundColorChange={this.handlebodyBackGroundColorChange}
                         onMainMessageTextChange = {this.handleMainMessageTextChange}
