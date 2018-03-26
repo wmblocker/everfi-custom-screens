@@ -9,7 +9,7 @@ export class Option1 extends Component{
         this.state = {
             primaryColor: "",
             secondaryColor: "",
-            font: "Arial",
+            font: "",
             headerText: "Did You Know?",
             headerTextColor: "#fff", 
             subHeadingText: "We offer Associates tools to help manage insurance costs.", actionButtonText: "Learn More", 
@@ -171,6 +171,7 @@ export class Option3 extends Component{
         this.state = {
             primaryColor: "",
             secondaryColor: "",
+            font: "",
             headerText: "Did You Know?",
             headerTextColor: "#fff", 
             subHeadingText: "We offer Associates tools to help manage insurance costs.", actionButtonText: "Learn More", 
@@ -196,6 +197,12 @@ export class Option3 extends Component{
             actionButtonColor: updatedText,
             linesColor: updatedText
         });
+    }
+
+    handleFontChange = (updatedText) => {
+        this.setState({
+            font: updatedText
+        })
     }
 
     handleHeaderTextChange = (updatedText) => {
@@ -297,6 +304,7 @@ export class Option4 extends Component{
         this.state = {
             primaryColor: "",
             secondaryColor: "",
+            font: "",
             headerText: "Did You Know?",
             headerTextColor: "#fff", 
             subHeadingText: "We offer Associates tools to help manage insurance costs.", actionButtonText: "Learn More", 
@@ -324,6 +332,12 @@ export class Option4 extends Component{
             actionButtonColor: updatedText,
             headerBorderColor: updatedText
         });
+    }
+
+    handleFontChange = (updatedText) => {
+        this.setState({
+            font: updatedText
+        })
     }
 
     handleHeaderTextChange = (updatedText) => {
@@ -432,6 +446,7 @@ export class Option6 extends Component{
         this.state = {
             primaryColor: "",
             secondaryColor: "",
+            font: "",
             headerText: "Did You Know?",
             leftColumnBackGroundColor: "#fff",
             rightColumnBackGroundColor: "#208aee",
@@ -457,6 +472,12 @@ export class Option6 extends Component{
             secondaryColor : updatedText,
             actionButtonColor: updatedText,
         });
+    }
+
+    handleFontChange = (updatedText) => {
+        this.setState({
+            font: updatedText
+        })
     }
 
     handleHeaderTextChange = (updatedText) => {
@@ -560,6 +581,7 @@ export class Option7 extends Component{
         this.state = {
             primaryColor: "",
             secondaryColor: "",
+            font: "",
             headerText: "Did You Know?",
             leftColumnBackGroundColor: "#fff",
             rightColumnBackGroundColor: "#208aee",
@@ -591,6 +613,12 @@ export class Option7 extends Component{
             actionButtonColor1: updatedText,
             actionButtonColor2: updatedText
         });
+    }
+
+    handleFontChange = (updatedText) => {
+        this.setState({
+            font: updatedText
+        })
     }
 
     handleHeaderTextChange = (updatedText) => {
@@ -722,6 +750,7 @@ export class Option8 extends Component{
         this.state = {
             primaryColor: "",
             secondaryColor: "",
+            font: "",
             headerText: "Did You Know?",
             headerTextColor: "#fff", 
             subHeadingText: "We offer Associates tools to help manage insurance costs.", actionButtonText: "Learn More", 
@@ -748,6 +777,12 @@ export class Option8 extends Component{
             actionButtonColor: updatedText,
             headerBorderColor: updatedText
         });
+    }
+
+    handleFontChange = (updatedText) => {
+        this.setState({
+            font: updatedText
+        })
     }
 
     handleHeaderTextChange = (updatedText) => {

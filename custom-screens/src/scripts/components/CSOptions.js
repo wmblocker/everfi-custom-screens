@@ -19,6 +19,43 @@ class FormGroup extends Component{
     }
 }
 
+class Fonts extends Component{
+    constructor(props){
+        super(props);
+    }
+
+    render(){
+        return(
+            <React.Fragment>
+                <option value=""></option>
+                <option value="American Typewriter, serif">American Typewriter, serif</option>
+                <option value="Andale Mono, monospace">Andale Mono, monospace</option>
+                <option value="Arial, sans-serif">Arial, sans-serif</option>
+                <option value="Arial Narrow, sans-serif">Arial Narrow, sans-serif</option>
+                <option value="Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif">Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif</option>
+                <option value="Bookman, URW Bookman L, serif">Bookman, URW Bookman L, serif</option>
+                <option value="Comic Sans MS, Comic Sans, cursive">Comic Sans MS, Comic Sans, cursive</option>
+                <option value="Courier, monospace">Courier, monospace</option>
+                <option value="Courier New, monospace">Courier New, monospace</option>
+                <option value="DejaVu Sans Mono, monospace">DejaVu Sans Mono, monospace</option>
+                <option value="Didot, serif">Didot, serif</option>
+                <option value="FreeMono, monospace">FreeMono, monospace</option>
+                <option value="Georgia, serif">Georgia, serif</option>
+                <option value="Gill Sans, sans-serif">Gill Sans, sans-serif</option>
+                <option value="Helvetica, sans-serif">Helvetica, sans-serif</option>
+                <option value="New Century Schoolbook, TeX Gyre Schola, serif">New Century Schoolbook, TeX Gyre Schola, serif</option>
+                <option value="Noto Sans, sans-serif">Noto Sans, sans-serif</option>
+                <option value="OCR A Std, monospace">OCR A Std, monospace</option>
+                <option value="Optima, sans-serif">Optima, sans-serif</option>
+                <option value="Palatino, URW Palladio L, serif">Palatino, URW Palladio L, serif</option>
+                <option value="Verdana, sans-serif">Verdana, sans-serif</option>
+                <option value="Times, Times New Roman, serif">Times, Times New Roman, serif</option>
+                <option value="Trebuchet MS, sans-serif">Trebuchet MS, sans-serif</option>
+            </React.Fragment>
+        )
+    }
+}
+
 class GlobalOptions extends Component{
     constructor(props){
         super(props);
@@ -130,14 +167,9 @@ export class Option1 extends Component {
                                 <FormGroup formGroup="col-md-6" label="Primary Brand Color" value={this.props.state.priamryColor} onChange={this.handlePrimaryColorChange} />
                                 <FormGroup formGroup="col-md-6" label="Secondary Brand Color" value={this.props.state.secondaryColor} onChange={this.handleSecondaryColorChange} />
                                 <div className="col-md-12">
-                                    <label htmlFor="fontGroup">Example select</label>
+                                    <label htmlFor="fontGroup">Font</label>
                                     <select className="form-control" id="fontGroup" onChange={this.handleFontChange} >
-                                        <option value=""></option>
-                                        <option value="Arial, sans-serif">Arial, sans-serif</option>
-                                        <option value="Helvetica, sans-serif">Helvetica, sans-serif</option>
-                                        <option value="Verdana, sans-serif">Verdana, sans-serif</option>
-                                        <option value="Trebuchet MS, sans-serif">Trebuchet MS, sans-serif</option>
-                                        <option value="Gill Sans, sans-serif">Gill Sans, sans-serif</option>
+                                        <Fonts />
                                     </select>
                                 </div>
                             </div>
@@ -244,6 +276,10 @@ export class Option3 extends Component {
         this.props.onSecondaryColorChange(e.target.value);
     }
 
+    handleFontChange = (e) => {
+        this.props.onFontChange(e.target.value);
+    }
+
     handleHeaderTextChange = (e) => {
         this.props.onHeaderTextChange(e.target.value);
     }
@@ -311,6 +347,12 @@ export class Option3 extends Component {
                             <div className="form-row">
                                 <FormGroup formGroup="col-md-6" label="Primary Brand Color" value={this.props.state.priamryColor} onChange={this.handlePrimaryColorChange} />
                                 <FormGroup formGroup="col-md-6" label="Secondary Brand Color" value={this.props.state.secondaryColor} onChange={this.handleSecondaryColorChange} />
+                                <div className="col-md-12">
+                                    <label htmlFor="fontGroup">Font</label>
+                                    <select className="form-control" id="fontGroup" onChange={this.handleFontChange} >
+                                        <Fonts />
+                                    </select>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -410,6 +452,10 @@ export class Option4 extends Component {
         this.props.onSecondaryColorChange(e.target.value);
     }
 
+    handleFontChange = (e) => {
+        this.props.onFontChange(e.target.value);
+    }
+
     handleHeaderTextChange = (e) => {
         this.props.onHeaderTextChange(e.target.value);
     }
@@ -481,6 +527,12 @@ export class Option4 extends Component {
                             <div className="form-row">
                                 <FormGroup formGroup="col-md-6" label="Primary Brand Color" value={this.props.state.priamryColor} onChange={this.handlePrimaryColorChange} />
                                 <FormGroup formGroup="col-md-6" label="Secondary Brand Color" value={this.props.state.secondaryColor} onChange={this.handleSecondaryColorChange} />
+                                <div className="col-md-12">
+                                    <label htmlFor="fontGroup">Font</label>
+                                    <select className="form-control" id="fontGroup" onChange={this.handleFontChange} >
+                                        <Fonts />
+                                    </select>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -581,6 +633,10 @@ export class Option6 extends Component {
         this.props.onSecondaryColorChange(e.target.value);
     }
 
+    handleFontChange = (e) => {
+        this.props.onFontChange(e.target.value);
+    }
+
     handleHeaderTextChange = (e) => {
         this.props.onHeaderTextChange(e.target.value);
     }
@@ -644,6 +700,12 @@ export class Option6 extends Component {
                             <div className="form-row">
                                 <FormGroup formGroup="col-md-6" label="Primary Brand Color" value={this.props.state.priamryColor} onChange={this.handlePrimaryColorChange} />
                                 <FormGroup formGroup="col-md-6" label="Secondary Brand Color" value={this.props.state.secondaryColor} onChange={this.handleSecondaryColorChange} />
+                                <div className="col-md-12">
+                                    <label htmlFor="fontGroup">Font</label>
+                                    <select className="form-control" id="fontGroup" onChange={this.handleFontChange} >
+                                        <Fonts />
+                                    </select>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -712,6 +774,10 @@ export class Option7 extends Component {
 
     handleSecondaryColorChange = (e) => {
         this.props.onSecondaryColorChange(e.target.value);
+    }
+
+    handleFontChange = (e) => {
+        this.props.onFontChange(e.target.value);
     }
 
     handleHeaderTextChange = (e) => {
@@ -794,6 +860,12 @@ export class Option7 extends Component {
                             <div className="form-row">
                                 <FormGroup formGroup="col-md-6" label="Primary Brand Color" value={this.props.state.priamryColor} onChange={this.handlePrimaryColorChange} />
                                 <FormGroup formGroup="col-md-6" label="Secondary Brand Color" value={this.props.state.secondaryColor} onChange={this.handleSecondaryColorChange} />
+                                <div className="col-md-12">
+                                    <label htmlFor="fontGroup">Font</label>
+                                    <select className="form-control" id="fontGroup" onChange={this.handleFontChange} >
+                                        <Fonts />
+                                    </select>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -871,6 +943,10 @@ export class Option8 extends Component {
 
     handleSecondaryColorChange = (e) => {
         this.props.onSecondaryColorChange(e.target.value);
+    }
+
+    handleFontChange = (e) => {
+        this.props.onFontChange(e.target.value);
     }
 
     handleHeaderTextChange = (e) => {
@@ -957,6 +1033,12 @@ export class Option8 extends Component {
                             <div className="form-row">
                                 <FormGroup formGroup="col-md-6" label="Primary Brand Color" value={this.props.state.priamryColor} onChange={this.handlePrimaryColorChange} />
                                 <FormGroup formGroup="col-md-6" label="Secondary Brand Color" value={this.props.state.secondaryColor} onChange={this.handleSecondaryColorChange} />
+                                <div className="col-md-12">
+                                    <label htmlFor="fontGroup">Font</label>
+                                    <select className="form-control" id="fontGroup" onChange={this.handleFontChange} >
+                                        <Fonts />
+                                    </select>
+                                </div>
                             </div>
                         </div>
                     </div>
