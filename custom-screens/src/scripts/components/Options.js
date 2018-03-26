@@ -9,6 +9,7 @@ export class Option1 extends Component{
         this.state = {
             primaryColor: "",
             secondaryColor: "",
+            font: "Arial",
             headerText: "Did You Know?",
             headerTextColor: "#fff", 
             subHeadingText: "We offer Associates tools to help manage insurance costs.", actionButtonText: "Learn More", 
@@ -40,6 +41,11 @@ export class Option1 extends Component{
         });
     }
 
+    handleFontChange = (updatedText) => {
+        this.setState({
+            font: updatedText
+        })
+    }
 
     handleHeaderTextChange = (updatedText) => {
         this.setState({
@@ -122,6 +128,7 @@ export class Option1 extends Component{
                         state = {this.state}
                         onPrimaryColorChange = {this.handlePriamryColorChange}
                         onSecondaryColorChange = {this.handleSecondaryColorChange}
+                        onFontChange = {this.handleFontChange}
                         onHeaderBackGroundColorChange = {this.handleHeaderBackGroundColorChange}
                         onHeaderTextChange = {this.handleHeaderTextChange}
                         onMainMessageTextChange = {this.handleMainMessageTextChange}

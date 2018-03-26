@@ -7,7 +7,7 @@ export class Option1 extends Component{
     }
     render(){
         return(
-            <div className="option-1">
+            <div className="option-1" style={{fontFamily: this.props.state.font}}>
                     <div className="cs-header" style={{
                         background: this.props.state.headerBackGroundColor,borderBottomColor: this.props.state.headerBorderColor
                         }}>

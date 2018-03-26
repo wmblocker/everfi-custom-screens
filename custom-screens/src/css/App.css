@@ -41,9 +41,10 @@ body {
 
 .card-body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.07); }
-.card:last-child .card-body{
-    border-bottom:none;
-}
+
+.card:last-child .card-body {
+  border-bottom: none; }
+
 .card-body .fa-question-circle {
   position: relative;
   right: 58px;
@@ -169,8 +170,7 @@ h3 {
   font-weight: 600; }
 
 .screen-dropdown {
-  line-height: 40px;
-  width: 25.65% !important; }
+  line-height: 40px; }
 
 .dropdown-menu {
   padding: .5rem .8rem;
@@ -221,9 +221,4 @@ form {
 label {
   font-size: 14px; }
 
-.navbar .fa-question-circle{
-    color: #ffffff;
-    position: absolute;
-    left: 20px;
-}
 /*# sourceMappingURL=App.css.map */

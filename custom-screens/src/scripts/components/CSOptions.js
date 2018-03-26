@@ -19,6 +19,18 @@ class FormGroup extends Component{
     }
 }
 
+class GlobalOptions extends Component{
+    constructor(props){
+        super(props);
+    }
+
+    render(){
+        return(
+        <div></div>
+        );
+    }
+}
+
 export class Option1 extends Component {
     constructor(props) {
         super(props);
@@ -30,6 +42,10 @@ export class Option1 extends Component {
 
     handleSecondaryColorChange = (e) => {
         this.props.onSecondaryColorChange(e.target.value);
+    }
+
+    handleFontChange = (e) => {
+        this.props.onFontChange(e.target.value);
     }
 
     handleHeaderTextChange = (e) => {
@@ -100,6 +116,7 @@ export class Option1 extends Component {
         document.body.removeChild(copyElem);
     }
 
+
     render() {
         return (       
             <div id="customizationOptions-1">
@@ -112,6 +129,17 @@ export class Option1 extends Component {
                             <div className="form-row">
                                 <FormGroup formGroup="col-md-6" label="Primary Brand Color" value={this.props.state.priamryColor} onChange={this.handlePrimaryColorChange} />
                                 <FormGroup formGroup="col-md-6" label="Secondary Brand Color" value={this.props.state.secondaryColor} onChange={this.handleSecondaryColorChange} />
+                                <div className="col-md-12">
+                                    <label htmlFor="fontGroup">Example select</label>
+                                    <select className="form-control" id="fontGroup" onChange={this.handleFontChange} >
+                                        <option value=""></option>
+                                        <option value="Arial, sans-serif">Arial, sans-serif</option>
+                                        <option value="Helvetica, sans-serif">Helvetica, sans-serif</option>
+                                        <option value="Verdana, sans-serif">Verdana, sans-serif</option>
+                                        <option value="Trebuchet MS, sans-serif">Trebuchet MS, sans-serif</option>
+                                        <option value="Gill Sans, sans-serif">Gill Sans, sans-serif</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -164,7 +192,7 @@ export class Option1 extends Component {
                             <div className="form-row">
                                 <FormGroup formGroup="col-md-6" label="Button Text" value={this.props.state.actionButtonText} onChange={this.handleActionButtonTextChange} />
                                 <FormGroup formGroup="col-md-6" label="Button Color" value={this.props.state.actionButtonColor} onChange={this.handleActionButtonColorChange} />
-                                <FormGroup formGroup="col-md-6" label="Button Href" value={this.props.buttonHref} onChange={this.handleButtonHrefChange} /> <i class="fa fa-question-circle"></i>
+                                <FormGroup formGroup="col-md-6" label="Button Url" value={this.props.buttonHref} onChange={this.handleButtonHrefChange} /> <i class="fa fa-question-circle"></i>
                             </div>
                         </div>
                     </div>
@@ -345,7 +373,7 @@ export class Option3 extends Component {
                             <div className="form-row">
                                 <FormGroup formGroup="col-md-6" label="Button Text" value={this.props.state.actionButtonText} onChange={this.handleActionButtonTextChange} />
                                 <FormGroup formGroup="col-md-6" label="Button Color" value={this.props.state.actionButtonColor} onChange={this.handleActionButtonColorChange} />
-                                <FormGroup formGroup="col-md-6" label="Button Href" value={this.props.buttonHref} onChange={this.handleButtonHrefChange} />
+                                <FormGroup formGroup="col-md-6" label="Button Url" value={this.props.buttonHref} onChange={this.handleButtonHrefChange} />
                             </div>
                         </div>
                     </div>
@@ -516,7 +544,7 @@ export class Option4 extends Component {
                             <div className="form-row">
                                 <FormGroup formGroup="col-md-6" label="Button Text" value={this.props.state.actionButtonText} onChange={this.handleActionButtonTextChange} />
                                 <FormGroup formGroup="col-md-6" label="Button Color" value={this.props.state.actionButtonColor} onChange={this.handleActionButtonColorChange} />
-                                <FormGroup formGroup="col-md-6" label="Button Href" value={this.props.buttonHref} onChange={this.handleButtonHrefChange} />
+                                <FormGroup formGroup="col-md-6" label="Button Url" value={this.props.buttonHref} onChange={this.handleButtonHrefChange} />
                             </div>
                         </div>
                     </div>
@@ -649,7 +677,7 @@ export class Option6 extends Component {
                                 <FormGroup formGroup="col-md-6" label="Right Column Background Color" value={this.props.state.rightColumnBackGroundColor} onChange={this.handleRightColumnBackGroundColorChange} />
                                 <FormGroup formGroup="col-md-6" label="Button Text" value={this.props.state.actionButtonText} onChange={this.handleActionButtonTextChange} />
                                 <FormGroup formGroup="col-md-6" label="Button Color" value={this.props.state.actionButtonColor} onChange={this.handleActionButtonColorChange} />
-                                <FormGroup formGroup="col-md-6" label="Button Href" value={this.props.buttonHref} onChange={this.handleButtonHrefChange} />
+                                <FormGroup formGroup="col-md-6" label="Button Url" value={this.props.buttonHref} onChange={this.handleButtonHrefChange} />
                             </div>
                         </div>
                     </div>
@@ -799,7 +827,7 @@ export class Option7 extends Component {
                                 <FormGroup formGroup="col-md-6" label="Main Message Text Color" value={this.props.state.mainMessageTextColor1} onChange={this.handleMainMessageTextColorChange1} />
                                 <FormGroup formGroup="col-md-6" label="Button Text" value={this.props.state.actionButtonText1} onChange={this.handleActionButtonTextChange1} />
                                 <FormGroup formGroup="col-md-6" label="Button Color" value={this.props.state.actionButtonColor1} onChange={this.handleActionButtonColorChange1} />
-                                <FormGroup formGroup="col-md-6" label="Button Href" value={this.props.buttonHref1} onChange={this.handleButtonHrefChange1} />
+                                <FormGroup formGroup="col-md-6" label="Button Url" value={this.props.buttonHref1} onChange={this.handleButtonHrefChange1} />
                                 <hr />
                                 <h4 className="w-100">Message 2</h4>
 
@@ -808,7 +836,7 @@ export class Option7 extends Component {
                                 <FormGroup formGroup="col-md-6" label="Main Message Text Color" value={this.props.state.mainMessageTextColor2} onChange={this.handleMainMessageTextColorChange2} />
                                 <FormGroup formGroup="col-md-6" label="Button Text" value={this.props.state.actionButtonText2} onChange={this.handleActionButtonTextChange2} />
                                 <FormGroup formGroup="col-md-6" label="Button Color" value={this.props.state.actionButtonColor2} onChange={this.handleActionButtonColorChange2} />
-                                <FormGroup formGroup="col-md-6" label="Button Href" value={this.props.buttonHref2} onChange={this.handleButtonHrefChange2} />
+                                <FormGroup formGroup="col-md-6" label="Button Url" value={this.props.buttonHref2} onChange={this.handleButtonHrefChange2} />
                             </div>
                         </div>
                     </div>
@@ -980,7 +1008,7 @@ export class Option8 extends Component {
                             <div className="form-row">
                                 <FormGroup formGroup="col-md-6" label="Button Text" value={this.props.state.actionButtonText} onChange={this.handleActionButtonTextChange} />
                                 <FormGroup formGroup="col-md-6" label="Button Color" value={this.props.state.actionButtonColor} onChange={this.handleActionButtonColorChange} />
-                                <FormGroup formGroup="col-md-6" label="Button Href" value={this.props.buttonHref} onChange={this.handleButtonHrefChange} />
+                                <FormGroup formGroup="col-md-6" label="Button Url" value={this.props.buttonHref} onChange={this.handleButtonHrefChange} />
                             </div>
                         </div>
                     </div>
