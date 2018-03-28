@@ -32,13 +32,40 @@ export class Option1 extends Component{
     }
 }
 
+export class Option2 extends Component{
+    constructor(props){
+        super(props);
+    }
+    render(){
+        return(
+            <div className="option-2" style={{fontFamily: this.props.state.font}}>
+                    <div className="cs-header" style={{
+                        background: this.props.state.headerBackGroundColor
+                        }}>
+                        <div className="lines" style={{borderColor: this.props.state.linesColor}}></div>
+                        <p className="cs-header-text" style={{color: this.props.state.headerTextColor}}>{this.props.state.headerText}</p>
+                    </div>
+                    <div className="col-wrap">
+                        <div className="col-98">
+                            <p className="cs-sub-heading" style={{
+                                fontWeight: this.props.state.isSubHeadingBold
+                                }}>{this.props.state.subHeadingText}</p>
+                            <p className="mainMessage">{this.props.state.mainMessageText}</p>
+                            <a className="action-button" style={{backgroundColor: this.props.state.actionButtonColor}} href={this.props.state.buttonHref}  target="_blank">{this.props.state.actionButtonText}</a>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+}
+
 export class Option3 extends Component{
     constructor(props){
         super(props);
     }
     render(){
         return(
-            <div className="option-3">
+            <div className="option-3" style={{fontFamily: this.props.state.font}}>
                     <div className="cs-header" style={{
                         background: this.props.state.headerBackGroundColor
                         }}>
@@ -66,7 +93,7 @@ export class Option4 extends Component{
     }
     render(){
         return(
-            <div className="option-4">
+            <div className="option-4" style={{fontFamily: this.props.state.font}}>
                     <div className="cs-header" style={{
                         background: this.props.state.headerBackGroundColor,
                         borderBottomColor: this.props.state.headerBorderColor
@@ -97,7 +124,7 @@ export class Option6 extends Component{
     }
     render(){
         return(
-            <div className="option-6">
+            <div className="option-6" style={{fontFamily: this.props.state.font}}>
                     <div className="col-wrap">
                         <div className="col-50" style={{backgroundColor: this.props.state.leftColumnBackGroundColor}}>
                             <div className="cs-header">
@@ -121,7 +148,7 @@ export class Option7 extends Component{
     }
     render(){
         return(
-            <div className="option-7">
+            <div className="option-7" style={{fontFamily: this.props.state.font}}>
                     <div className="col-wrap">
                         <div className="col-50" style={{backgroundColor: this.props.state.leftColumnBackGroundColor}}>
                             <div className="cs-header">
@@ -147,7 +174,7 @@ export class Option8 extends Component{
     }
     render(){
         return(
-            <div className="option-8" style={{background: this.props.state.bodyBackGroundColor}}>
+            <div className="option-8" style={{background: this.props.state.bodyBackGroundColor, fontFamily: this.props.state.font}}>
                     <div className="cs-header" style={{
                         borderBottomColor: this.props.state.headerBorderColor
                         }}>

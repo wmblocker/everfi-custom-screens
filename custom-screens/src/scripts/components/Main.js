@@ -20,7 +20,7 @@ class Main extends Component{
                 <main className="col-md-12">
                     <div className="dropdown show">
                         <a className="btn btn-dropdown-toggle screen-dropdown" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Template
+                            Template <span className="fa fa-image float-right mt-3"></span>
                         </a>
                         <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <div className="row">

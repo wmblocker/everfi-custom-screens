@@ -155,12 +155,135 @@ export class Option1 extends Component{
 }
 
 export class Option2 extends Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            primaryColor: "",
+            secondaryColor: "",
+            font: "",
+            headerText: "Did You Know?",
+            headerTextColor: "#fff", 
+            subHeadingText: "We offer Associates tools to help manage insurance costs.", actionButtonText: "Learn More", 
+            actionButtonColor: "#208aee",
+            headerBackGroundColor: "#5bbaed", 
+            isSubHeadingBold: "normal",
+            mainMessageText: "Wherever you are in life, there is a plan to help you meet your needs.Visit us to learn more about the options available to you.",
+            linesColor: "#208aee",
+            buttonHref: "https://everfi.com"
+        };
+    }
+
+    handlePriamryColorChange = (updatedText) => {
+        this.setState({
+            primaryColor : updatedText,
+            headerBackGroundColor : updatedText,
+        });
+    }
+
+    handleSecondaryColorChange = (updatedText) => {
+        this.setState({
+            secondaryColor : updatedText,
+            actionButtonColor: updatedText,
+            linesColor: updatedText
+        });
+    }
+
+    handleFontChange = (updatedText) => {
+        this.setState({
+            font: updatedText
+        })
+    }
+
+    handleHeaderTextChange = (updatedText) => {
+        this.setState({
+            headerText : updatedText
+        });
+    }
+
+    handleSubHeadingTextChange = (updatedText) => {
+        this.setState({
+            subHeadingText : updatedText
+        });
+    }
+
+    handleIsSubHeadingBoldChange = (updatedText) => {
+        this.setState({
+            isSubHeadingBold: updatedText
+        })
+    }
+
+    handleMainMessageTextChange = (updatedText) => {
+        this.setState({
+            mainMessageText : updatedText
+        });
+    }
+
+
+    handleActionButtonTextChange = (updatedText) => {
+        this.setState({
+            actionButtonText : updatedText
+        });
+    }
+
+    handleActionButtonColorChange = (updatedText) => {
+        this.setState({
+            actionButtonColor : updatedText
+        });
+    }
+
+    handleHeaderBackGroundColorChange = (updatedText) => {
+        this.setState({
+            headerBackGroundColor : updatedText
+        });
+    }
+
+    handleHeaderTextColorChange = (updatedText) => {
+        this.setState({
+            headerTextColor : updatedText
+        });
+    }
+    
+    handleLinesColorChange = (updatedText) => {
+        this.setState({
+            linesColor : updatedText
+        });
+    }
+    handleButtonHrefChange = (updatedText) => {
+        this.setState({
+            buttonHref : updatedText
+        });
+    }
+
+
+
     render(){
         return(
-            <div>
-            <h2 className="text-center" >Option 2</h2>
-            <h3>EVERFI</h3>
-            </div>
+            <div className="row mt-3">
+                    <div className="col-md-3 aside-options-list">
+                        <CSOptions.Option2
+                        state = {this.state}
+                        onPrimaryColorChange = {this.handlePriamryColorChange}
+                        onSecondaryColorChange = {this.handleSecondaryColorChange}
+                        onFontChange = {this.handleFontChange}
+                        onHeaderBackGroundColorChange = {this.handleHeaderBackGroundColorChange}
+                        onHeaderTextChange = {this.handleHeaderTextChange}
+                        onMainMessageTextChange = {this.handleMainMessageTextChange}
+                        onSubHeadingTextChange = {this.handleSubHeadingTextChange}
+                        onActionButtonTextChange = {this.handleActionButtonTextChange}
+                        onActionButtonColorChange = {this.handleActionButtonColorChange}
+                        onHeaderTextColorChange = {this.handleHeaderTextColorChange}
+                        onLinesColorChange = {this.handleLinesColorChange}
+                        onIsSubHeadingBoldChange = {this.handleIsSubHeadingBoldChange}
+                        onButtonHrefChange = {this.handleButtonHrefChange}
+                    />
+                    </div>
+                    <div className="col-md-9" id="option2">
+                        <CSSStyles.Option3 />
+                        <HTMLCode.Option2 
+                        state = {this.state}
+                        />
+                    </div>
+                </div>
         );
     }
 }
@@ -275,6 +398,7 @@ export class Option3 extends Component{
                         state = {this.state}
                         onPrimaryColorChange = {this.handlePriamryColorChange}
                         onSecondaryColorChange = {this.handleSecondaryColorChange}
+                        onFontChange = {this.handleFontChange}
                         onHeaderBackGroundColorChange = {this.handleHeaderBackGroundColorChange}
                         onHeaderTextChange = {this.handleHeaderTextChange}
                         onMainMessageTextChange = {this.handleMainMessageTextChange}
@@ -415,6 +539,7 @@ export class Option4 extends Component{
                         state = {this.state}
                         onPrimaryColorChange = {this.handlePriamryColorChange}
                         onSecondaryColorChange = {this.handleSecondaryColorChange}
+                        onFontChange = {this.handleFontChange}
                         onHeaderBackGroundColorChange = {this.handleHeaderBackGroundColorChange}
                         onHeaderTextChange = {this.handleHeaderTextChange}
                         onMainMessageTextChange = {this.handleMainMessageTextChange}
@@ -550,6 +675,7 @@ export class Option6 extends Component{
                         state = {this.state}
                         onPrimaryColorChange = {this.handlePriamryColorChange}
                         onSecondaryColorChange = {this.handleSecondaryColorChange}
+                        onFontChange = {this.handleFontChange}
                         onHeaderBackGroundColorChange = {this.handleHeaderBackGroundColorChange}
                         onLeftColumnBackGroundColorChange = {this.handleLeftColumnBackGroundColorChange}
                         onRightColumnBackGroundColorChange={this.handleRightColumnBackGroundColorChange}
@@ -715,6 +841,7 @@ export class Option7 extends Component{
                         state = {this.state}
                         onPrimaryColorChange = {this.handlePriamryColorChange}
                         onSecondaryColorChange = {this.handleSecondaryColorChange}
+                        onFontChange = {this.handleFontChange}
                         onHeaderBackGroundColorChange = {this.handleHeaderBackGroundColorChange}
                         onLeftColumnBackGroundColorChange = {this.handleLeftColumnBackGroundColorChange}
                         onRightColumnBackGroundColorChange={this.handleRightColumnBackGroundColorChange}
@@ -861,6 +988,7 @@ export class Option8 extends Component{
                         state = {this.state}
                         onPrimaryColorChange = {this.handlePriamryColorChange}
                         onSecondaryColorChange = {this.handleSecondaryColorChange}
+                        onFontChange = {this.handleFontChange}
                         onHeaderTextChange = {this.handleHeaderTextChange}
                         onBodyBackGroundColorChange={this.handlebodyBackGroundColorChange}
                         onMainMessageTextChange = {this.handleMainMessageTextChange}
