@@ -164,8 +164,8 @@ export class Option1 extends Component {
                     <div id="globalOptionsCollapse-1" className="collapse" data-parent="customizationOptions-1">
                         <div className="card-body">
                             <div className="form-row">
-                                <FormGroup formGroup="col-md-6" label="Primary Brand Color" value={this.props.state.priamryColor} onChange={this.handlePrimaryColorChange} />
-                                <FormGroup formGroup="col-md-6" label="Secondary Brand Color" value={this.props.state.secondaryColor} onChange={this.handleSecondaryColorChange} />
+                                <FormGroup formGroup="col-md-6" label="Primary Color" value={this.props.state.priamryColor} onChange={this.handlePrimaryColorChange} />
+                                <FormGroup formGroup="col-md-6" label="Secondary Color" value={this.props.state.secondaryColor} onChange={this.handleSecondaryColorChange} />
                                 <div className="col-md-12">
                                     <label htmlFor="fontGroup">Font</label>
                                     <select className="form-control" id="fontGroup" onChange={this.handleFontChange} >
@@ -345,8 +345,8 @@ export class Option2 extends Component {
                     <div id="globalOptionsCollapse-2" className="collapse" data-parent="customizationOptions-2">
                         <div className="card-body">
                             <div className="form-row">
-                                <FormGroup formGroup="col-md-6" label="Primary Brand Color" value={this.props.state.priamryColor} onChange={this.handlePrimaryColorChange} />
-                                <FormGroup formGroup="col-md-6" label="Secondary Brand Color" value={this.props.state.secondaryColor} onChange={this.handleSecondaryColorChange} />
+                                <FormGroup formGroup="col-md-6" label="Primary Color" value={this.props.state.priamryColor} onChange={this.handlePrimaryColorChange} />
+                                <FormGroup formGroup="col-md-6" label="Secondary Color" value={this.props.state.secondaryColor} onChange={this.handleSecondaryColorChange} />
                                 <div className="col-md-12">
                                     <label htmlFor="fontGroup">Font</label>
                                     <select className="form-control" id="fontGroup" onChange={this.handleFontChange} >
@@ -521,8 +521,8 @@ export class Option3 extends Component {
                     <div id="globalOptionsCollapse-3" className="collapse" data-parent="customizationOptions-3">
                         <div className="card-body">
                             <div className="form-row">
-                                <FormGroup formGroup="col-md-6" label="Primary Brand Color" value={this.props.state.priamryColor} onChange={this.handlePrimaryColorChange} />
-                                <FormGroup formGroup="col-md-6" label="Secondary Brand Color" value={this.props.state.secondaryColor} onChange={this.handleSecondaryColorChange} />
+                                <FormGroup formGroup="col-md-6" label="Primary Color" value={this.props.state.priamryColor} onChange={this.handlePrimaryColorChange} />
+                                <FormGroup formGroup="col-md-6" label="Secondary Color" value={this.props.state.secondaryColor} onChange={this.handleSecondaryColorChange} />
                                 <div className="col-md-12">
                                     <label htmlFor="fontGroup">Font</label>
                                     <select className="form-control" id="fontGroup" onChange={this.handleFontChange} >
@@ -701,8 +701,8 @@ export class Option4 extends Component {
                     <div id="globalOptionsCollapse-4" className="collapse" data-parent="customizationOptions-4">
                         <div className="card-body">
                             <div className="form-row">
-                                <FormGroup formGroup="col-md-6" label="Primary Brand Color" value={this.props.state.priamryColor} onChange={this.handlePrimaryColorChange} />
-                                <FormGroup formGroup="col-md-6" label="Secondary Brand Color" value={this.props.state.secondaryColor} onChange={this.handleSecondaryColorChange} />
+                                <FormGroup formGroup="col-md-6" label="Primary Color" value={this.props.state.priamryColor} onChange={this.handlePrimaryColorChange} />
+                                <FormGroup formGroup="col-md-6" label="Secondary Color" value={this.props.state.secondaryColor} onChange={this.handleSecondaryColorChange} />
                                 <div className="col-md-12">
                                     <label htmlFor="fontGroup">Font</label>
                                     <select className="form-control" id="fontGroup" onChange={this.handleFontChange} >
@@ -874,8 +874,8 @@ export class Option6 extends Component {
                     <div id="globalOptionsCollapse-6" className="collapse" data-parent="customizationOptions-6">
                         <div className="card-body">
                             <div className="form-row">
-                                <FormGroup formGroup="col-md-6" label="Primary Brand Color" value={this.props.state.priamryColor} onChange={this.handlePrimaryColorChange} />
-                                <FormGroup formGroup="col-md-6" label="Secondary Brand Color" value={this.props.state.secondaryColor} onChange={this.handleSecondaryColorChange} />
+                                <FormGroup formGroup="col-md-6" label="Primary Color" value={this.props.state.priamryColor} onChange={this.handlePrimaryColorChange} />
+                                <FormGroup formGroup="col-md-6" label="Secondary Color" value={this.props.state.secondaryColor} onChange={this.handleSecondaryColorChange} />
                                 <div className="col-md-12">
                                     <label htmlFor="fontGroup">Font</label>
                                     <select className="form-control" id="fontGroup" onChange={this.handleFontChange} >
@@ -1034,8 +1034,8 @@ export class Option7 extends Component {
                     <div id="globalOptionsCollapse-7" className="collapse" data-parent="customizationOptions-7">
                         <div className="card-body">
                             <div className="form-row">
-                                <FormGroup formGroup="col-md-6" label="Primary Brand Color" value={this.props.state.priamryColor} onChange={this.handlePrimaryColorChange} />
-                                <FormGroup formGroup="col-md-6" label="Secondary Brand Color" value={this.props.state.secondaryColor} onChange={this.handleSecondaryColorChange} />
+                                <FormGroup formGroup="col-md-6" label="Primary Color" value={this.props.state.priamryColor} onChange={this.handlePrimaryColorChange} />
+                                <FormGroup formGroup="col-md-6" label="Secondary Color" value={this.props.state.secondaryColor} onChange={this.handleSecondaryColorChange} />
                                 <div className="col-md-12">
                                     <label htmlFor="fontGroup">Font</label>
                                     <select className="form-control" id="fontGroup" onChange={this.handleFontChange} >
@@ -1207,8 +1207,8 @@ export class Option8 extends Component {
                     <div id="globalOptionsCollapse-8" className="collapse" data-parent="customizationOptions-8">
                         <div className="card-body">
                             <div className="form-row">
-                                <FormGroup formGroup="col-md-6" label="Primary Brand Color" value={this.props.state.priamryColor} onChange={this.handlePrimaryColorChange} />
-                                <FormGroup formGroup="col-md-6" label="Secondary Brand Color" value={this.props.state.secondaryColor} onChange={this.handleSecondaryColorChange} />
+                                <FormGroup formGroup="col-md-6" label="Primary Color" value={this.props.state.priamryColor} onChange={this.handlePrimaryColorChange} />
+                                <FormGroup formGroup="col-md-6" label="Secondary Color" value={this.props.state.secondaryColor} onChange={this.handleSecondaryColorChange} />
                                 <div className="col-md-12">
                                     <label htmlFor="fontGroup">Font</label>
                                     <select className="form-control" id="fontGroup" onChange={this.handleFontChange} >
