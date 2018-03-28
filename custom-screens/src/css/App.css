@@ -9,6 +9,10 @@ ul li {
 body {
   background-color: #A3A3A3; }
 
+.navbar-brand img{
+  height: 25px !important;
+}
+
 .action-button {
   margin-left: 0px !important; }
 
@@ -19,8 +23,9 @@ body {
 
 .aside-options-list {
   background-color: #f3f3f3;
-  padding: 0px;
-  margin-bottom: 40px; }
+  padding: 0;
+  margin-bottom: 40px;
+  height: calc(100vh - 156px); }
 
 .option-image {
   height: 100px; }
@@ -31,6 +36,13 @@ body {
   right: 18px;
   top: 18px;
   font-size: 16px; }
+
+.fa-image{
+  color: #adadad;
+  bottom: 4px;
+  right: 4px;
+  position: relative;
+}
 
 .card {
   border: none;
@@ -47,6 +59,10 @@ body {
 
 .card:last-child .card-body {
   border-bottom: none; }
+
+.card:last-child{
+  margin-bottom: 50px;
+}
 
 .card-body .fa-question-circle {
   position: relative;
@@ -85,7 +101,8 @@ body {
 .btn-primary {
   background-color: #EE4620;
   border-color: #EE4620; }
-
+.btn-send{
+    margin-bottom:60px;}
 h3 {
   margin: 0px; }
 
@@ -168,12 +185,15 @@ h3 {
   border-radius: 0px;
   text-align: left;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-  background-color: #fff !important;
+  background-color: #fff;
   color: #4D4D4D;
-  font-weight: 600; }
+  font-weight: 600;
+  line-height: 40px;  }
 
-.screen-dropdown {
-  line-height: 40px; }
+.screen-dropdown:hover{
+  background-color: #f7f7f7;
+  color: #4D4D4D;
+}
 
 .dropdown-menu {
   padding: .5rem .8rem;
@@ -208,8 +228,10 @@ h3 {
   margin-left: 65%;
   vertical-align: 0.155em; }
 
-.col-md-9 {
-  height: 538px !important; }
+.col-md-9{
+    height:538px !important;
+    position: fixed;
+    right: 0;}
 
 .code-box {
   margin: 20px 0px 40px 0px;
@@ -223,5 +245,13 @@ form {
 
 label {
   font-size: 14px; }
+
+.fixed-bottom{
+    padding: 17px 25px !important;
+  }
+
+  .navbar .fa-question-circle{
+    color: #ffffff;
+}
 
 /*# sourceMappingURL=App.css.map */

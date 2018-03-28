@@ -4,7 +4,7 @@ class Footer extends Component{
     render(){
         return( 
             <footer>
-                <nav className="navbar fixed-bottom justify-content-center py-4" style={{backgroundColor: "#393939"}}>
+                <nav className="navbar fixed-bottom py-4" style={{backgroundColor: "#393939"}}>
                 	<i className="fa fa-question-circle"></i>
                 </nav>
             </footer>
