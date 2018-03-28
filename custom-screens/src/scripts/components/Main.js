@@ -47,6 +47,7 @@ class Main extends Component{
                         </div>
                         </div>
                     </div>
+                    <Route exact path="/everfi-custom-screens/" component={Options.Option1} />
                     <Route path="/everfi-custom-screens/option1" component={Options.Option1} />
                     <Route path="/everfi-custom-screens/option2" component={Options.Option2} />
                     <Route path="/everfi-custom-screens/option3" component={Options.Option3} />

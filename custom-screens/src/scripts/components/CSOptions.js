@@ -277,7 +277,7 @@ export class Option2 extends Component {
     }
 
     handleFontChange = (e) => {
-        this.props.onFontChange(e.target.value);
+        this.props.onFontChange(e);
     }
 
     handleHeaderTextChange = (e) => {
